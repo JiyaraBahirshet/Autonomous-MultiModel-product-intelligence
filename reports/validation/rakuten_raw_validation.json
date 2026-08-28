@@ -1,0 +1,52 @@
+{
+  "validator": "rakuten_raw_validation",
+  "validator_version": "v001",
+  "dataset": "Rakuten 2018",
+  "train": {
+    "file": "D:\\Autonomous MultiModel product intelligence\\rakuten-data-challenge\\rdc-catalog-train.tsv",
+    "format": "TSV",
+    "header_present": false,
+    "total_rows": 800000,
+    "malformed_rows": 0,
+    "empty_titles": 0,
+    "empty_category_paths": 0,
+    "invalid_category_paths": 0,
+    "unique_complete_category_paths": 3008,
+    "depth_distribution": {
+      "1": 8172,
+      "2": 2792,
+      "3": 228888,
+      "4": 344472,
+      "5": 166165,
+      "6": 45253,
+      "7": 4197,
+      "8": 61
+    }
+  },
+  "test": {
+    "file": "D:\\Autonomous MultiModel product intelligence\\rakuten-data-challenge\\rdc-catalog-test.tsv",
+    "format": "TSV",
+    "header_present": true,
+    "header": [
+      "Title",
+      "CategoryIdPath"
+    ],
+    "header_matches_expected": true,
+    "total_data_rows": 200000,
+    "malformed_rows": 0,
+    "empty_titles": 0,
+    "empty_category_paths": 0,
+    "invalid_category_paths": 0,
+    "unique_complete_category_paths": 2184,
+    "depth_distribution": {
+      "1": 2094,
+      "2": 780,
+      "3": 59356,
+      "4": 85153,
+      "5": 40948,
+      "6": 10806,
+      "7": 855,
+      "8": 8
+    }
+  }
+}

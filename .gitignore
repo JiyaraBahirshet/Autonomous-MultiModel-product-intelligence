@@ -1,0 +1,85 @@
+# ============================================================
+# Autonomous MultiModel Product Intelligence
+# Git ignore policy
+# ============================================================
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.class
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging / build
+build/
+dist/
+*.egg-info/
+
+# ------------------------------------------------------------
+# IDE / OS
+# ------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ------------------------------------------------------------
+# Secrets / local environment
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# ------------------------------------------------------------
+# Large raw / audit datasets
+# ------------------------------------------------------------
+
+# ABO audit data
+ABO_Audit/
+
+# MAVE audit/source data
+MAVE_Audit/
+
+# Rakuten raw challenge data
+rakuten-data-challenge/
+
+# ------------------------------------------------------------
+# Large processed/split datasets
+# ------------------------------------------------------------
+
+# Ignore actual large dataset records.
+# Keep schemas, manifests, statistics and documentation tracked.
+data/processed/**/*.jsonl
+data/processed/**/*.json
+data/splits/**/*.jsonl
+data/splits/**/*.json
+
+# ------------------------------------------------------------
+# Local caches / temporary files
+# ------------------------------------------------------------
+*.tmp
+*.temp
+*.cache
+
+# ------------------------------------------------------------
+# Model outputs / checkpoints
+# ------------------------------------------------------------
+checkpoints/
+models/
+runs/
+wandb/
+mlruns/
+
+*.pt
+*.pth
+*.ckpt
+*.safetensors

@@ -1,0 +1,68 @@
+{
+  "validator": "rakuten_hierarchy_validation",
+  "validator_version": "v001",
+  "dataset": "Rakuten 2018",
+  "train": {
+    "root_categories": [
+      "1208",
+      "1395",
+      "1608",
+      "2075",
+      "2199",
+      "2296",
+      "3093",
+      "3292",
+      "3625",
+      "3730",
+      "4015",
+      "4238",
+      "4564",
+      "92"
+    ],
+    "root_category_count": 14,
+    "unique_complete_paths": 3008
+  },
+  "test": {
+    "root_categories": [
+      "1208",
+      "1395",
+      "1608",
+      "2075",
+      "2199",
+      "2296",
+      "3093",
+      "3292",
+      "3625",
+      "3730",
+      "4015",
+      "4238",
+      "4564",
+      "92"
+    ],
+    "root_category_count": 14,
+    "unique_complete_paths": 2184
+  },
+  "combined": {
+    "root_categories": [
+      "1208",
+      "1395",
+      "1608",
+      "2075",
+      "2199",
+      "2296",
+      "3093",
+      "3292",
+      "3625",
+      "3730",
+      "4015",
+      "4238",
+      "4564",
+      "92"
+    ],
+    "root_category_count": 14,
+    "test_only_complete_paths": 0,
+    "test_only_path_examples": [],
+    "parent_child_conflict_count": 0,
+    "parent_child_conflict_examples": []
+  }
+}

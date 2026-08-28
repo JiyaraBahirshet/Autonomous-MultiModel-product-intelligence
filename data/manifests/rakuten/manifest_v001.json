@@ -1,0 +1,75 @@
+{
+  "manifest_name": "rakuten_dataset_manifest",
+  "manifest_version": "v001",
+  "dataset": {
+    "name": "Rakuten 2018",
+    "role": "hierarchical_categorization"
+  },
+  "source": {
+    "type": "local_dataset",
+    "train": {
+      "path": "rakuten-data-challenge\\rdc-catalog-train.tsv",
+      "size_bytes": 72068362,
+      "sha256": "524bc30553a7ea02defddbe34a5211c1e822df875095ddd50aeec8b1048c6c68"
+    },
+    "test": {
+      "path": "rakuten-data-challenge\\rdc-catalog-test.tsv",
+      "size_bytes": 18003059,
+      "sha256": "ed5875719905a4a9b3c223730dc341e19244ad6351b1a8435821e8d68bdbc962"
+    }
+  },
+  "raw_structure": {
+    "train": {
+      "format": "TSV",
+      "header_present": false,
+      "columns": [
+        "title",
+        "category_id_path"
+      ],
+      "record_count": 800000
+    },
+    "test": {
+      "format": "TSV",
+      "header_present": true,
+      "columns": [
+        "Title",
+        "CategoryIdPath"
+      ],
+      "record_count": 200000
+    }
+  },
+  "hierarchy": {
+    "separator": ">",
+    "identifier_type": "anonymized_numeric_category_id",
+    "root_category_count": 14,
+    "observed_depth_range": [
+      1,
+      8
+    ],
+    "train_unique_complete_paths": 3008,
+    "test_unique_complete_paths": 2184
+  },
+  "validation": {
+    "validation_report": "reports\\validation\\rakuten_raw_validation.json",
+    "malformed_train_rows": 0,
+    "malformed_test_rows": 0,
+    "empty_train_titles": 0,
+    "empty_test_titles": 0,
+    "empty_train_category_paths": 0,
+    "empty_test_category_paths": 0,
+    "invalid_train_category_paths": 0,
+    "invalid_test_category_paths": 0
+  },
+  "schema": {
+    "path": "data\\manifests\\rakuten\\schema_v001.json",
+    "version": "v001",
+    "sha256": "ded9bb2b16ed38d284c1ae9b99204655d93c52a986ed2b7d43210765cc0e1637"
+  },
+  "processing": {
+    "processing_version": "v001",
+    "status": "raw_validated_not_processed"
+  },
+  "generated": {
+    "timestamp_utc": "2026-08-27T09:03:53.588162+00:00"
+  }
+}

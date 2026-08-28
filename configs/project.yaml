@@ -1,0 +1,15 @@
+﻿project:
+  name: "Autonomous MultiModel Product Intelligence"
+  phase: "A0"
+  processing_version: "v001"
+  schema_version: "v001"
+
+reproducibility:
+  seed: 20260827
+  deterministic: true
+
+logging:
+  level: "INFO"
+
+artifacts:
+  format_version: "v001"

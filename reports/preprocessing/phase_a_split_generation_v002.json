@@ -1,0 +1,29 @@
+{
+  "generator": "phase_a_split_generation",
+  "version": "v002",
+  "seed": "phase-a-split-v001",
+  "counts": {
+    "rakuten": {
+      "train": 719701,
+      "validation": 80299,
+      "test": 200000
+    },
+    "abo": {
+      "train": 70284,
+      "validation": 69996,
+      "test": 7422
+    },
+    "mave": {
+      "train": 2326033,
+      "validation": 290488,
+      "test": 290837
+    }
+  },
+  "source_modified": false,
+  "implementation": {
+    "rakuten": "streaming 90/10 split of official training data; official test copied unchanged",
+    "abo": "image-connected components using union-find; component split key preserves v001 semantics",
+    "mave": "streaming deterministic ASIN-based 80/10/10 split",
+    "memory_strategy": "stream records; do not retain complete JSONL datasets in memory"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "manifest_name": "abo_dataset_manifest",
+  "manifest_version": "v001",
+  "dataset": {
+    "name": "Amazon Berkeley Objects (ABO)",
+    "role": "multimodal_product_intelligence",
+    "listing_key": [
+      "item_id",
+      "domain_name"
+    ]
+  },
+  "source": {
+    "type": "local_dataset",
+    "listing_metadata": {
+      "directory": "ABO_Audit\\listings\\metadata",
+      "file_count": 16,
+      "files": [
+        {
+          "path": "ABO_Audit\\listings\\metadata\\listings_0.json.gz",
+          "size_bytes": 5446000,
+          "sha256": "c5e7723f4a4afa3da4f35c497ab30ac0f8ee5b3e473ec0ffa897511e127e9324"
+        },
+        {
+          "path": "ABO_Audit\\listings\\metadata\\listings_1.json.gz",
+          "size_bytes": 5350124,
+          "sha256": "3c1b0d27a008d7db96b22baac53f613cba3322ae1bddca3da90f92c2834550c2"
+        },
+        {
+          "path": "ABO_Audit\\listings\\metadata\\listings_2.json.gz",
+          "size_bytes": 5446138,
+          "sha256": "90efc22137ddff87db5889d807b60c19e39f157d74ae7f4e8e95270223cbbf3c"
+        },
+        {
+          "path": "ABO_Audit\\listings\\metadata\\listings_3.json.gz",
+          "size_bytes": 5390098,
+          "sha256": "72ffc22271d1ce3e091731c12a24d6875c9864a11fc1966272248b018e25a291"
+        },
+        {
+          "path": "ABO_Audit\\listings\\metadata\\listings_4.json.gz",
+          "size_bytes": 5546055,
+          "sha256": "7ff0d40dbfa23c6f0972e1814177f15aa866511f96e4720e5c860c9d314719c5"
+        },
+        {
+          "path": "ABO_Audit\\listings\\metadata\\listings_5.json.gz",
+          "size_bytes": 5581270,
+          "sha256": "06b88440b35b47a1924ba15e4b2a7b86b62069fd3a02b79bbf361ef9371d8f7f"
+        },
+        {
+          "path": "ABO_Audit\\listings\\metadata\\listings_6.json.gz",
+          "size_bytes": 5496890,
+          "sha256": "2cea3adb5f6d8680f62676e6bbb5e3585a08e089687199755dbfe97d23e60376"
+        },
+        {
+          "path": "ABO_Audit\\listings\\metadata\\listings_7.json.gz",
+          "size_bytes": 5428695,
+          "sha256": "8a1a5a4c7c8b426cc081baeb51c84e934218934faffd439732bafd567d4e4c1c"
+        },
+        {
+          "path": "ABO_Audit\\listings\\metadata\\listings_8.json.gz",
+          "size_bytes": 5565097,
+          "sha256": "5bcaf1ed85c34f204da3d3e787730ad228a96c410565a4fdb57826a297d868cc"
+        },
+        {
+          "path": "ABO_Audit\\listings\\metadata\\listings_9.json.gz",
+          "size_bytes": 5497477,
+          "sha256": "e1a8d0ce00d7d1b858db7bcc384e3301a939f449ded3c04aa8e1ef6bd2a123ae"
+        },
+        {
+          "path": "ABO_Audit\\listings\\metadata\\listings_a.json.gz",
+          "size_bytes": 5461223,
+          "sha256": "1655cdb9b83e46f3d5bf870bb92ba4259cb3ba85c7e3fc19786f4da1ba60d648"
+        },
+        {
+          "path": "ABO_Audit\\listings\\metadata\\listings_b.json.gz",
+          "size_bytes": 5409119,
+          "sha256": "73df50844054d7f33553012f6f606e8128bc83762acadf9a63440ee39f55349b"
+        },
+        {
+          "path": "ABO_Audit\\listings\\metadata\\listings_c.json.gz",
+          "size_bytes": 5443388,
+          "sha256": "6339e61243aa6c9ea88c29cfc72e1e005a7c6c2152185e21ceabe8c8046271c6"
+        },
+        {
+          "path": "ABO_Audit\\listings\\metadata\\listings_d.json.gz",
+          "size_bytes": 5413521,
+          "sha256": "b7e252bbff66da0084420ccbbec6d36ed251cadefb1daababd3709114a07e299"
+        },
+        {
+          "path": "ABO_Audit\\listings\\metadata\\listings_e.json.gz",
+          "size_bytes": 5501262,
+          "sha256": "9240ddbe9f1712c2179ca8eb2f70efa4053a243bbb2609df3609d4933524a45a"
+        },
+        {
+          "path": "ABO_Audit\\listings\\metadata\\listings_f.json.gz",
+          "size_bytes": 5460984,
+          "sha256": "0ef3dd735b0542d017c45d7feb939eeeb01d4d1b37398d17b031fd84d8f5bb1b"
+        }
+      ]
+    },
+    "image_metadata": {
+      "path": "ABO_Audit\\images\\metadata\\images.csv.gz",
+      "size_bytes": 6430535,
+      "sha256": "915263ef354d7a5d3503e899e610082f510c0011cccd5b4dc4f4c5efa86ef539"
+    },
+    "small_image_archive": {
+      "path": "ABO_Audit\\downloads\\abo-images-small.tar",
+      "size_bytes": 3253381120,
+      "sha256": "b766c6585c0f882bc64b2315171a0f81c020fc2f46204b2781075198367a01a8"
+    }
+  },
+  "raw_structure": {
+    "listing_metadata": {
+      "format": "NDJSON",
+      "compression": "gzip",
+      "record_count": 147702,
+      "unique_item_ids": 145615,
+      "unique_listing_keys": 147702,
+      "duplicate_listing_keys": 0
+    },
+    "image_metadata": {
+      "format": "CSV",
+      "compression": "gzip",
+      "image_id_count": 398212
+    }
+  },
+  "images": {
+    "unique_referenced_image_ids": 398170,
+    "referenced_ids_with_metadata": 398170,
+    "referenced_ids_without_metadata": 0,
+    "extracted_file_count": 495,
+    "referenced_ids_with_physical_files": 495,
+    "referenced_ids_missing_physically": 397675,
+    "extracted_unreferenced_files": 0
+  },
+  "validation": {
+    "report": "reports\\validation\\abo_raw_validation.json",
+    "malformed_jsonl_lines": 0,
+    "missing_item_id": 0,
+    "missing_main_image_id": 575,
+    "duplicate_listing_keys": 0,
+    "referenced_ids_without_metadata": 0
+  },
+  "processing": {
+    "processing_version": "v001",
+    "status": "raw_validated_not_processed"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "validator": "phase_a_split_validation",
+  "version": "v002",
+  "memory_strategy": "streaming JSONL validation",
+  "datasets": {
+    "rakuten": {
+      "counts": {
+        "train": 719701,
+        "validation": 80299,
+        "test": 200000
+      },
+      "duplicate_record_ids": 0,
+      "cross_split_record_id_leakage": 0,
+      "official_test_artifact_present": true,
+      "train_validation_only_contain_official_train": true,
+      "test_contains_official_test": true,
+      "overall_valid": true
+    },
+    "abo": {
+      "counts": {
+        "train": 70284,
+        "validation": 69996,
+        "test": 7422
+      },
+      "duplicate_record_ids": 0,
+      "cross_split_record_id_leakage": 0,
+      "shared_image_ids_across_splits": 0,
+      "overall_valid": true
+    },
+    "mave": {
+      "counts": {
+        "train": 2326033,
+        "validation": 290488,
+        "test": 290837
+      },
+      "duplicate_record_ids": 0,
+      "cross_split_record_id_leakage": 0,
+      "cross_split_asin_leakage": 0,
+      "overall_valid": true
+    }
+  },
+  "overall_valid": true
+}

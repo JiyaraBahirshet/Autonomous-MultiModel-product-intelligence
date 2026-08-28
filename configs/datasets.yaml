@@ -1,0 +1,9 @@
+﻿datasets:
+  rakuten:
+    root: "D:/Autonomous MultiModel product intelligence/rakuten-data-challenge"
+
+  abo:
+    root: "D:/Autonomous MultiModel product intelligence/ABO_Audit"
+
+  mave:
+    root: "D:/Autonomous MultiModel product intelligence/MAVE_Audit"

@@ -1,0 +1,81 @@
+{
+  "validator": "abo_processed_validation",
+  "validator_version": "v002",
+  "dataset": "Amazon Berkeley Objects (ABO)",
+  "artifacts": {
+    "listings": "D:\\Autonomous MultiModel product intelligence\\data\\processed\\abo\\listings.jsonl",
+    "image_inventory": "D:\\Autonomous MultiModel product intelligence\\data\\processed\\abo\\image_inventory.jsonl",
+    "schema": "D:\\Autonomous MultiModel product intelligence\\data\\processed\\abo\\schema_v001.json",
+    "statistics": "D:\\Autonomous MultiModel product intelligence\\data\\processed\\abo\\statistics.json"
+  },
+  "listings": {
+    "total_records": 147702,
+    "malformed_lines": 0,
+    "missing_record_id": 0,
+    "unique_record_ids": 147702,
+    "duplicate_record_ids": 0,
+    "missing_item_id": 0,
+    "unique_item_ids": 145615,
+    "duplicate_item_ids": 1932,
+    "missing_main_image_id": 575,
+    "invalid_main_image_structure": 0,
+    "invalid_other_images_structure": 0,
+    "invalid_image_reference_records": 0,
+    "total_image_references": 710653,
+    "unique_referenced_image_ids": 398170,
+    "image_references_with_physical_files": 1793,
+    "image_references_missing_physical_files": 708860
+  },
+  "image_inventory": {
+    "total_records": 398212,
+    "malformed_lines": 0,
+    "unique_image_ids": 398212,
+    "duplicate_image_ids": 0,
+    "physical_images_available": 495,
+    "physical_images_missing": 397717,
+    "invalid_records": 0
+  },
+  "expected": {
+    "listing_records": 147702,
+    "image_metadata_records": 398212,
+    "physical_images_available": 495,
+    "physical_images_missing": 397717,
+    "total_image_references": 710653,
+    "references_with_physical_files": 1793,
+    "references_missing_physical_files": 708860,
+    "missing_main_image_id": 575
+  },
+  "checks": {
+    "listing_record_count": true,
+    "listing_jsonl_valid": true,
+    "record_ids_present": true,
+    "record_ids_unique": true,
+    "item_ids_present": true,
+    "processed_main_image_structure_valid": true,
+    "processed_other_images_structure_valid": true,
+    "processed_image_references_valid": true,
+    "missing_main_image_matches_statistics": true,
+    "image_inventory_jsonl_valid": true,
+    "image_inventory_records_valid": true,
+    "image_metadata_count": true,
+    "image_ids_unique": true,
+    "physical_image_count_matches_statistics": true,
+    "physical_missing_count_matches_statistics": true,
+    "image_reference_count_matches_statistics": true,
+    "physical_reference_count_matches_statistics": true,
+    "missing_physical_reference_count_matches_statistics": true,
+    "reference_counts_reconcile": true,
+    "statistics_reference_counts_reconcile": true,
+    "image_inventory_counts_reconcile": true,
+    "schema_dataset_correct": true,
+    "schema_version_correct": true,
+    "processing_version_correct": true,
+    "raw_data_not_modified": true
+  },
+  "validation": {
+    "all_checks_pass": true,
+    "duplicate_record_ids": 0,
+    "duplicate_item_ids": 1932,
+    "duplicate_image_ids": 0
+  }
+}

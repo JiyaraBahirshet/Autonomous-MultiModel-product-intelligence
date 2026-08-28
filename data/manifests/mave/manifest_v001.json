@@ -1,0 +1,57 @@
+{
+  "manifest_name": "mave_dataset_manifest",
+  "manifest_version": "v001",
+  "dataset": {
+    "name": "MAVE",
+    "role": "multimodal_product_intelligence",
+    "artifact": "historically_reconstructed_final_dataset"
+  },
+  "source": {
+    "type": "local_dataset",
+    "path": "mave_audit\\mave_final_dataset.jsonl",
+    "size_bytes": 6126449761,
+    "sha256": "ca4cf24af5585ca6ab3b7b53dac7626f3a5c9637b121495f4fae346d6672adfd"
+  },
+  "raw_structure": {
+    "format": "JSONL",
+    "compression": "none",
+    "record_count": 2907358,
+    "unique_asins": 2907358,
+    "fields": [
+      "asin",
+      "title",
+      "description",
+      "brand",
+      "price",
+      "feature",
+      "amazon_category_path",
+      "amazon_main_category",
+      "imageURL",
+      "imageURLHighRes",
+      "mave_category",
+      "mave_attributes",
+      "metadata_source",
+      "mave_label_source",
+      "metadata_complete",
+      "mave_information_available"
+    ]
+  },
+  "mave_information": {
+    "records_with_mave_information": 7148,
+    "records_with_mave_category": 7148,
+    "records_with_mave_attributes": 7148
+  },
+  "validation": {
+    "report": "reports\\validation\\mave_final_validation.json",
+    "malformed_jsonl": 0,
+    "missing_asin": 0,
+    "duplicate_asin": 0
+  },
+  "processing": {
+    "processing_version": "v001",
+    "status": "validated_not_processed"
+  },
+  "generated": {
+    "timestamp_utc": "2026-08-27T11:32:10.900303+00:00"
+  }
+}

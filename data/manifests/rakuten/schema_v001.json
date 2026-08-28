@@ -1,0 +1,119 @@
+{
+  "schema_name": "rakuten_processed_record",
+  "schema_version": "v001",
+  "dataset": "Rakuten 2018",
+  "dataset_role": "hierarchical_categorization",
+
+  "source_format": {
+    "type": "TSV",
+    "train_header_present": false,
+    "test_header_present": true,
+    "train_columns": [
+      "title",
+      "category_id_path"
+    ],
+    "test_columns": [
+      "Title",
+      "CategoryIdPath"
+    ]
+  },
+
+  "fields": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "nullable": false,
+      "source": "raw",
+      "description": "Original product title.",
+      "transformation": "Preserve source value."
+    },
+
+    "category_id_path": {
+      "type": "string",
+      "required": true,
+      "nullable": false,
+      "source": "raw",
+      "description": "Original hierarchical category path using '>' as the separator.",
+      "transformation": "Preserve source value exactly."
+    },
+
+    "category_path": {
+      "type": "array<string>",
+      "required": true,
+      "nullable": false,
+      "source": "derived",
+      "description": "Structured representation of category_id_path.",
+      "transformation": "Split category_id_path on '>'."
+    },
+
+    "depth": {
+      "type": "integer",
+      "required": true,
+      "nullable": false,
+      "source": "derived",
+      "description": "Number of category nodes in the complete path.",
+      "transformation": "Length of category_path."
+    },
+
+    "split": {
+      "type": "enum",
+      "required": true,
+      "nullable": false,
+      "allowed_values": [
+        "train",
+        "test"
+      ],
+      "source": "derived",
+      "description": "Partition derived from the authoritative source file.",
+      "transformation": "train for rdc-catalog-train.tsv; test for rdc-catalog-test.tsv."
+    }
+  },
+
+  "hierarchy": {
+    "separator": ">",
+    "identifier_type": "anonymized_numeric_category_id",
+    "minimum_depth": 1,
+    "maximum_depth_observed": 8,
+    "preserve_original_path": true,
+    "preserve_parent_child_relationships": true,
+    "semantic_category_names_available": false
+  },
+
+  "missing_value_policy": {
+    "title": "Missing values are not fabricated. Current raw validation found zero empty titles.",
+    "category_id_path": "Missing values are not fabricated. Current raw validation found zero empty category paths.",
+    "derived_fields": "Derived fields are generated only from valid source values."
+  },
+
+  "split_policy": {
+    "train": "Preserve the official Rakuten training source.",
+    "test": "Preserve the official Rakuten test source.",
+    "replacement_of_official_test": false,
+    "new_random_test_split": false,
+    "validation_split": "If required later, derive only from the training partition and document the procedure."
+  },
+
+  "prohibited_transformations": [
+    "Do not modify raw source files.",
+    "Do not invent semantic category names.",
+    "Do not discard category hierarchy.",
+    "Do not replace anonymized category IDs.",
+    "Do not replace the official test set with a random test split.",
+    "Do not fabricate missing values."
+  ],
+
+  "current_validation_baseline": {
+    "train_records": 800000,
+    "test_records": 200000,
+    "train_unique_complete_paths": 3008,
+    "test_unique_complete_paths": 2184,
+    "train_root_categories": 14,
+    "test_root_categories": 14,
+    "test_only_complete_paths": 0,
+    "parent_child_conflicts": 0,
+    "observed_depth_range": [
+      1,
+      8
+    ]
+  }
+}

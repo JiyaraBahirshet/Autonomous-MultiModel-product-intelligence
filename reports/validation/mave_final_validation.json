@@ -1,0 +1,38 @@
+{
+  "validator": "mave_final_validation",
+  "validator_version": "v001",
+  "dataset": "MAVE",
+  "dataset_file": "mave_audit\\mave_final_dataset.jsonl",
+  "record_count": 2907358,
+  "unique_asins": 2907358,
+  "missing_asin": 0,
+  "duplicate_asin": 0,
+  "malformed": 0,
+  "mave_information_available": 7148,
+  "metadata_complete": 2900210,
+  "mave_category_present": 7148,
+  "mave_attributes_present": 7148,
+  "field_counts": {
+    "amazon_category_path": 2907358,
+    "amazon_main_category": 2907358,
+    "asin": 2907358,
+    "brand": 2907358,
+    "description": 2907358,
+    "feature": 2907358,
+    "imageURL": 2907358,
+    "imageURLHighRes": 2907358,
+    "mave_attributes": 2907358,
+    "mave_category": 2907358,
+    "mave_information_available": 2907358,
+    "mave_label_source": 2907358,
+    "metadata_complete": 2907358,
+    "metadata_source": 2907358,
+    "price": 2907358,
+    "title": 2907358
+  },
+  "validation": {
+    "jsonl_valid": true,
+    "asins_present": true,
+    "asins_unique": true
+  }
+}
