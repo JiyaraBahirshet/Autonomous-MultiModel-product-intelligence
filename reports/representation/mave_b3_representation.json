@@ -1,0 +1,188 @@
+{
+  "report": "mave_b3_representation",
+  "report_version": "v001",
+  "dataset": "MAVE",
+  "stage": "B3",
+  "status": "PASS",
+  "schema": {
+    "dataset": "MAVE",
+    "stage": "B3",
+    "schema_version": "v001",
+    "representation_version": "v001",
+    "input_artifact": "data/processed/mave/b2/{split}.jsonl",
+    "output_artifact": "data/representations/mave/b3/{split}.jsonl",
+    "split_values": [
+      "train",
+      "validation",
+      "test"
+    ],
+    "representation_components": {
+      "text": {
+        "source_fields": [
+          "title",
+          "description",
+          "brand",
+          "amazon_category_path",
+          "amazon_main_category",
+          "feature"
+        ],
+        "normalization": "deterministic whitespace normalization only",
+        "tokenization": "deterministic whitespace tokenization",
+        "lowercasing": false,
+        "stemming": false,
+        "stopword_removal": false,
+        "learned_vocabulary": false
+      },
+      "structured": {
+        "source_fields": [
+          "mave_category",
+          "mave_attributes",
+          "mave_information_available",
+          "mave_label_source",
+          "metadata_source",
+          "metadata_complete",
+          "supervision"
+        ],
+        "encoding": "field presence and native source type metadata",
+        "source_values_overwritten": false,
+        "mave_attributes_flattened": false,
+        "mave_category_overwritten": false
+      },
+      "image_references": {
+        "source_fields": [
+          "imageURL",
+          "imageURLHighRes"
+        ],
+        "references_preserved": true,
+        "image_download": false,
+        "image_path_guessing": false,
+        "synthetic_images": false
+      }
+    },
+    "provenance": {
+      "asin_preserved": true,
+      "record_id_preserved": true,
+      "split_preserved_or_artifact_derived": true,
+      "frozen_split_added": true,
+      "b2_fields_preserved": true,
+      "metadata_source_preserved": true,
+      "mave_label_source_preserved": true
+    },
+    "leakage_policy": "Record-local deterministic representations only; no learned parameters, corpus fitting, vocabulary fitting, or cross-record statistics.",
+    "missing_data_policy": "Missing source values remain missing. No values are imputed or fabricated.",
+    "raw_data_modified": false
+  },
+  "statistics": {
+    "dataset": "MAVE",
+    "stage": "B3",
+    "representation_version": "v001",
+    "splits": {
+      "train": {
+        "source_records": 2326033,
+        "output_records": 2326033,
+        "unique_asins": 2326033,
+        "duplicate_asins": 0,
+        "duplicate_record_ids": 0,
+        "total_text_tokens": 398950519,
+        "empty_text_sequences": 5724,
+        "records_with_mave_information": 5724,
+        "records_with_mave_category": 5724,
+        "records_with_mave_attributes": 5724,
+        "metadata_source_counts": {
+          "amazon_metadata": 2320309,
+          "mave_fallback": 5724
+        },
+        "mave_label_source_counts": {
+          "": 2320309,
+          "mave_positive_and_negative": 1364,
+          "mave_positive": 3993,
+          "mave_negative": 367
+        },
+        "text_field_presence": {
+          "title": 2320309,
+          "description": 2068428,
+          "brand": 2004040,
+          "amazon_category_path": 2320309,
+          "amazon_main_category": 1446342,
+          "feature": 2113819
+        }
+      },
+      "validation": {
+        "source_records": 290488,
+        "output_records": 290488,
+        "unique_asins": 290488,
+        "duplicate_asins": 0,
+        "duplicate_record_ids": 0,
+        "total_text_tokens": 49905101,
+        "empty_text_sequences": 706,
+        "records_with_mave_information": 706,
+        "records_with_mave_category": 706,
+        "records_with_mave_attributes": 706,
+        "metadata_source_counts": {
+          "amazon_metadata": 289782,
+          "mave_fallback": 706
+        },
+        "mave_label_source_counts": {
+          "": 289782,
+          "mave_positive": 512,
+          "mave_positive_and_negative": 153,
+          "mave_negative": 41
+        },
+        "text_field_presence": {
+          "title": 289782,
+          "description": 258651,
+          "brand": 250499,
+          "amazon_category_path": 289782,
+          "amazon_main_category": 180899,
+          "feature": 263935
+        }
+      },
+      "test": {
+        "source_records": 290837,
+        "output_records": 290837,
+        "unique_asins": 290837,
+        "duplicate_asins": 0,
+        "duplicate_record_ids": 0,
+        "total_text_tokens": 49988445,
+        "empty_text_sequences": 718,
+        "records_with_mave_information": 718,
+        "records_with_mave_category": 718,
+        "records_with_mave_attributes": 718,
+        "metadata_source_counts": {
+          "amazon_metadata": 290119,
+          "mave_fallback": 718
+        },
+        "mave_label_source_counts": {
+          "": 290119,
+          "mave_positive_and_negative": 167,
+          "mave_positive": 508,
+          "mave_negative": 43
+        },
+        "text_field_presence": {
+          "title": 290119,
+          "description": 258940,
+          "brand": 250946,
+          "amazon_category_path": 290119,
+          "amazon_main_category": 181395,
+          "feature": 264299
+        }
+      }
+    },
+    "total_records": 2907358,
+    "total_unique_asins": 2907358,
+    "total_text_tokens": 498844065,
+    "empty_text_sequences": 7148,
+    "duplicate_asins_within_splits": 0,
+    "duplicate_record_ids_within_splits": 0,
+    "cross_split_asin_leakage": 0,
+    "invariants": {
+      "record_count_preserved": true,
+      "asin_uniqueness": true,
+      "record_id_uniqueness_within_splits": true,
+      "mave_source_distinctions_preserved": true,
+      "missing_values_fabricated": false,
+      "learned_parameters": false,
+      "raw_data_modified": false
+    }
+  }
+}

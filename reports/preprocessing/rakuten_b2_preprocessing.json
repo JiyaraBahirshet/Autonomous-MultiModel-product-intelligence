@@ -1,0 +1,114 @@
+{
+  "report": "rakuten_b2_preprocessing",
+  "report_version": "v001",
+  "dataset": "Rakuten 2018",
+  "stage": "B2",
+  "status": "COMPLETE",
+  "statistics": {
+    "dataset": "Rakuten 2018",
+    "stage": "B2",
+    "processing_version": "v001",
+    "input_directory": "data\\splits\\rakuten",
+    "output_directory": "data\\processed\\rakuten\\b2",
+    "total_records": 1000000,
+    "replacement_character_titles": 732,
+    "short_titles_length_le_3": 76,
+    "titles_changed_by_whitespace_normalization": 0,
+    "duplicate_record_ids": 0,
+    "splits": {
+      "train": {
+        "records_processed": 719701,
+        "malformed_records": 0,
+        "titles_with_replacement_character": 508,
+        "titles_length_le_3": 51,
+        "titles_changed_by_whitespace_normalization": 0,
+        "titles_unchanged": 719701,
+        "original_title_characters": 49389439,
+        "processed_title_characters": 49389439,
+        "unique_record_ids": 719701,
+        "duplicate_record_ids": 0,
+        "category_paths_changed": 0,
+        "category_id_paths_changed": 0
+      },
+      "validation": {
+        "records_processed": 80299,
+        "malformed_records": 0,
+        "titles_with_replacement_character": 55,
+        "titles_length_le_3": 6,
+        "titles_changed_by_whitespace_normalization": 0,
+        "titles_unchanged": 80299,
+        "original_title_characters": 5510122,
+        "processed_title_characters": 5510122,
+        "unique_record_ids": 80299,
+        "duplicate_record_ids": 0,
+        "category_paths_changed": 0,
+        "category_id_paths_changed": 0
+      },
+      "test": {
+        "records_processed": 200000,
+        "malformed_records": 0,
+        "titles_with_replacement_character": 169,
+        "titles_length_le_3": 19,
+        "titles_changed_by_whitespace_normalization": 0,
+        "titles_unchanged": 200000,
+        "original_title_characters": 13735241,
+        "processed_title_characters": 13735241,
+        "unique_record_ids": 200000,
+        "duplicate_record_ids": 0,
+        "category_paths_changed": 0,
+        "category_id_paths_changed": 0
+      }
+    },
+    "invariants": {
+      "record_count_preserved": true,
+      "category_information_preserved": true,
+      "record_ids_preserved": true,
+      "split_boundaries_preserved": true,
+      "duplicates_preserved": true,
+      "raw_data_modified": false
+    }
+  },
+  "schema": {
+    "dataset": "Rakuten 2018",
+    "stage": "B2",
+    "schema_version": "v001",
+    "processing_version": "v001",
+    "input": {
+      "source": "data/splits/rakuten/",
+      "frozen_splits": [
+        "train.jsonl",
+        "validation.jsonl",
+        "test.jsonl"
+      ]
+    },
+    "output": {
+      "directory": "data/processed/rakuten/b2/",
+      "split_artifacts": [
+        "train.jsonl",
+        "validation.jsonl",
+        "test.jsonl"
+      ]
+    },
+    "transformations": {
+      "title": "deterministic whitespace normalization only",
+      "unicode": "preserved; no translation or ASCII conversion",
+      "replacement_character": "preserved and statistically reported",
+      "digits": "preserved",
+      "punctuation": "preserved",
+      "symbols": "preserved",
+      "short_titles": "preserved; no length-based filtering",
+      "duplicates": "preserved; no deduplication",
+      "category_id_path": "preserved exactly",
+      "category_path": "preserved exactly",
+      "depth": "preserved exactly",
+      "root_category_id": "preserved exactly",
+      "leaf_category_id": "preserved exactly",
+      "split": "preserved exactly",
+      "record_id": "preserved exactly"
+    },
+    "frozen_split": "experimental split determined by the frozen split artifact location",
+    "leakage_policy": "No preprocessing statistics are fitted from validation or test data.",
+    "missing_data_policy": "No values are fabricated or imputed.",
+    "raw_data_modified": false
+  }
+}

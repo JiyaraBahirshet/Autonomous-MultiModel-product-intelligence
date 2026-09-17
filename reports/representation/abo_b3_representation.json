@@ -1,0 +1,188 @@
+{
+  "report": "abo_b3_representation",
+  "report_version": "v001",
+  "dataset": "Amazon Berkeley Objects (ABO)",
+  "stage": "B3",
+  "status": "PASS",
+  "schema": {
+    "dataset": "Amazon Berkeley Objects (ABO)",
+    "stage": "B3",
+    "schema_version": "v001",
+    "representation_version": "v001",
+    "input_artifact": "data/processed/abo/b2/{split}.jsonl",
+    "output_artifact": "data/representations/abo/b3/{split}.jsonl",
+    "split_values": [
+      "train",
+      "validation",
+      "test"
+    ],
+    "representation_components": {
+      "text": {
+        "source_fields": [
+          "item_name",
+          "title",
+          "brand",
+          "bullet_point",
+          "color",
+          "description",
+          "fabric_type",
+          "finish_type",
+          "item_keywords",
+          "item_shape",
+          "material",
+          "model_name",
+          "pattern",
+          "product_description",
+          "style"
+        ],
+        "tokenization": "deterministic whitespace tokenization",
+        "lowercasing": false,
+        "translation": false,
+        "stemming": false,
+        "stopword_removal": false,
+        "punctuation_deletion": false
+      },
+      "structured": {
+        "source_fields": [
+          "amazon_category_path",
+          "amazon_main_category",
+          "feature",
+          "item_keywords"
+        ],
+        "encoding": "presence and native source type metadata",
+        "source_values_overwritten": false
+      },
+      "image": {
+        "image_ids_preserved": true,
+        "physical_file_availability_preserved": true,
+        "image_download": false,
+        "image_path_guessing": false,
+        "synthetic_images": false
+      }
+    },
+    "provenance": {
+      "record_id_preserved": true,
+      "item_id_preserved": true,
+      "split_preserved": true,
+      "frozen_split_preserved": true,
+      "b2_fields_preserved": true
+    },
+    "leakage_policy": "Record-local deterministic representations only; no learned parameters.",
+    "missing_data_policy": "Missing source fields and missing physical images remain missing. No values are fabricated.",
+    "raw_data_modified": false
+  },
+  "statistics": {
+    "dataset": "Amazon Berkeley Objects (ABO)",
+    "stage": "B3",
+    "representation_version": "v001",
+    "splits": {
+      "train": {
+        "source_records": 70284,
+        "output_records": 70284,
+        "malformed_records": 0,
+        "duplicate_record_ids": 0,
+        "unique_record_ids": 70284,
+        "title_tokens": 1759635,
+        "combined_text_tokens": 17337531,
+        "empty_token_sequences": 0,
+        "records_with_main_image_reference": 69823,
+        "records_with_physical_main_image": 552,
+        "total_image_references": 364787,
+        "image_references_with_physical_files": 557,
+        "image_references_missing_physical_files": 364230,
+        "text_field_presence": {
+          "item_name": 70284,
+          "brand": 70236,
+          "bullet_point": 57758,
+          "color": 44784,
+          "item_keywords": 54362,
+          "model_name": 18227,
+          "style": 30334,
+          "material": 20184,
+          "fabric_type": 6372,
+          "product_description": 3281,
+          "pattern": 3634,
+          "finish_type": 1288,
+          "item_shape": 3660
+        }
+      },
+      "validation": {
+        "source_records": 69996,
+        "output_records": 69996,
+        "malformed_records": 0,
+        "duplicate_record_ids": 0,
+        "unique_record_ids": 69996,
+        "title_tokens": 1372999,
+        "combined_text_tokens": 24318837,
+        "empty_token_sequences": 0,
+        "records_with_main_image_reference": 69926,
+        "records_with_physical_main_image": 1161,
+        "total_image_references": 306983,
+        "image_references_with_physical_files": 1162,
+        "image_references_missing_physical_files": 305821,
+        "text_field_presence": {
+          "item_name": 69996,
+          "brand": 69990,
+          "bullet_point": 67923,
+          "color": 66573,
+          "item_keywords": 66904,
+          "material": 31217,
+          "model_name": 61313,
+          "style": 9152,
+          "fabric_type": 867,
+          "product_description": 514,
+          "pattern": 579,
+          "item_shape": 1112,
+          "finish_type": 128
+        }
+      },
+      "test": {
+        "source_records": 7422,
+        "output_records": 7422,
+        "malformed_records": 0,
+        "duplicate_record_ids": 0,
+        "unique_record_ids": 7422,
+        "title_tokens": 165151,
+        "combined_text_tokens": 1547793,
+        "empty_token_sequences": 0,
+        "records_with_main_image_reference": 7378,
+        "records_with_physical_main_image": 73,
+        "total_image_references": 38883,
+        "image_references_with_physical_files": 74,
+        "image_references_missing_physical_files": 38809,
+        "text_field_presence": {
+          "item_name": 7422,
+          "brand": 7417,
+          "bullet_point": 5889,
+          "color": 4822,
+          "item_keywords": 5507,
+          "style": 3702,
+          "model_name": 2039,
+          "product_description": 444,
+          "material": 2184,
+          "fabric_type": 954,
+          "pattern": 377,
+          "item_shape": 294,
+          "finish_type": 120
+        }
+      }
+    },
+    "total_records": 147702,
+    "total_title_tokens": 3297785,
+    "total_combined_text_tokens": 43204161,
+    "empty_token_sequences": 0,
+    "duplicate_record_ids": 0,
+    "total_image_references": 710653,
+    "image_references_with_physical_files": 1793,
+    "image_references_missing_physical_files": 708860,
+    "invariants": {
+      "record_count_preserved": true,
+      "record_ids_preserved": true,
+      "split_boundaries_preserved": true,
+      "b2_source_fields_preserved": true,
+      "missing_images_preserved": true,
+      "synthetic_values_created": false,
+      "raw_data_modified": false
+    }
+  }
+}

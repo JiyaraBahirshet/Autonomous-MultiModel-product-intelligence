@@ -1,0 +1,165 @@
+{
+  "report_version": "v001",
+  "report_name": "abo_b5.5_comparison_against_b4.2",
+  "status": "PASS",
+  "dataset": "ABO",
+  "stage": "B5.5",
+  "b3_version": "v002",
+  "b4_version": "v002",
+  "b5_version": "v001",
+  "target_field": "product_type",
+  "comparison_scope": {
+    "description": "Comparison of locked B4.2 text-only and image-only endpoints against locked B5.4 multimodal fusion on the exact same B5 common paired population.",
+    "population_source": "B5.3 common paired prediction population",
+    "same_population_for_all_models": true,
+    "same_target_labels_for_all_models": true,
+    "same_common_class_space_for_all_models": true,
+    "common_class_count": 549
+  },
+  "population": {
+    "train": 69823,
+    "validation": 69867,
+    "test": 7346,
+    "comparison_split": "test",
+    "test_records_compared": 7346,
+    "paired_common_target_population": true,
+    "cross_split_record_id_leakage": {
+      "train_validation": 0,
+      "train_test": 0,
+      "validation_test": 0
+    }
+  },
+  "frozen_fusion": {
+    "source_stage": "B5.4",
+    "fusion_version": "v001",
+    "selected_alpha": 0.9,
+    "text_weight": 0.9,
+    "image_weight": 0.09999999999999998,
+    "alpha_was_retuned_in_b5_5": false,
+    "test_used_for_alpha_selection": false
+  },
+  "models_compared": {
+    "text_only": {
+      "source": "B4.2",
+      "modality": "text",
+      "model_version": "v002",
+      "metrics": {
+        "accuracy": 0.569425537707596,
+        "macro_f1": 0.058107181452159186,
+        "weighted_f1": 0.5058603257557122
+      }
+    },
+    "image_only": {
+      "source": "B4.2",
+      "modality": "image",
+      "model_version": "v002",
+      "metrics": {
+        "accuracy": 0.3913694527634087,
+        "macro_f1": 0.11203960097135889,
+        "weighted_f1": 0.3638150700358917
+      }
+    },
+    "fusion": {
+      "source": "B5.4",
+      "modality": "text_plus_image",
+      "fusion_version": "v001",
+      "metrics": {
+        "accuracy": 0.5386604955077593,
+        "macro_f1": 0.1223595494343571,
+        "weighted_f1": 0.5073533552478247
+      }
+    }
+  },
+  "fusion_vs_text_only": {
+    "absolute_delta": {
+      "accuracy": -0.030765042199836667,
+      "macro_f1": 0.06425236798219791,
+      "weighted_f1": 0.0014930294921124965
+    },
+    "relative_change": {
+      "accuracy": -0.05402820941907725,
+      "macro_f1": 1.1057560593452322,
+      "weighted_f1": 0.002951465881183779
+    }
+  },
+  "fusion_vs_image_only": {
+    "absolute_delta": {
+      "accuracy": 0.14729104274435062,
+      "macro_f1": 0.010319948462998219,
+      "weighted_f1": 0.14353828521193296
+    },
+    "relative_change": {
+      "accuracy": 0.3763478260869564,
+      "macro_f1": 0.09210982878845085,
+      "weighted_f1": 0.39453639234288007
+    }
+  },
+  "metric_outcomes": {
+    "accuracy": {
+      "fusion": 0.5386604955077593,
+      "text_only": 0.569425537707596,
+      "image_only": 0.3913694527634087,
+      "outcome": "fusion_better_than_image_only"
+    },
+    "macro_f1": {
+      "fusion": 0.1223595494343571,
+      "text_only": 0.058107181452159186,
+      "image_only": 0.11203960097135889,
+      "outcome": "fusion_best"
+    },
+    "weighted_f1": {
+      "fusion": 0.5073533552478247,
+      "text_only": 0.5058603257557122,
+      "image_only": 0.3638150700358917,
+      "outcome": "fusion_best"
+    }
+  },
+  "rankings": {
+    "accuracy": [
+      "text_only",
+      "fusion",
+      "image_only"
+    ],
+    "macro_f1": [
+      "fusion",
+      "image_only",
+      "text_only"
+    ],
+    "weighted_f1": [
+      "fusion",
+      "text_only",
+      "image_only"
+    ]
+  },
+  "primary_outcome": "fusion_best_on_macro_f1",
+  "interpretation": {
+    "accuracy": "Fusion accuracy is evaluated directly against the B4.2 text-only and image-only baselines on the same B5 comparison population.",
+    "macro_f1": "Macro F1 is the primary class-balanced comparison metric. Fusion is reported as best only if its macro F1 exceeds both B4.2 endpoints.",
+    "weighted_f1": "Weighted F1 is reported independently and is not substituted for accuracy or macro F1.",
+    "no_universal_improvement_claim": true
+  },
+  "integrity": {
+    "b3_modified": false,
+    "b4_2_modified": false,
+    "b4_2_retrained": false,
+    "b5_3_modified": false,
+    "b5_4_modified": false,
+    "splits_regenerated": false,
+    "images_read": false,
+    "image_download": false,
+    "path_guessing": false,
+    "synthetic_data": false,
+    "alpha_retuned": false,
+    "test_used_for_tuning": false,
+    "rakuten_used": false,
+    "mave_used": false,
+    "same_population_comparison": true,
+    "same_class_space_comparison": true,
+    "fusion_recomputed_from_locked_b5_3_predictions": true
+  },
+  "source_contracts": {
+    "b5_3_metadata": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\b5\\predictions_v001\\metadata.json",
+    "b5_4_report": "D:\\Autonomous MultiModel product intelligence\\reports\\fusion\\abo\\abo_b5.4_fusion_v001.json",
+    "b5_4_metadata": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\b5\\fusion_v001\\metadata.json"
+  }
+}

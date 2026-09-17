@@ -1,0 +1,112 @@
+{
+  "report": "abo_b4.2_baseline",
+  "version": "v002",
+  "dataset": "ABO",
+  "stage": "B4.2",
+  "status": "PASS",
+  "execution_modality": "all",
+  "purpose": "Dataset-specific baseline models before multimodal fusion.",
+  "target_contract": {
+    "field": "product_type",
+    "selection_rule": "first non-empty value"
+  },
+  "input_representation": {
+    "representation_version": "v002",
+    "source": "data/representations/abo/b3"
+  },
+  "split_integrity": {
+    "train_records": 70284,
+    "validation_records": 69996,
+    "test_records": 7422,
+    "duplicate_record_ids": 0,
+    "cross_split_record_id_leakage": 0,
+    "status": "PASS"
+  },
+  "baselines": {
+    "text_only": {
+      "status": "complete",
+      "target_field": "product_type",
+      "target_rule": "first non-empty value",
+      "train": {
+        "records": 70284,
+        "classes": 553
+      },
+      "validation": {
+        "records": 69996,
+        "unseen_target_records": 59,
+        "accuracy": 0.9082173956560905,
+        "macro_f1": 0.08524528962807053,
+        "weighted_f1": 0.8980940672973458
+      },
+      "test": {
+        "records": 7422,
+        "unseen_target_records": 30,
+        "accuracy": 0.5684523809523809,
+        "macro_f1": 0.09387840495350011,
+        "weighted_f1": 0.5050464332987978
+      },
+      "vocabulary_size": 256395,
+      "representation_source": "B3 v002 b3_representation.text.combined_tokens"
+    },
+    "image_only": {
+      "status": "complete",
+      "target_field": "product_type",
+      "target_rule": "first non-empty value",
+      "train": {
+        "records": 70284,
+        "physically_eligible_records": 69823,
+        "classes": 549
+      },
+      "validation": {
+        "records": 69996,
+        "physically_eligible_records": 69926,
+        "accuracy": 0.838278,
+        "macro_f1": 0.134345
+      },
+      "test": {
+        "records": 7422,
+        "physically_eligible_records": 7378,
+        "accuracy": 0.390961,
+        "macro_f1": 0.166236
+      },
+      "representation_source": "B3 v002 b3_representation.image.main",
+      "preprocessing": {
+        "color": "RGB",
+        "resize": "64x64",
+        "interpolation": "bilinear",
+        "dtype": "float32",
+        "scaling": "divide by 255",
+        "representation": "flattened pixel vector"
+      },
+      "training": {
+        "epochs": 30,
+        "batch_size": 256,
+        "checkpoint_resume": true
+      }
+    }
+  },
+  "fusion": {
+    "performed": false,
+    "reserved_for": "B5"
+  },
+  "provenance": {
+    "python_version": "3.13.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "seed": 20260827
+  },
+  "integrity_constraints": {
+    "B2_modified": false,
+    "B3_modified": false,
+    "frozen_splits_regenerated": false,
+    "images_downloaded": false,
+    "image_paths_guessed": false,
+    "synthetic_images_created": false
+  },
+  "finalization": {
+    "type": "report_only",
+    "training_rerun": false,
+    "image_evaluation_rerun": false,
+    "generated_utc": "2026-09-07T16:45:54.442732+00:00",
+    "note": "Consolidates completed B4.2 text-only and image-only runs without rerunning training."
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "report": "mave_b4.3_feasibility",
+  "report_version": "v001",
+  "dataset": "MAVE",
+  "stage": "B4.3",
+  "status": "BLOCKED",
+  "feasibility_status": "BLOCKED_NO_USABLE_B3_INPUT",
+  "feasibility_reason": "Explicit MAVE-supervised candidates exist, but none have usable B3 combined_tokens. B4.3 cannot train a text baseline without changing the approved B3 input contract.",
+  "execution_timestamp_utc": "2026-08-31T16:33:26.060170+00:00",
+  "runtime": {
+    "python_version": "3.13.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "scikit_learn_version": "1.9.0",
+    "seed": 20260827
+  },
+  "source_artifacts": {
+    "train": "data/representations/mave/b3/train.jsonl",
+    "validation": "data/representations/mave/b3/validation.jsonl",
+    "test": "data/representations/mave/b3/test.jsonl",
+    "b3_representation_version": "v001"
+  },
+  "expected_counts": {
+    "train": 2326033,
+    "validation": 290488,
+    "test": 290837
+  },
+  "observed_total_records": 2907358,
+  "counts_match_expected": true,
+  "splits": {
+    "train": {
+      "path": "D:\\Autonomous MultiModel product intelligence\\data\\representations\\mave\\b3\\train.jsonl",
+      "records": 2326033,
+      "unique_asins": 2326033,
+      "unique_record_ids": 2326033,
+      "duplicate_asins": 0,
+      "duplicate_record_ids": 0,
+      "missing_asins": 0,
+      "split_mismatches": 0,
+      "malformed_records": 0,
+      "mave_information_available": 5724,
+      "mave_category_nonempty": 5724,
+      "mave_attributes_nonempty": 5724,
+      "mave_label_source_nonempty": 5724,
+      "supervision_label_available": 5724,
+      "usable_b3_text": 2320309,
+      "usable_b3_text_with_mave_information": 0,
+      "supervised_candidates": 5724,
+      "supervised_candidates_with_usable_text": 0,
+      "supervised_candidates_with_empty_text": 5724,
+      "category_cardinality": 10,
+      "top_categories": [
+        [
+          "Collectible Trading Cards",
+          3621
+        ],
+        [
+          "Collectible Coins & Currency",
+          1323
+        ],
+        [
+          "Posters, Prints, & Visual Artwork",
+          762
+        ],
+        [
+          "Hockey Balls & Pucks",
+          7
+        ],
+        [
+          "Flags & Windsocks",
+          3
+        ],
+        [
+          "Post Cards",
+          2
+        ],
+        [
+          "Books",
+          2
+        ],
+        [
+          "Games",
+          2
+        ],
+        [
+          "Greeting & Note Cards",
+          1
+        ],
+        [
+          "Shirts & Tops",
+          1
+        ]
+      ],
+      "label_source_distribution": {
+        "mave_positive_and_negative": 1364,
+        "mave_positive": 3993,
+        "mave_negative": 367
+      },
+      "metadata_source_distribution": {
+        "amazon_metadata": 2320309,
+        "mave_fallback": 5724
+      },
+      "representation_versions": {
+        "v001": 2326033
+      }
+    },
+    "validation": {
+      "path": "D:\\Autonomous MultiModel product intelligence\\data\\representations\\mave\\b3\\validation.jsonl",
+      "records": 290488,
+      "unique_asins": 290488,
+      "unique_record_ids": 290488,
+      "duplicate_asins": 0,
+      "duplicate_record_ids": 0,
+      "missing_asins": 0,
+      "split_mismatches": 0,
+      "malformed_records": 0,
+      "mave_information_available": 706,
+      "mave_category_nonempty": 706,
+      "mave_attributes_nonempty": 706,
+      "mave_label_source_nonempty": 706,
+      "supervision_label_available": 706,
+      "usable_b3_text": 289782,
+      "usable_b3_text_with_mave_information": 0,
+      "supervised_candidates": 706,
+      "supervised_candidates_with_usable_text": 0,
+      "supervised_candidates_with_empty_text": 706,
+      "category_cardinality": 4,
+      "top_categories": [
+        [
+          "Collectible Trading Cards",
+          464
+        ],
+        [
+          "Collectible Coins & Currency",
+          151
+        ],
+        [
+          "Posters, Prints, & Visual Artwork",
+          90
+        ],
+        [
+          "Flags & Windsocks",
+          1
+        ]
+      ],
+      "label_source_distribution": {
+        "mave_positive": 512,
+        "mave_positive_and_negative": 153,
+        "mave_negative": 41
+      },
+      "metadata_source_distribution": {
+        "amazon_metadata": 289782,
+        "mave_fallback": 706
+      },
+      "representation_versions": {
+        "v001": 290488
+      }
+    },
+    "test": {
+      "path": "D:\\Autonomous MultiModel product intelligence\\data\\representations\\mave\\b3\\test.jsonl",
+      "records": 290837,
+      "unique_asins": 290837,
+      "unique_record_ids": 290837,
+      "duplicate_asins": 0,
+      "duplicate_record_ids": 0,
+      "missing_asins": 0,
+      "split_mismatches": 0,
+      "malformed_records": 0,
+      "mave_information_available": 718,
+      "mave_category_nonempty": 718,
+      "mave_attributes_nonempty": 718,
+      "mave_label_source_nonempty": 718,
+      "supervision_label_available": 718,
+      "usable_b3_text": 290119,
+      "usable_b3_text_with_mave_information": 0,
+      "supervised_candidates": 718,
+      "supervised_candidates_with_usable_text": 0,
+      "supervised_candidates_with_empty_text": 718,
+      "category_cardinality": 5,
+      "top_categories": [
+        [
+          "Collectible Trading Cards",
+          445
+        ],
+        [
+          "Collectible Coins & Currency",
+          166
+        ],
+        [
+          "Posters, Prints, & Visual Artwork",
+          105
+        ],
+        [
+          "Games",
+          1
+        ],
+        [
+          "Books",
+          1
+        ]
+      ],
+      "label_source_distribution": {
+        "mave_positive_and_negative": 167,
+        "mave_positive": 508,
+        "mave_negative": 43
+      },
+      "metadata_source_distribution": {
+        "amazon_metadata": 290119,
+        "mave_fallback": 718
+      },
+      "representation_versions": {
+        "v001": 290837
+      }
+    }
+  },
+  "global_integrity": {
+    "cross_split_asin_overlap": {
+      "train_vs_validation": 0,
+      "train_vs_test": 0,
+      "validation_vs_test": 0
+    },
+    "cross_split_record_id_overlap": {
+      "train_vs_validation": 0,
+      "train_vs_test": 0,
+      "validation_vs_test": 0
+    },
+    "cross_split_asin_leakage": 0,
+    "cross_split_record_id_leakage": 0
+  },
+  "target_assessment": {
+    "status": "BLOCKED_NO_USABLE_B3_INPUT",
+    "reason": "Explicit MAVE-supervised candidates exist, but none have usable B3 combined_tokens. B4.3 cannot train a text baseline without changing the approved B3 input contract.",
+    "total_mave_information_records": 7148,
+    "total_category_records": 7148,
+    "total_attribute_records": 7148,
+    "total_supervised_candidates": 7148,
+    "total_supervised_candidates_with_usable_text": 0
+  },
+  "invariants": {
+    "b3_artifacts_modified": false,
+    "labels_fabricated": false,
+    "missing_labels_converted_to_negative": false,
+    "amazon_metadata_used_as_mave_target": false,
+    "model_training_performed": false,
+    "tfidf_fitted": false,
+    "test_used_for_fitting": false,
+    "b5_fusion_performed": false
+  },
+  "next_step": "Do not train B4.3 yet. Resolve the reported target/input eligibility issue without modifying B3."
+}

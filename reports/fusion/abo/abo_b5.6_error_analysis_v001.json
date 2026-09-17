@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "stage": "B5.6",
+  "dataset": "ABO",
+  "versions": {
+    "b3_representation": "v002",
+    "b4": "v002",
+    "b5": "v001",
+    "b5_6": "v001"
+  },
+  "target_field": "product_type",
+  "population": {
+    "definition": "B5.3 common paired test population",
+    "test_records": 7346,
+    "common_classes": 549
+  },
+  "frozen_fusion": {
+    "alpha": 0.9,
+    "text_weight": 0.9,
+    "image_weight": 0.09999999999999998,
+    "alpha_retuned": false
+  },
+  "test_metrics": {
+    "text_only": {
+      "accuracy": 0.569425537707596,
+      "macro_f1": 0.058107181452159186,
+      "weighted_f1": 0.5058603257557122
+    },
+    "image_only": {
+      "accuracy": 0.3913694527634087,
+      "macro_f1": 0.11203960097135889,
+      "weighted_f1": 0.3638150700358917
+    },
+    "fusion": {
+      "accuracy": 0.5386604955077593,
+      "macro_f1": 0.1223595494343571,
+      "weighted_f1": 0.5073533552478247
+    }
+  },
+  "prediction_relationships": {
+    "all_three_correct": {
+      "count": 2325,
+      "rate_of_test_population": 0.31649877484345224
+    },
+    "text_correct_image_wrong_fusion_correct": {
+      "count": 1202,
+      "rate_of_test_population": 0.16362646338143208
+    },
+    "text_wrong_image_correct_fusion_correct": {
+      "count": 404,
+      "rate_of_test_population": 0.05499591614484073
+    },
+    "both_wrong_fusion_correct": {
+      "count": 26,
+      "rate_of_test_population": 0.0035393411380343046
+    },
+    "both_correct_fusion_wrong": {
+      "count": 0,
+      "rate_of_test_population": 0.0
+    },
+    "text_correct_image_wrong_fusion_wrong": {
+      "count": 656,
+      "rate_of_test_population": 0.08930029948271168
+    },
+    "text_wrong_image_correct_fusion_wrong": {
+      "count": 146,
+      "rate_of_test_population": 0.01987476177511571
+    },
+    "both_wrong_fusion_wrong": {
+      "count": 2587,
+      "rate_of_test_population": 0.35216444323441326
+    }
+  },
+  "complementarity": {
+    "fusion_correct": {
+      "count": 3957,
+      "rate_of_test_population": 0.5386604955077593
+    },
+    "fusion_correct_when_text_wrong": {
+      "count": 430,
+      "rate_of_test_population": 0.058535257282875036
+    },
+    "fusion_correct_when_image_wrong": {
+      "count": 1228,
+      "rate_of_test_population": 0.1671658045194664
+    },
+    "fusion_correct_when_both_wrong": {
+      "count": 26,
+      "rate_of_test_population": 0.0035393411380343046
+    },
+    "fusion_regression_when_both_correct": {
+      "count": 0,
+      "rate_of_test_population": 0.0
+    },
+    "fusion_correct_when_at_least_one_baseline_correct": {
+      "count": 3931,
+      "rate_of_test_population": 0.5351211543697251
+    }
+  },
+  "integrity": {
+    "b3_representation_version": "v002",
+    "b4_version": "v002",
+    "b5_version": "v001",
+    "frozen_alpha_used": true,
+    "alpha_retuned": false,
+    "b4_2_retrained": false,
+    "b3_modified": false,
+    "b4_2_modified": false,
+    "split_regenerated": false,
+    "image_download": false,
+    "image_path_guessing": false,
+    "synthetic_images": false,
+    "fusion_retrained": false
+  },
+  "source_artifacts": {
+    "b5_3_metadata": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\b5\\predictions_v001\\metadata.json",
+    "b5_4_report": "D:\\Autonomous MultiModel product intelligence\\reports\\fusion\\abo\\abo_b5.4_fusion_v001.json",
+    "b5_5_report": "D:\\Autonomous MultiModel product intelligence\\reports\\fusion\\abo\\abo_b5.5_comparison_v001.json"
+  }
+}

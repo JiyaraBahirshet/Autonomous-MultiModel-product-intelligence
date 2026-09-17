@@ -83,3 +83,9 @@ mlruns/
 *.pth
 *.ckpt
 *.safetensors
+
+# ------------------------------------------------------------
+# Large generated representation artifacts
+# ------------------------------------------------------------
+# Keep local generated representations out of Git.
+data/representations/

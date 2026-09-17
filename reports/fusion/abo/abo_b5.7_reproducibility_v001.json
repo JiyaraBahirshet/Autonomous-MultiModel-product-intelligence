@@ -1,0 +1,189 @@
+{
+  "status": "PASS",
+  "stage": "B5.7",
+  "dataset": "ABO",
+  "versions": {
+    "b3_representation": "v002",
+    "b4": "v002",
+    "b5": "v001",
+    "b5_7": "v001"
+  },
+  "target_field": "product_type",
+  "source_artifacts": {
+    "b3_statistics": {
+      "path": "D:\\Autonomous MultiModel product intelligence\\data\\representations\\abo\\b3\\statistics_v002.json",
+      "exists": true,
+      "size_bytes": 3813
+    },
+    "b3_schema": {
+      "path": "D:\\Autonomous MultiModel product intelligence\\data\\representations\\abo\\b3\\schema_v002.json",
+      "exists": true,
+      "size_bytes": 2438
+    },
+    "b4_2": {
+      "text_model": {
+        "path": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\b4.2\\text_model.joblib",
+        "exists": true,
+        "size_bytes": 496902589
+      },
+      "image_model": {
+        "path": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\b4.2\\image_model.joblib",
+        "exists": true,
+        "size_bytes": 25150738
+      },
+      "statistics": {
+        "path": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\b4.2\\statistics.json",
+        "exists": true
+      }
+    }
+  },
+  "b5_1": {
+    "path": "D:\\Autonomous MultiModel product intelligence\\reports\\fusion\\abo\\abo_b5_contract_v001.json",
+    "status": "PASS"
+  },
+  "b5_2": {
+    "path": "D:\\Autonomous MultiModel product intelligence\\reports\\fusion\\abo\\abo_b5.2_eligibility_v001.json",
+    "status": "PASS"
+  },
+  "b5_3": {
+    "report": {
+      "path": "D:\\Autonomous MultiModel product intelligence\\reports\\fusion\\abo\\abo_b5.3_prediction_prep_v001.json",
+      "status": "PASS"
+    },
+    "metadata": {
+      "prediction_version": "v001",
+      "stage": "B5.3",
+      "dataset": "ABO",
+      "b3_representation_version": "v002",
+      "b4_version": "v002",
+      "target_field": "product_type",
+      "common_class_count": 549,
+      "common_class_probability_normalization": true,
+      "common_classes_unique": true
+    },
+    "prediction_files": {
+      "train": {
+        "path": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\b5\\predictions_v001\\train.npz",
+        "exists": true,
+        "size_bytes": 282023032,
+        "record_count": 69823,
+        "record_id_unique": true,
+        "text_probability_shape": [
+          69823,
+          549
+        ],
+        "image_probability_shape": [
+          69823,
+          549
+        ],
+        "finite": true,
+        "nonnegative": true,
+        "rows_sum_to_one": true
+      },
+      "validation": {
+        "path": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\b5\\predictions_v001\\validation.npz",
+        "exists": true,
+        "size_bytes": 279939577,
+        "record_count": 69867,
+        "record_id_unique": true,
+        "text_probability_shape": [
+          69867,
+          549
+        ],
+        "image_probability_shape": [
+          69867,
+          549
+        ],
+        "finite": true,
+        "nonnegative": true,
+        "rows_sum_to_one": true
+      },
+      "test": {
+        "path": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\b5\\predictions_v001\\test.npz",
+        "exists": true,
+        "size_bytes": 29641174,
+        "record_count": 7346,
+        "record_id_unique": true,
+        "text_probability_shape": [
+          7346,
+          549
+        ],
+        "image_probability_shape": [
+          7346,
+          549
+        ],
+        "finite": true,
+        "nonnegative": true,
+        "rows_sum_to_one": true
+      }
+    },
+    "cross_split_record_id_leakage": {
+      "train_validation": 0,
+      "train_test": 0,
+      "validation_test": 0,
+      "total": 0
+    }
+  },
+  "b5_4": {
+    "report": {
+      "path": "D:\\Autonomous MultiModel product intelligence\\reports\\fusion\\abo\\abo_b5.4_fusion_v001.json",
+      "status": "PASS"
+    },
+    "metadata": {
+      "path": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\b5\\fusion_v001\\metadata.json",
+      "exists": true
+    },
+    "frozen_alpha": 0.9,
+    "alpha_retuned": false
+  },
+  "b5_5": {
+    "path": "D:\\Autonomous MultiModel product intelligence\\reports\\fusion\\abo\\abo_b5.5_comparison_v001.json",
+    "status": "PASS",
+    "comparison_population": "B5.3 common paired test population",
+    "test_records": 7346
+  },
+  "b5_6": {
+    "path": "D:\\Autonomous MultiModel product intelligence\\reports\\fusion\\abo\\abo_b5.6_error_analysis_v001.json",
+    "status": "PASS",
+    "test_records": 7346
+  },
+  "integrity": {
+    "frozen_b3_version": "v002",
+    "frozen_b4_version": "v002",
+    "frozen_b5_version": "v001",
+    "b3_modified": false,
+    "b4_2_modified": false,
+    "b4_2_retrained": false,
+    "split_regenerated": false,
+    "image_download": false,
+    "image_path_guessing": false,
+    "synthetic_images": false,
+    "alpha_retuned": false,
+    "fusion_retrained": false,
+    "mave_integrated": false,
+    "rakuten_integrated": false,
+    "cross_split_prediction_record_id_leakage": 0,
+    "b5_stages_complete": [
+      "B5.1",
+      "B5.2",
+      "B5.3",
+      "B5.4",
+      "B5.5",
+      "B5.6",
+      "B5.7"
+    ]
+  },
+  "reproducibility": {
+    "same_frozen_b3": true,
+    "same_frozen_b4_2": true,
+    "same_b5_3_prediction_artifacts": true,
+    "same_frozen_b5_4_alpha": true,
+    "same_common_test_population": true,
+    "no_retraining": true,
+    "no_split_regeneration": true,
+    "no_image_download": true,
+    "no_path_guessing": true,
+    "no_synthetic_data": true,
+    "no_cross_dataset_fusion": true
+  }
+}

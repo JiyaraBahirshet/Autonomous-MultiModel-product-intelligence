@@ -1,0 +1,132 @@
+{
+  "audit": {
+    "name": "MAVE B3 to B4.3 interface audit",
+    "version": "v001",
+    "read_only": true,
+    "model_training_performed": false
+  },
+  "source": {
+    "b3_root": "data\\representations\\mave\\b3",
+    "splits": [
+      "train",
+      "validation",
+      "test"
+    ]
+  },
+  "splits": {
+    "train": {
+      "split": "train",
+      "path": "data\\representations\\mave\\b3\\train.jsonl",
+      "records": 2326033,
+      "unique_asins": 2326033,
+      "unique_record_ids": 2326033,
+      "duplicate_asins": 0,
+      "duplicate_record_ids": 0,
+      "malformed_identity": 0,
+      "split_mismatches": 0,
+      "usable_b3_text": 2320309,
+      "mave_information_records": 5724,
+      "mave_category_records": 5724,
+      "mave_attribute_records": 5724,
+      "supervision_candidates": 5724,
+      "supervision_candidates_with_text": 0,
+      "supervision_candidates_without_text": 5724,
+      "missing_b3_representation": 0,
+      "missing_b3_text": 0,
+      "missing_b3_structured": 0,
+      "supervision_examples": []
+    },
+    "validation": {
+      "split": "validation",
+      "path": "data\\representations\\mave\\b3\\validation.jsonl",
+      "records": 290488,
+      "unique_asins": 290488,
+      "unique_record_ids": 290488,
+      "duplicate_asins": 0,
+      "duplicate_record_ids": 0,
+      "malformed_identity": 0,
+      "split_mismatches": 0,
+      "usable_b3_text": 289782,
+      "mave_information_records": 706,
+      "mave_category_records": 706,
+      "mave_attribute_records": 706,
+      "supervision_candidates": 706,
+      "supervision_candidates_with_text": 0,
+      "supervision_candidates_without_text": 706,
+      "missing_b3_representation": 0,
+      "missing_b3_text": 0,
+      "missing_b3_structured": 0,
+      "supervision_examples": []
+    },
+    "test": {
+      "split": "test",
+      "path": "data\\representations\\mave\\b3\\test.jsonl",
+      "records": 290837,
+      "unique_asins": 290837,
+      "unique_record_ids": 290837,
+      "duplicate_asins": 0,
+      "duplicate_record_ids": 0,
+      "malformed_identity": 0,
+      "split_mismatches": 0,
+      "usable_b3_text": 290119,
+      "mave_information_records": 718,
+      "mave_category_records": 718,
+      "mave_attribute_records": 718,
+      "supervision_candidates": 718,
+      "supervision_candidates_with_text": 0,
+      "supervision_candidates_without_text": 718,
+      "missing_b3_representation": 0,
+      "missing_b3_text": 0,
+      "missing_b3_structured": 0,
+      "supervision_examples": []
+    }
+  },
+  "aggregate": {
+    "total_records": 2907358,
+    "usable_b3_text": 2900210,
+    "mave_information_records": 7148,
+    "mave_category_records": 7148,
+    "mave_attribute_records": 7148,
+    "supervision_candidates": 7148,
+    "supervision_candidates_with_text": 0,
+    "supervision_candidates_without_text": 7148
+  },
+  "leakage": {
+    "asin": {
+      "pairwise": {
+        "train_vs_validation": {
+          "count": 0,
+          "examples": []
+        },
+        "train_vs_test": {
+          "count": 0,
+          "examples": []
+        },
+        "validation_vs_test": {
+          "count": 0,
+          "examples": []
+        }
+      },
+      "total_pairwise_intersections": 0
+    },
+    "record_id": {
+      "pairwise": {
+        "train_vs_validation": {
+          "count": 0,
+          "examples": []
+        },
+        "train_vs_test": {
+          "count": 0,
+          "examples": []
+        },
+        "validation_vs_test": {
+          "count": 0,
+          "examples": []
+        }
+      },
+      "total_pairwise_intersections": 0
+    }
+  },
+  "root_cause_classification": "LABEL_INPUT_DISJOINTNESS_MAVE_LABELS_HAVE_NO_USABLE_B3_TEXT",
+  "status": "INTERFACE_REQUIRES_REVIEW"
+}

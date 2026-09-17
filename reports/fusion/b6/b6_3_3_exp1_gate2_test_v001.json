@@ -1,0 +1,87 @@
+{
+  "classifier": {
+    "loss": "log_loss",
+    "max_iter": 30,
+    "n_jobs": 1,
+    "random_state": 20260827,
+    "tol": 0.001,
+    "type": "SGDClassifier"
+  },
+  "dimensions": {
+    "combined_dimension": 259403,
+    "text_dimension": 256395,
+    "transfer_dimension": 3008
+  },
+  "experiment": "B6.3.3 Exp1",
+  "experiment_type": "negative_control",
+  "gamma": {
+    "frozen_before_test": true,
+    "selection_split": "ABO_validation",
+    "value": 1.0
+  },
+  "gate": "Gate 2",
+  "integrity": {
+    "label_encoder_fit_during_gate2": false,
+    "source_model_modified": false,
+    "test_evaluated_once": true,
+    "vectorizer_fit_during_gate2": false
+  },
+  "leakage": {
+    "abo_test_for_tuning": false,
+    "asin_matching": false,
+    "b5_predictions_used": false,
+    "b5_weights_used": false,
+    "category_id_mapping": false,
+    "external_enrichment": false,
+    "image_download": false,
+    "path_guessing": false,
+    "product_id_matching": false,
+    "rakuten_source_model_modified": false,
+    "rakuten_validation_test_for_tuning": false,
+    "record_joins": false,
+    "semantic_label_crosswalk": false,
+    "split_regeneration": false,
+    "synthetic_pairing": false
+  },
+  "metrics": {
+    "accuracy": 0.5682372055239643,
+    "macro_f1": 0.058720810905631214,
+    "weighted_f1": 0.50588931202641
+  },
+  "objective": "Final test evaluation of ABO text plus within-train row-permuted Rakuten transfer signal using the gamma selected during Exp1 Gate 1.",
+  "permutation": {
+    "identity_permutation": false,
+    "row_permutation": true,
+    "scope": "ABO_train_only",
+    "seed": 20260827,
+    "test_loaded": true,
+    "test_permuted": false,
+    "validation_permuted": false
+  },
+  "selection": {
+    "gamma_search_during_gate2": false,
+    "selected_gamma": 1.0,
+    "split": "ABO_validation",
+    "test_used_for_selection": false
+  },
+  "status": "GATE_2_PASS",
+  "target": {
+    "dataset": "ABO",
+    "excluded_target_classes": [
+      "HAIRBAND",
+      "PUNCHING_BAG",
+      "SALWAR_SUIT_SET",
+      "TREADMILL"
+    ],
+    "filtered_test_count": 7416,
+    "filtered_train_count": 70258,
+    "original_test_count": 7422,
+    "original_train_count": 70284,
+    "original_validation_count": 69996,
+    "representation_version": "B3_v002",
+    "target_classes": 549,
+    "target_field": "product_type",
+    "test_metric_count": 7386,
+    "test_unseen_target_records": 30
+  }
+}

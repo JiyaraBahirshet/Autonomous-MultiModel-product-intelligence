@@ -1,0 +1,88 @@
+{
+  "artifact_version": "v004",
+  "stage": "B6.3.3",
+  "task": "PRE_EXECUTION_VALIDATION",
+  "global_seed": 20260827,
+  "overall_status": "PASS",
+  "checks": {
+    "01_RAKUTEN_B3_TRAIN_COUNT": {
+      "status": "PASS",
+      "expected": 719701,
+      "observed": 719701
+    },
+    "02_UNIQUE_SUPERVISED_LEAF_IDS": {
+      "status": "PASS",
+      "expected": 3008,
+      "observed": 3008
+    },
+    "03_MISSING_LEAF_CATEGORY_IDS": {
+      "status": "PASS",
+      "expected": 0,
+      "observed": 0
+    },
+    "04_HIERARCHY_TERMINAL_LEAF_COUNT": {
+      "status": "PASS",
+      "expected": 3008,
+      "observed": 3008
+    },
+    "05_SUPERVISED_LEAF_IDS_IN_HIERARCHY": {
+      "status": "PASS",
+      "expected": 0,
+      "observed": 0
+    },
+    "06_ABO_B3_SPLIT_COUNTS": {
+      "status": "PASS",
+      "expected": "70284/69996/7422",
+      "observed": "70284/69996/7422"
+    },
+    "07_ABO_B3_PRODUCT_TYPE_PRESENT": {
+      "status": "PASS",
+      "expected_missing": 0,
+      "observed_missing": 0,
+      "observed_train_classes": 553
+    },
+    "08_PROHIBITED_DEPENDENCIES": {
+      "status": "PASS",
+      "record_joins": false,
+      "label_crosswalk": false,
+      "external_data": false,
+      "B5_dependency": false,
+      "synthetic_pairing": false,
+      "image_download": false,
+      "split_regeneration": false
+    },
+    "09_CONFIGURATION_LOCK": {
+      "status": "PASS",
+      "expected": {
+        "seed": 20260827,
+        "K": 3008,
+        "train": 719701,
+        "ngram_range": [
+          1,
+          2
+        ],
+        "sublinear_tf": true,
+        "loss": "log_loss",
+        "penalty": "l2"
+      },
+      "observed": {
+        "seed": 20260827,
+        "K": 3008,
+        "train": 719701,
+        "ngram_range": [
+          1,
+          2
+        ],
+        "sublinear_tf": true,
+        "loss": "log_loss",
+        "penalty": "l2"
+      }
+    },
+    "10_PRE_TRAINING_GATE": {
+      "status": "PASS",
+      "model_training": false,
+      "transfer_extraction": false,
+      "experiment_execution": false
+    }
+  }
+}

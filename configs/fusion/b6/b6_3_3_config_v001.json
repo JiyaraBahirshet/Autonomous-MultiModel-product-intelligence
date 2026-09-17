@@ -1,0 +1,47 @@
+{
+  "artifact_version": "v001",
+  "stage": "B6.3.3",
+  "task": "CONTROLLED_CROSS_DATASET_SIGNAL_INTEGRATION",
+  "global_seed": 20260827,
+  "source_configuration": {
+    "dataset_name": "Rakuten 2018",
+    "representation_version": "Rakuten B3 v001",
+    "train_population_expected": 719701,
+    "val_population_expected": 80299,
+    "test_population_expected": 200000,
+    "auxiliary_target_type": "single_label_terminal_leaf_category_id",
+    "expected_unique_leaf_classes": 3008,
+    "expected_hierarchy_terminal_leaves": 3008,
+    "expected_hierarchy_node_count": 3695,
+    "text_vectorizer": {
+      "type": "TfidfVectorizer",
+      "sublinear_tf": true,
+      "ngram_range": [1, 2]
+    },
+    "classifier": {
+      "type": "SGDClassifier",
+      "loss": "log_loss",
+      "penalty": "l2",
+      "random_state": 20260827
+    }
+  },
+  "target_configuration": {
+    "dataset_name": "Amazon Berkeley Objects",
+    "representation_version": "ABO B3 v002",
+    "train_population_expected": 70284,
+    "val_population_expected": 69996,
+    "test_population_expected": 7422,
+    "target_task": "product_type_classification",
+    "target_classes_expected": 549,
+    "gamma_search_space": [0.1, 0.5, 1.0]
+  },
+  "control_configuration": {
+    "type": "matched_row_permutation",
+    "permutation_scope": "ABO_train_only",
+    "permutation_seed": 20260827
+  },
+  "baseline_reference": {
+    "authoritative_b4_2_accuracy": 0.569426,
+    "authoritative_b4_2_weighted_f1": 0.505860
+  }
+}

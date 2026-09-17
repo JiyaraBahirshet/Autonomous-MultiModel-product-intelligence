@@ -1,0 +1,277 @@
+{
+  "validation_version": "v001",
+  "status": "PASS",
+  "split_results": {
+    "train": {
+      "expected_records": 70284,
+      "actual_records": 70284,
+      "passed": true
+    },
+    "validation": {
+      "expected_records": 69996,
+      "actual_records": 69996,
+      "passed": true
+    },
+    "test": {
+      "expected_records": 7422,
+      "actual_records": 7422,
+      "passed": true
+    }
+  },
+  "dimension_results": {
+    "train": {
+      "expected_dimension": 3008,
+      "actual_dimension": 3008,
+      "passed": true
+    },
+    "validation": {
+      "expected_dimension": 3008,
+      "actual_dimension": 3008,
+      "passed": true
+    },
+    "test": {
+      "expected_dimension": 3008,
+      "actual_dimension": 3008,
+      "passed": true
+    }
+  },
+  "record_id_results": {
+    "train": {
+      "record_id_count": 70284,
+      "unique_record_id_count": 70284,
+      "unique_within_split": true
+    },
+    "validation": {
+      "record_id_count": 69996,
+      "unique_record_id_count": 69996,
+      "unique_within_split": true
+    },
+    "test": {
+      "record_id_count": 7422,
+      "unique_record_id_count": 7422,
+      "unique_within_split": true
+    },
+    "cross_split": {
+      "train_validation_overlap": 0,
+      "train_test_overlap": 0,
+      "validation_test_overlap": 0,
+      "passed": true
+    },
+    "authoritative_b3_order": {
+      "train": {
+        "checked": true,
+        "path": "D:\\Autonomous MultiModel product intelligence\\data\\representations\\abo\\b3\\train.jsonl",
+        "b3_record_count": 70284,
+        "artifact_record_count": 70284,
+        "count_match": true,
+        "exact_order_match": true,
+        "passed": true
+      },
+      "validation": {
+        "checked": true,
+        "path": "D:\\Autonomous MultiModel product intelligence\\data\\representations\\abo\\b3\\validation.jsonl",
+        "b3_record_count": 69996,
+        "artifact_record_count": 69996,
+        "count_match": true,
+        "exact_order_match": true,
+        "passed": true
+      },
+      "test": {
+        "checked": true,
+        "path": "D:\\Autonomous MultiModel product intelligence\\data\\representations\\abo\\b3\\test.jsonl",
+        "b3_record_count": 7422,
+        "artifact_record_count": 7422,
+        "count_match": true,
+        "exact_order_match": true,
+        "passed": true
+      }
+    }
+  },
+  "numerical_results": {
+    "train": {
+      "finite": true,
+      "nonnegative": true,
+      "row_sum_tolerance": 1e-05,
+      "max_row_sum_error": 2.384185791015625e-07,
+      "row_sums_pass": true
+    },
+    "validation": {
+      "finite": true,
+      "nonnegative": true,
+      "row_sum_tolerance": 1e-05,
+      "max_row_sum_error": 2.384185791015625e-07,
+      "row_sums_pass": true
+    },
+    "test": {
+      "finite": true,
+      "nonnegative": true,
+      "row_sum_tolerance": 1e-05,
+      "max_row_sum_error": 2.384185791015625e-07,
+      "row_sums_pass": true
+    }
+  },
+  "reproducibility_sample_results": {
+    "train": {
+      "checked": true,
+      "b3_path": "D:\\Autonomous MultiModel product intelligence\\data\\representations\\abo\\b3\\train.jsonl",
+      "sample_indices": [
+        0,
+        17570,
+        35141,
+        52712,
+        70283
+      ],
+      "sample_size": 5,
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    "validation": {
+      "checked": true,
+      "b3_path": "D:\\Autonomous MultiModel product intelligence\\data\\representations\\abo\\b3\\validation.jsonl",
+      "sample_indices": [
+        0,
+        17498,
+        34997,
+        52496,
+        69995
+      ],
+      "sample_size": 5,
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    "test": {
+      "checked": true,
+      "b3_path": "D:\\Autonomous MultiModel product intelligence\\data\\representations\\abo\\b3\\test.jsonl",
+      "sample_indices": [
+        0,
+        1855,
+        3710,
+        5565,
+        7421
+      ],
+      "sample_size": 5,
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-06,
+      "passed": true
+    }
+  },
+  "provenance_results": {
+    "source_dataset": "Rakuten",
+    "source_representation": "B3_v001",
+    "target_dataset": "ABO",
+    "target_representation": "B3_v002",
+    "source_model_reference": "D:\\Autonomous MultiModel product intelligence\\models\\fusion\\b6\\b6_3_3_rakuten_source_model_v001.pkl",
+    "source_model_class_count": 3008,
+    "seed": 20260827,
+    "fit_performed_during_validation": false,
+    "source_artifact_metadata": {
+      "stage": "B6.3.3",
+      "artifact_version": "v001",
+      "dataset": "Rakuten",
+      "representation_version": "B3_v001",
+      "train_records": 719701,
+      "source_classes": 3008,
+      "tfidf": {
+        "ngram_range": [
+          1,
+          2
+        ],
+        "sublinear_tf": true,
+        "max_features": 100000,
+        "dtype": "float32",
+        "actual_features": 100000
+      },
+      "classifier": {
+        "type": "SGDClassifier",
+        "loss": "log_loss",
+        "penalty": "l2",
+        "random_state": 20260827
+      },
+      "target_dimension": 3008
+    },
+    "split_metadata": {
+      "train": {
+        "metadata_found": true,
+        "path": "D:\\Autonomous MultiModel product intelligence\\data\\representations\\abo\\b6_3_3_transfer\\train_metadata.json",
+        "keys": [
+          "stage",
+          "artifact_version",
+          "source_dataset",
+          "source_model",
+          "source_representation_version",
+          "target_dataset",
+          "target_representation_version",
+          "split",
+          "record_count",
+          "feature_dimension",
+          "signal_type",
+          "fit_performed",
+          "external_data_used",
+          "record_join_performed",
+          "label_transfer_performed"
+        ]
+      },
+      "validation": {
+        "metadata_found": true,
+        "path": "D:\\Autonomous MultiModel product intelligence\\data\\representations\\abo\\b6_3_3_transfer\\validation_metadata.json",
+        "keys": [
+          "stage",
+          "artifact_version",
+          "source_dataset",
+          "source_model",
+          "source_representation_version",
+          "target_dataset",
+          "target_representation_version",
+          "split",
+          "record_count",
+          "feature_dimension",
+          "signal_type",
+          "fit_performed",
+          "external_data_used",
+          "record_join_performed",
+          "label_transfer_performed"
+        ]
+      },
+      "test": {
+        "metadata_found": true,
+        "path": "D:\\Autonomous MultiModel product intelligence\\data\\representations\\abo\\b6_3_3_transfer\\test_metadata.json",
+        "keys": [
+          "stage",
+          "artifact_version",
+          "source_dataset",
+          "source_model",
+          "source_representation_version",
+          "target_dataset",
+          "target_representation_version",
+          "split",
+          "record_count",
+          "feature_dimension",
+          "signal_type",
+          "fit_performed",
+          "external_data_used",
+          "record_join_performed",
+          "label_transfer_performed"
+        ]
+      }
+    }
+  },
+  "integrity_constraints": {
+    "record_joins": false,
+    "label_transfer": false,
+    "synthetic_pairing": false,
+    "external_enrichment": false,
+    "image_download": false,
+    "path_guessing": false,
+    "split_regeneration": false,
+    "b5_outputs_or_weights": false,
+    "target_model_training": false,
+    "source_model_fitting": false
+  },
+  "artifact_paths": {
+    "source_model": "D:\\Autonomous MultiModel product intelligence\\models\\fusion\\b6\\b6_3_3_rakuten_source_model_v001.pkl",
+    "transfer_directory": "D:\\Autonomous MultiModel product intelligence\\data\\representations\\abo\\b6_3_3_transfer"
+  },
+  "failure_reasons": []
+}

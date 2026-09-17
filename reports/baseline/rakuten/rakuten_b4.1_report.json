@@ -1,0 +1,114 @@
+{
+  "report": "rakuten_b4.1_baseline",
+  "report_version": "v001",
+  "status": "PASS",
+  "dataset": "Rakuten 2018",
+  "stage": "B4.1",
+  "baseline_name": "RK-FLAT",
+  "task": {
+    "description": "Flat supervised classification of the exact complete anonymized category path.",
+    "hierarchy_aware_final_model": false,
+    "comparison_baseline": true
+  },
+  "inputs": {
+    "directory": "data/representations/rakuten/b3",
+    "representation_version": "v001",
+    "text_source": "title_tokens",
+    "target_source": "category_id_path",
+    "splits": {
+      "train": 719701,
+      "validation": 80299,
+      "test": 200000
+    }
+  },
+  "fitting_protocol": {
+    "tfidf_fit_split": "train",
+    "classifier_fit_split": "train",
+    "validation_role": "validation/model assessment",
+    "test_role": "final held-out evaluation only"
+  },
+  "vectorizer": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "sublinear_tf": true,
+    "norm": "l2",
+    "lowercase": false,
+    "token_pattern": "(?u)\\b\\w+\\b"
+  },
+  "classifier": {
+    "loss": "log_loss",
+    "penalty": "l2",
+    "alpha": 1e-05,
+    "max_iter": 5,
+    "learning_rate": "optimal",
+    "early_stopping": false,
+    "verbose": 1,
+    "n_jobs": 1,
+    "random_state": 20260827
+  },
+  "data_integrity": {
+    "expected_counts": {
+      "train": 719701,
+      "validation": 80299,
+      "test": 200000
+    },
+    "record_ids_unique_within_splits": true,
+    "b3_modified": false,
+    "test_used_for_model_selection": false,
+    "validation_target_classes_unseen_in_train": 0,
+    "test_target_classes_unseen_in_train": 0
+  },
+  "metrics": {
+    "validation": {
+      "records_evaluated": 80299,
+      "exact_complete_path_accuracy": 0.6019377576308547,
+      "macro_f1": 0.06793983487222473,
+      "weighted_f1": 0.5564700605813414,
+      "hierarchy_diagnostics": {
+        "max_true_depth_observed": 8,
+        "level_accuracy": {
+          "1": 0.6975802936524739,
+          "2": 0.649372374411994,
+          "3": 0.6236118122160526,
+          "4": 0.583822824794591,
+          "5": 0.5562430219575735,
+          "6": 0.5811895451739041,
+          "7": 0.03777777777777778,
+          "8": 0.0
+        }
+      }
+    },
+    "test": {
+      "records_evaluated": 200000,
+      "exact_complete_path_accuracy": 0.61119,
+      "macro_f1": 0.07316843059051803,
+      "weighted_f1": 0.5737282315089579,
+      "hierarchy_diagnostics": {
+        "max_true_depth_observed": 8,
+        "level_accuracy": {
+          "1": 0.69658,
+          "2": 0.6507483350681637,
+          "3": 0.629703844241754,
+          "4": 0.5945488858241997,
+          "5": 0.5782541764068647,
+          "6": 0.6111063501585398,
+          "7": 0.04287369640787949,
+          "8": 0.0
+        }
+      }
+    }
+  },
+  "artifacts": {
+    "vectorizer": "data/models/rakuten/b4.1/tfidf_vectorizer.joblib",
+    "classifier": "data/models/rakuten/b4.1/linear_classifier.joblib",
+    "test_predictions": "reports/baseline/rakuten/rakuten_b4.1_test_predictions.jsonl"
+  },
+  "runtime": {
+    "timestamp_utc": "2026-08-31T11:48:02.618336+00:00",
+    "python": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  }
+}

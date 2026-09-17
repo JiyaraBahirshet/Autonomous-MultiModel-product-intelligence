@@ -1,0 +1,93 @@
+{
+  "report": "abo_b5.3_prediction_preparation",
+  "b5_version": "v001",
+  "stage": "B5.3",
+  "status": "PASS",
+  "dataset": "ABO",
+  "target_field": "product_type",
+  "b3_representation_version": "v002",
+  "b4_version": "v002",
+  "common_class_count": 549,
+  "class_alignment": {
+    "actual_label_alignment": true,
+    "probability_columns_aligned_by_product_type": true,
+    "text_class_count": 553,
+    "image_class_count": 549,
+    "common_class_count": 549,
+    "text_only_class_count": 4,
+    "image_only_class_count": 0,
+    "common_class_probability_normalization": true,
+    "normalization_method": "Renormalize projected probabilities over the common product_type classes"
+  },
+  "split_results": {
+    "train": {
+      "b3_record_count": 70284,
+      "split_field_valid_record_count": 70284,
+      "prediction_record_count": 69823,
+      "text_probability_shape": [
+        69823,
+        549
+      ],
+      "image_probability_shape": [
+        69823,
+        549
+      ],
+      "unique_record_ids": 69823,
+      "text_probability_finite": true,
+      "image_probability_finite": true,
+      "text_probability_rows_sum_to_one": true,
+      "image_probability_rows_sum_to_one": true
+    },
+    "validation": {
+      "b3_record_count": 69996,
+      "split_field_valid_record_count": 69996,
+      "prediction_record_count": 69867,
+      "text_probability_shape": [
+        69867,
+        549
+      ],
+      "image_probability_shape": [
+        69867,
+        549
+      ],
+      "unique_record_ids": 69867,
+      "text_probability_finite": true,
+      "image_probability_finite": true,
+      "text_probability_rows_sum_to_one": true,
+      "image_probability_rows_sum_to_one": true
+    },
+    "test": {
+      "b3_record_count": 7422,
+      "split_field_valid_record_count": 7422,
+      "prediction_record_count": 7346,
+      "text_probability_shape": [
+        7346,
+        549
+      ],
+      "image_probability_shape": [
+        7346,
+        549
+      ],
+      "unique_record_ids": 7346,
+      "text_probability_finite": true,
+      "image_probability_finite": true,
+      "text_probability_rows_sum_to_one": true,
+      "image_probability_rows_sum_to_one": true
+    }
+  },
+  "integrity": {
+    "cross_split_record_id_leakage": 0,
+    "model_retraining": false,
+    "split_regeneration": false,
+    "b3_modification": false,
+    "b4.2_modification": false,
+    "image_download": false,
+    "image_path_guessing": false,
+    "synthetic_images": false,
+    "fusion_performed": false
+  },
+  "artifacts": {
+    "prediction_directory": "data\\models\\abo\\b5\\predictions_v001",
+    "metadata": "data\\models\\abo\\b5\\predictions_v001\\metadata.json"
+  }
+}

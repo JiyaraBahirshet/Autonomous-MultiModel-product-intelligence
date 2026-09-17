@@ -1,0 +1,469 @@
+{
+  "audit_version": "v001",
+  "stage": "B6.3.5",
+  "audit_type": "final_integrity_and_reproducibility",
+  "status": "PASS",
+  "seed": 20260827,
+  "target_class_count": 549,
+  "checks": {
+    "reports": {
+      "status": "PASS",
+      "details": {
+        "exp0": {
+          "path": "D:\\Autonomous MultiModel product intelligence\\reports\\fusion\\b6\\b6_3_3_exp0_reproduction_v001.json",
+          "exists": true,
+          "json_readable": true,
+          "top_level_keys": [
+            "b4_version",
+            "dataset",
+            "eligible_records",
+            "expected_frozen_test",
+            "expected_frozen_validation",
+            "experiment",
+            "input_contract",
+            "integrity",
+            "model",
+            "purpose",
+            "report",
+            "report_version",
+            "representation_version",
+            "seed",
+            "stage",
+            "status",
+            "task",
+            "test",
+            "test_unseen_target_records",
+            "train_classes",
+            "validation",
+            "validation_unseen_target_records"
+          ]
+        },
+        "exp1_gate1": {
+          "path": "D:\\Autonomous MultiModel product intelligence\\reports\\fusion\\b6\\b6_3_3_exp1_gate1_validation_v001.json",
+          "exists": true,
+          "json_readable": true,
+          "top_level_keys": [
+            "downstream_classifier",
+            "experiment",
+            "experiment_type",
+            "frozen_baseline_reference",
+            "gamma_candidates",
+            "gamma_selection",
+            "integration",
+            "leakage_controls",
+            "objective",
+            "permutation",
+            "results",
+            "seed",
+            "source",
+            "status",
+            "target",
+            "test_evaluation",
+            "transfer_artifacts"
+          ]
+        },
+        "exp1_gate2": {
+          "path": "D:\\Autonomous MultiModel product intelligence\\reports\\fusion\\b6\\b6_3_3_exp1_gate2_test_v001.json",
+          "exists": true,
+          "json_readable": true,
+          "top_level_keys": [
+            "classifier",
+            "dimensions",
+            "experiment",
+            "experiment_type",
+            "gamma",
+            "gate",
+            "integrity",
+            "leakage",
+            "metrics",
+            "objective",
+            "permutation",
+            "selection",
+            "status",
+            "target"
+          ]
+        },
+        "exp2_gate1": {
+          "path": "D:\\Autonomous MultiModel product intelligence\\reports\\fusion\\b6\\b6_3_3_exp2_gate1_validation_v001.json",
+          "exists": true,
+          "json_readable": true,
+          "top_level_keys": [
+            "downstream_classifier",
+            "experiment",
+            "experiment_type",
+            "frozen_baseline_reference",
+            "gamma_candidates",
+            "gamma_selection",
+            "integration",
+            "leakage_controls",
+            "objective",
+            "permutation",
+            "results",
+            "seed",
+            "source",
+            "status",
+            "target",
+            "test_evaluation",
+            "transfer_artifacts"
+          ]
+        },
+        "exp2_gate2": {
+          "path": "D:\\Autonomous MultiModel product intelligence\\reports\\fusion\\b6\\b6_3_3_exp2_gate2_test_v001.json",
+          "exists": true,
+          "json_readable": true,
+          "top_level_keys": [
+            "classifier",
+            "dimensions",
+            "experiment",
+            "experiment_type",
+            "gamma",
+            "gate",
+            "integrity",
+            "leakage",
+            "metrics",
+            "objective",
+            "permutation",
+            "selection",
+            "status",
+            "target"
+          ]
+        },
+        "b6_3_4": {
+          "path": "D:\\Autonomous MultiModel product intelligence\\reports\\fusion\\b6\\b6_3_4_evaluation_results_v001.json",
+          "exists": true,
+          "json_readable": true,
+          "top_level_keys": [
+            "error_analysis",
+            "frozen_b6_3_3",
+            "frozen_inputs",
+            "integrity",
+            "known_source_metadata_issue",
+            "matched_text_only_ablation",
+            "metric_deltas",
+            "population",
+            "purpose",
+            "scientific_conclusion",
+            "stage",
+            "status",
+            "version"
+          ]
+        }
+      }
+    },
+    "source_model": {
+      "status": "PASS",
+      "details": {
+        "path": "D:\\Autonomous MultiModel product intelligence\\models\\fusion\\b6\\b6_3_3_rakuten_source_model_v001.pkl",
+        "sha256": "b75465f392e6c8ce7abfcc5780326b71763bd1ffc843f54eb16268cc3043a255",
+        "checks": {
+          "artifact_is_dict": true,
+          "pipeline_present": true,
+          "metadata_present": true,
+          "source_classes": true,
+          "train_records": true,
+          "representation_version": true,
+          "target_dimension": true,
+          "tfidf_present": true,
+          "classifier_present": true,
+          "tfidf_ngram_range": true,
+          "tfidf_sublinear_tf": true,
+          "tfidf_max_features": true,
+          "classifier_loss": true,
+          "classifier_penalty": true,
+          "classifier_random_state": true
+        },
+        "metadata": {
+          "stage": "B6.3.3",
+          "artifact_version": "v001",
+          "dataset": "Rakuten",
+          "representation_version": "B3_v001",
+          "train_records": 719701,
+          "source_classes": 3008,
+          "tfidf": {
+            "ngram_range": [
+              1,
+              2
+            ],
+            "sublinear_tf": true,
+            "max_features": 100000,
+            "dtype": "float32",
+            "actual_features": 100000
+          },
+          "classifier": {
+            "type": "SGDClassifier",
+            "loss": "log_loss",
+            "penalty": "l2",
+            "random_state": 20260827
+          },
+          "target_dimension": 3008
+        },
+        "pipeline_type": "<class 'sklearn.pipeline.Pipeline'>"
+      }
+    },
+    "transfer_artifacts": {
+      "status": "PASS",
+      "details": {
+        "train": {
+          "status": "PASS",
+          "details": {
+            "path": "D:\\Autonomous MultiModel product intelligence\\data\\representations\\abo\\b6_3_3_transfer\\train.npz",
+            "sha256": "f72d5d4b7a0b267352049840759a28511f8b8194239ff652ab398e810ca12b8f",
+            "shape": [
+              70284,
+              3008
+            ],
+            "expected_shape": [
+              70284,
+              3008
+            ],
+            "finite": true,
+            "nonnegative": true,
+            "keys": [
+              "record_ids",
+              "transferred_signal"
+            ]
+          }
+        },
+        "validation": {
+          "status": "PASS",
+          "details": {
+            "path": "D:\\Autonomous MultiModel product intelligence\\data\\representations\\abo\\b6_3_3_transfer\\validation.npz",
+            "sha256": "17e2be008cf1022786268ac0d7ef7a00897138203f48d3544f9da6f1b98e8ef3",
+            "shape": [
+              69996,
+              3008
+            ],
+            "expected_shape": [
+              69996,
+              3008
+            ],
+            "finite": true,
+            "nonnegative": true,
+            "keys": [
+              "record_ids",
+              "transferred_signal"
+            ]
+          }
+        },
+        "test": {
+          "status": "PASS",
+          "details": {
+            "path": "D:\\Autonomous MultiModel product intelligence\\data\\representations\\abo\\b6_3_3_transfer\\test.npz",
+            "sha256": "ff26dfd0062d0c647c73a1cfacac51f14260895e1ea5fafc36e883f7c38080f7",
+            "shape": [
+              7422,
+              3008
+            ],
+            "expected_shape": [
+              7422,
+              3008
+            ],
+            "finite": true,
+            "nonnegative": true,
+            "keys": [
+              "record_ids",
+              "transferred_signal"
+            ]
+          }
+        }
+      }
+    },
+    "population_boundary": {
+      "status": "PASS",
+      "details": {
+        "checks": {
+          "target_class_count": true,
+          "train_original": true,
+          "validation_original": true,
+          "test_original": true,
+          "train_filtered": true,
+          "validation_filtered": true,
+          "test_filtered": true,
+          "validation_known": true,
+          "test_known": true,
+          "validation_unseen": true,
+          "test_unseen": true,
+          "excluded_class_count": true
+        },
+        "original_counts": {
+          "train": 70284,
+          "validation": 69996,
+          "test": 7422
+        },
+        "filtered_counts": {
+          "train": 70258,
+          "validation": 69995,
+          "test": 7416
+        },
+        "known_counts": {
+          "validation": 69936,
+          "test": 7386
+        },
+        "unseen_counts": {
+          "validation": 59,
+          "test": 30
+        },
+        "excluded_target_classes": [
+          "HAIRBAND",
+          "PUNCHING_BAG",
+          "SALWAR_SUIT_SET",
+          "TREADMILL"
+        ]
+      }
+    },
+    "experiments": {
+      "status": "PASS",
+      "details": {
+        "checks": {
+          "exp0_present": true,
+          "exp1_gate1_present": true,
+          "exp1_gate1_gamma": true,
+          "exp1_gate1_test_isolated": true,
+          "exp1_gate2_present": true,
+          "exp1_gate2_gamma": true,
+          "exp1_gate2_test_isolated": true,
+          "exp1_gate2_permutation_scope": true,
+          "exp1_gate2_permutation_seed": true,
+          "exp1_gate2_row_permutation": true,
+          "exp1_gate2_validation_unpermuted": true,
+          "exp1_gate2_test_unpermuted": true,
+          "exp2_gate1_present": true,
+          "exp2_gate1_gamma": true,
+          "exp2_gate1_test_isolated": true,
+          "exp2_gate2_present": true,
+          "exp2_gate2_gamma": true,
+          "exp2_gate2_test_isolated": true,
+          "exp2_gate2_no_gamma_search": true,
+          "exp2_gate2_genuine_transfer": true,
+          "exp1_gate2_accuracy": true,
+          "exp1_gate2_macro_f1": true,
+          "exp1_gate2_weighted_f1": true,
+          "exp2_gate2_accuracy": true,
+          "exp2_gate2_macro_f1": true,
+          "exp2_gate2_weighted_f1": true
+        },
+        "details": {
+          "exp0": {
+            "status": "PASS",
+            "frozen_model_inference_only": null,
+            "retraining": false
+          },
+          "exp1_gate1": {
+            "selected_gamma": 1.0,
+            "test_used_for_selection": false
+          },
+          "exp1_gate2": {
+            "selected_gamma": 1.0,
+            "test_used_for_selection": false,
+            "permutation": {
+              "identity_permutation": false,
+              "row_permutation": true,
+              "scope": "ABO_train_only",
+              "seed": 20260827,
+              "test_loaded": true,
+              "test_permuted": false,
+              "validation_permuted": false
+            }
+          },
+          "exp2_gate1": {
+            "selected_gamma": 1.0,
+            "test_used_for_selection": false
+          },
+          "exp2_gate2": {
+            "selected_gamma": 1.0,
+            "test_used_for_selection": false,
+            "gamma_search_during_gate2": false,
+            "experiment_type": "genuine_aligned_transfer"
+          },
+          "numerical_results": {
+            "exp1_gate2": {
+              "actual": {
+                "accuracy": 0.5682372055239643,
+                "macro_f1": 0.058720810905631214,
+                "weighted_f1": 0.50588931202641
+              },
+              "expected": {
+                "accuracy": 0.5682372055239643,
+                "macro_f1": 0.058720810905631214,
+                "weighted_f1": 0.50588931202641
+              },
+              "checks": {
+                "accuracy": true,
+                "macro_f1": true,
+                "weighted_f1": true
+              }
+            },
+            "exp2_gate2": {
+              "actual": {
+                "accuracy": 0.5683725968047658,
+                "macro_f1": 0.05877880520618687,
+                "weighted_f1": 0.5061787255110273
+              },
+              "expected": {
+                "accuracy": 0.5683725968047658,
+                "macro_f1": 0.05877880520618687,
+                "weighted_f1": 0.5061787255110273
+              },
+              "checks": {
+                "accuracy": true,
+                "macro_f1": true,
+                "weighted_f1": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "leakage_controls": {
+      "status": "PASS",
+      "details": {
+        "record_joins": false,
+        "asin_matching": false,
+        "product_id_matching": false,
+        "category_id_mapping": false,
+        "semantic_label_crosswalk": false,
+        "synthetic_pairing": false,
+        "external_enrichment": false,
+        "image_download": false,
+        "path_guessing": false,
+        "split_regeneration": false,
+        "rakuten_validation_test_for_tuning": false,
+        "abo_test_for_tuning": false,
+        "b5_predictions_used": false,
+        "b5_weights_used": false,
+        "rakuten_source_model_modified": false
+      }
+    }
+  },
+  "documentation_inconsistency": {
+    "status": "DOCUMENTATION_INCONSISTENCY",
+    "details": {
+      "issue": "Frozen Exp2 Gate 2 objective text refers to a row-permuted Rakuten transfer signal.",
+      "verified_execution": "Exp2 Gate 2 execution used genuine aligned Rakuten transfer.",
+      "verified_execution_metadata": "experiment_type=genuine_aligned_transfer",
+      "handling": "Record the inconsistency without modifying the frozen B6.3.3 report."
+    }
+  },
+  "failed_checks": [],
+  "scientific_boundary": {
+    "validated": [
+      "Representation-level cross-dataset transfer from Rakuten-derived signal into ABO product-type classification.",
+      "Genuine aligned transfer produced a small positive difference relative to the within-training row-permuted negative control.",
+      "Genuine aligned transfer produced a small positive difference relative to the matched text-only ablation."
+    ],
+    "not_established": [
+      "strong transfer performance",
+      "substantial practical performance improvement",
+      "universal product classification",
+      "semantic equivalence of Rakuten and ABO taxonomies",
+      "label transfer",
+      "multimodal superiority",
+      "uncertainty estimation",
+      "selective prediction",
+      "human-review routing",
+      "open-set detection"
+    ]
+  },
+  "final_status": "B6.3.5 PASS / COMPLETE / LOCKED",
+  "final_conclusion": "B6.3.5 PASS / COMPLETE / LOCKED. The B6.3 signal-integration sequence is internally consistent with the frozen experimental boundary, artifact configuration, target population, leakage controls, and reproducibility record. The scientific outcome is a small positive representation-level transfer effect rather than a strong performance claim."
+}

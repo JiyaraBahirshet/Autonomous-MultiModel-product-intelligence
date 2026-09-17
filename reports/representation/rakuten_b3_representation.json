@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "summary": {
+    "source_records": 1000000,
+    "output_records": 1000000,
+    "total_title_tokens": 11619942,
+    "empty_token_sequences": 0,
+    "duplicate_record_ids": 0
+  }
+}

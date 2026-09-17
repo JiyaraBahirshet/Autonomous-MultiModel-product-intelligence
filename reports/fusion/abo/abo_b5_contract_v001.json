@@ -1,0 +1,75 @@
+{
+  "report": "abo_b5_contract",
+  "b5_version": "v001",
+  "stage": "B5.1",
+  "status": "PASS",
+  "dataset": "ABO",
+  "target_field": "product_type",
+  "target_definition": "product_type",
+  "b3_representation_version": "v002",
+  "b4_version": "v002",
+  "split_policy": {
+    "use_existing_frozen_splits": true,
+    "regenerate_splits": false,
+    "expected_counts": {
+      "train": 70284,
+      "validation": 69996,
+      "test": 7422
+    }
+  },
+  "input_artifacts": {
+    "b3_statistics": "data\\representations\\abo\\b3\\statistics_v002.json",
+    "b3_schema": "data\\representations\\abo\\b3\\schema_v002.json",
+    "b4_text_model": "data\\models\\abo\\b4.2\\text_model.joblib",
+    "b4_image_model": "data\\models\\abo\\b4.2\\image_model.joblib",
+    "b4_statistics": "data\\models\\abo\\b4.2\\statistics.json"
+  },
+  "b4_class_spaces": {
+    "text_class_count": 553,
+    "image_class_count": 549,
+    "common_class_count": 549,
+    "text_only_class_count": 4,
+    "image_only_class_count": 0,
+    "text_only_classes": [
+      "HAIRBAND",
+      "PUNCHING_BAG",
+      "SALWAR_SUIT_SET",
+      "TREADMILL"
+    ],
+    "image_only_classes": []
+  },
+  "eligibility_policy": {
+    "same_record_required": true,
+    "same_frozen_split_required": true,
+    "usable_b3_text_required": true,
+    "usable_b3_main_image_required": true,
+    "valid_target_required": true,
+    "target_must_exist_in_text_model_class_space": true,
+    "target_must_exist_in_image_model_class_space": true,
+    "class_alignment_by_label": true,
+    "class_alignment_by_integer_index": false
+  },
+  "fusion_policy": {
+    "fusion_performed": false,
+    "reserved_for": "B5.4"
+  },
+  "comparison_policy": {
+    "common_paired_population_required": true,
+    "full_population_metrics_must_not_be_compared_directly": true
+  },
+  "integrity_constraints": [
+    "B3 v002 only",
+    "Frozen Phase A splits only",
+    "No B2 modification",
+    "No B3 modification",
+    "No split regeneration",
+    "No image downloading",
+    "No path guessing",
+    "No synthetic images",
+    "No Rakuten integration",
+    "No MAVE integration",
+    "No B4.2 retraining",
+    "No fusion in B5.1",
+    "No fusion in B5.2"
+  ]
+}

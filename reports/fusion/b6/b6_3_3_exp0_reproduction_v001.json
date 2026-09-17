@@ -1,0 +1,78 @@
+{
+  "report": "b6_3_3_exp0_reproduction",
+  "report_version": "v001",
+  "stage": "B6.3.3",
+  "experiment": "Exp0",
+  "status": "PASS",
+  "purpose": "Exact reproduction of the frozen ABO B4.2 text baseline without retraining.",
+  "dataset": "Amazon Berkeley Objects (ABO)",
+  "task": "product_type classification",
+  "representation_version": "v002",
+  "b4_version": "v002",
+  "seed": 20260827,
+  "model": {
+    "path": "data\\models\\abo\\b4.2\\text_model.joblib",
+    "artifact_type": "dict",
+    "frozen": true,
+    "retraining": false,
+    "vectorizer": "frozen B4.2 vectorizer",
+    "label_encoder": "frozen B4.2 LabelEncoder",
+    "classifier": "frozen B4.2 SGDClassifier",
+    "train_classes": 553,
+    "vocabulary_size": 256395
+  },
+  "input_contract": {
+    "source": "data/representations/abo/b3/{split}.jsonl",
+    "splits": [
+      "train",
+      "validation",
+      "test"
+    ],
+    "representation_version": "v002",
+    "target_field": "product_type",
+    "target_definition": "first non-empty product_type value",
+    "text_source": "b3_representation.text.combined_tokens"
+  },
+  "eligible_records": {
+    "train": 70284,
+    "validation": 69996,
+    "test": 7422
+  },
+  "train_classes": 553,
+  "validation_unseen_target_records": 59,
+  "test_unseen_target_records": 30,
+  "validation": {
+    "accuracy": 0.9082173956560905,
+    "macro_f1": 0.08524528962807053,
+    "weighted_f1": 0.8980940672973458
+  },
+  "test": {
+    "accuracy": 0.5684523809523809,
+    "macro_f1": 0.09387840495350011,
+    "weighted_f1": 0.5050464332987978
+  },
+  "expected_frozen_validation": {
+    "accuracy": 0.9082173956560905,
+    "macro_f1": 0.08524528962807053,
+    "weighted_f1": 0.8980940672973458
+  },
+  "expected_frozen_test": {
+    "accuracy": 0.5684523809523809,
+    "macro_f1": 0.09387840495350011,
+    "weighted_f1": 0.5050464332987978
+  },
+  "integrity": {
+    "cross_split_record_id_leakage": 0,
+    "retraining": false,
+    "vectorizer_refit": false,
+    "label_encoder_refit": false,
+    "classifier_refit": false,
+    "split_regeneration": false,
+    "synthetic_data": false,
+    "image_download": false,
+    "path_guessing": false,
+    "b5_fusion_used": false,
+    "rakuten_signal_used": false,
+    "mave_signal_used": false
+  }
+}

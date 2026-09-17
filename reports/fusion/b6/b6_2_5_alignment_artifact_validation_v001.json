@@ -1,0 +1,155 @@
+{
+  "status": "PASS",
+  "stage": "B6.2.5",
+  "artifact_version": "v001",
+  "purpose": "Validate construction inputs for the common semantic alignment layer without cross-dataset joins.",
+  "datasets": {
+    "ABO": {
+      "splits": {
+        "train": {
+          "records": 70284,
+          "text": 70284,
+          "attributes": 70284,
+          "category": 70284,
+          "visual": 69823,
+          "expected_records": 70284,
+          "record_count_match": true
+        },
+        "validation": {
+          "records": 69996,
+          "text": 69996,
+          "attributes": 69996,
+          "category": 69996,
+          "visual": 69926,
+          "expected_records": 69996,
+          "record_count_match": true
+        },
+        "test": {
+          "records": 7422,
+          "text": 7422,
+          "attributes": 7422,
+          "category": 7422,
+          "visual": 7378,
+          "expected_records": 7422,
+          "record_count_match": true
+        }
+      },
+      "duplicate_record_ids": 0,
+      "cross_split_record_id_overlap": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      },
+      "representation_versions": [
+        "v002"
+      ],
+      "total_records": 147702
+    },
+    "MAVE": {
+      "splits": {
+        "train": {
+          "records": 2326033,
+          "text": 2320309,
+          "attributes": 2326033,
+          "category": 0,
+          "visual": 0,
+          "expected_records": 2326033,
+          "record_count_match": true
+        },
+        "validation": {
+          "records": 290488,
+          "text": 289782,
+          "attributes": 290488,
+          "category": 0,
+          "visual": 0,
+          "expected_records": 290488,
+          "record_count_match": true
+        },
+        "test": {
+          "records": 290837,
+          "text": 290119,
+          "attributes": 290837,
+          "category": 0,
+          "visual": 0,
+          "expected_records": 290837,
+          "record_count_match": true
+        }
+      },
+      "duplicate_record_ids": 0,
+      "cross_split_record_id_overlap": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      },
+      "representation_versions": [
+        "v001"
+      ],
+      "total_records": 2907358
+    },
+    "Rakuten": {
+      "splits": {
+        "train": {
+          "records": 719701,
+          "text": 0,
+          "attributes": 0,
+          "category": 719701,
+          "visual": 0,
+          "expected_records": 719701,
+          "record_count_match": true
+        },
+        "validation": {
+          "records": 80299,
+          "text": 0,
+          "attributes": 0,
+          "category": 80299,
+          "visual": 0,
+          "expected_records": 80299,
+          "record_count_match": true
+        },
+        "test": {
+          "records": 200000,
+          "text": 0,
+          "attributes": 0,
+          "category": 200000,
+          "visual": 0,
+          "expected_records": 200000,
+          "record_count_match": true
+        }
+      },
+      "duplicate_record_ids": 0,
+      "cross_split_record_id_overlap": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      },
+      "representation_versions": [
+        "None"
+      ],
+      "total_records": 1000000
+    }
+  },
+  "cross_dataset_record_id_overlap": {
+    "ABO__MAVE": {
+      "record_id_overlap": 0
+    },
+    "ABO__Rakuten": {
+      "record_id_overlap": 0
+    },
+    "MAVE__Rakuten": {
+      "record_id_overlap": 0
+    }
+  },
+  "mave_visual_semantics": "reference_only_not_physical_image",
+  "mave_supervision_boundary": 7148,
+  "controls": {
+    "B3_inputs_frozen": true,
+    "B5_frozen": true,
+    "record_level_cross_dataset_join": false,
+    "label_space_merge": false,
+    "external_backfill": false,
+    "model_training": false,
+    "split_regeneration": false
+  },
+  "failures": [],
+  "next_stage": "B6.3 only after B6.2.5 PASS and review"
+}

@@ -1,0 +1,99 @@
+{
+  "audit": {
+    "name": "MAVE B2 -> canonical data root-cause audit",
+    "version": "v001",
+    "read_only": true,
+    "dataset_modification": false
+  },
+  "paths": {
+    "canonical": "MAVE_Audit\\mave_final_dataset.jsonl",
+    "b2_root": "data\\processed\\mave\\b2",
+    "b3_root": "data\\representations\\mave\\b3"
+  },
+  "b3_supervision_population": {
+    "total_supervised_asins": 7148,
+    "split_stats": {
+      "train": {
+        "records": 2326033,
+        "supervised_records": 5724,
+        "duplicate_asins": 0
+      },
+      "validation": {
+        "records": 290488,
+        "supervised_records": 706,
+        "duplicate_asins": 0
+      },
+      "test": {
+        "records": 290837,
+        "supervised_records": 718,
+        "duplicate_asins": 0
+      }
+    }
+  },
+  "canonical_trace": {
+    "total_records_scanned": 2907358,
+    "target_matches": 7148,
+    "target_records_with_approved_text": 0,
+    "target_records_with_image_references": 0
+  },
+  "b2_trace": {
+    "target_matches": 7148,
+    "target_records_with_approved_text": 0,
+    "target_records_with_supervision": 7148,
+    "target_source_asin_mismatches": 0,
+    "target_duplicate_record_ids": 0,
+    "target_matches_by_split": {
+      "train": 5724,
+      "validation": 706,
+      "test": 718
+    }
+  },
+  "classification": {
+    "SOURCE_AND_B2_NO_APPROVED_TEXT": 7148
+  },
+  "field_presence_among_supervised_targets": {
+    "canonical": {
+      "title": 0,
+      "description": 0,
+      "brand": 0,
+      "feature": 0,
+      "amazon_category_path": 0,
+      "amazon_main_category": 0,
+      "mave_category": 7148,
+      "mave_attributes": 7148
+    },
+    "b2": {
+      "title": 0,
+      "description": 0,
+      "brand": 0,
+      "feature": 0,
+      "amazon_category_path": 0,
+      "amazon_main_category": 0,
+      "mave_category": 7148,
+      "mave_attributes": 7148
+    }
+  },
+  "root_cause": "SOURCE_LEVEL_TEXT_ABSENCE_FOR_MAVE_SUPERVISED_RECORDS",
+  "status": "CONFIRMED_SOURCE_LEVEL_DISJOINTNESS",
+  "integrity_checks": {
+    "canonical_target_coverage": true,
+    "b2_target_coverage": true,
+    "b2_source_asin_mismatches": 0,
+    "b2_duplicate_target_record_ids": 0
+  },
+  "source_sha256": {
+    "canonical": "ca4cf24af5585ca6ab3b7b53dac7626f3a5c9637b121495f4fae346d6672adfd",
+    "b2_train": "1cdda5a6cff823c366c28f9b0a3a09b1640bcc55de3a896926931413b7c77046",
+    "b2_validation": "38b32869cf32c13934d8155fefd4b0b3bf631b53c1bb236ac9f34c64d36002ad",
+    "b2_test": "8401f001b3e928005ceb28a73facebc42d8315b3bfe3296d2fb02db10e43fe82",
+    "b3_train": "04a704ea6da2d4c54435d832c6cb0beca55d1f8d1f7bdf4b077960c8028e2a37",
+    "b3_validation": "3d02af23ea12c7c3b59912c9049983d2c758deac143ece4103341ec440177387",
+    "b3_test": "ce52092e690ad2c4a980e60a6816866c763a6005f0d9b851c25ec1ae4a11e300"
+  },
+  "notes": [
+    "Strictly read-only.",
+    "Image references are not treated as text inputs.",
+    "MAVE labels are not fabricated or inferred.",
+    "Approved text means non-empty product metadata in the defined text fields."
+  ]
+}

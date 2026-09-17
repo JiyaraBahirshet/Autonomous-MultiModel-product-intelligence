@@ -1,0 +1,66 @@
+{
+  "report_name": "MAVE B4.3 Decision / Evidence Report",
+  "report_version": "v001",
+  "dataset": "MAVE",
+  "stage": "B4.3",
+  "mode": "READ_ONLY",
+  "decision": {
+    "status": "BLOCKED",
+    "decision": "DO_NOT_TRAIN",
+    "reason": "CONFIRMED_LABEL_INPUT_DISJOINTNESS",
+    "root_cause": "LABEL_INPUT_DISJOINTNESS_MAVE_LABELS_HAVE_NO_USABLE_B3_TEXT",
+    "model_training_performed": false
+  },
+  "population": {
+    "total_records": 2907358,
+    "train": 2326033,
+    "validation": 290488,
+    "test": 290837,
+    "mave_information_records": 7148,
+    "usable_b3_text": 2900210,
+    "supervised_candidates": 7148,
+    "supervised_candidates_with_usable_b3_text": 0,
+    "supervised_candidates_without_usable_b3_text": 7148
+  },
+  "integrity": {
+    "duplicate_asins": 0,
+    "duplicate_record_ids": 0,
+    "cross_split_asin_leakage": 0,
+    "cross_split_record_id_leakage": 0,
+    "frozen_splits_preserved": true
+  },
+  "provenance_trace": {
+    "supervised_asins": 7148,
+    "canonical_matches": 7148,
+    "b2_matches": 7148,
+    "canonical_records_with_text": 0,
+    "b2_records_with_text": 0,
+    "b3_records_with_usable_text": 0,
+    "missing_canonical_targets": 0,
+    "missing_b2_targets": 0,
+    "b2_source_asin_mismatches": 0,
+    "b2_record_id_mismatches": 0,
+    "b2_split_mismatches": 0,
+    "classification": "MAVE_LABEL_WITHOUT_CANONICAL_APPROVED_TEXT"
+  },
+  "evidence_chain": [
+    "All 7,148 supervised MAVE ASINs trace from canonical MAVE to B2 and B3.",
+    "All 7,148 supervised records have no usable approved B3 text.",
+    "Therefore the approved B4.3 supervised text population is zero.",
+    "No valid TF-IDF + Linear Classifier baseline can be trained or evaluated without changing the task/input contract."
+  ],
+  "acceptance": {
+    "labels_fabricated": false,
+    "b2_b3_modified": false,
+    "b5_fusion_performed": false,
+    "metrics_generated": false,
+    "status": "BLOCKED"
+  },
+  "evidence_artifacts": [
+    "reports/baseline/mave/mave_b4.3_feasibility.json",
+    "reports/baseline/mave/mave_b3_b4.3_interface_audit.json",
+    "reports/baseline/mave/mave_b4_provenance_trace_audit.json"
+  ],
+  "recommended_next_state": "HOLD_FOR_ARCHITECTURAL_REVIEW",
+  "integrity_statement": "Evidence-only report; no raw data, frozen B2/B3 artifacts, splits, labels, or model inputs are modified."
+}

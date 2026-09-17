@@ -1,0 +1,162 @@
+{
+  "experiment": "B6.3.3 Exp2",
+  "experiment_type": "genuine_aligned_transfer",
+  "status": "GATE_1_PASS",
+  "objective": "Evaluate ABO text plus genuine aligned Rakuten transfer signal.",
+  "seed": 20260827,
+  "source": {
+    "dataset": "Rakuten",
+    "representation_version": "B3_v001",
+    "source_model": "Frozen B6.3.3 Rakuten TF-IDF + SGD",
+    "source_classes": 3008,
+    "source_model_inference_only": true,
+    "validation_used": false,
+    "test_used": false
+  },
+  "target": {
+    "dataset": "ABO",
+    "representation_version": "B3_v002",
+    "target_field": "product_type",
+    "target_classes": 549,
+    "original_train_count": 70284,
+    "original_validation_count": 69996,
+    "original_test_count": 7422,
+    "filtered_train_count": 70258,
+    "filtered_validation_count": 69995,
+    "validation_metric_count": 69936,
+    "validation_unseen_target_records": 59,
+    "excluded_target_classes": [
+      "HAIRBAND",
+      "PUNCHING_BAG",
+      "SALWAR_SUIT_SET",
+      "TREADMILL"
+    ]
+  },
+  "transfer_artifacts": {
+    "train": "D:\\Autonomous MultiModel product intelligence\\data\\representations\\abo\\b6_3_3_transfer\\train.npz",
+    "validation": "D:\\Autonomous MultiModel product intelligence\\data\\representations\\abo\\b6_3_3_transfer\\validation.npz",
+    "test": "D:\\Autonomous MultiModel product intelligence\\data\\representations\\abo\\b6_3_3_transfer\\test.npz",
+    "dimension": 3008,
+    "train_order_validated": true,
+    "validation_order_validated": true
+  },
+  "permutation": {
+    "scope": "ABO_train_only",
+    "seed": 20260827,
+    "row_permutation": false,
+    "validation_permuted": false,
+    "test_loaded": false,
+    "identity_permutation": null
+  },
+  "integration": {
+    "method": "feature_concatenation",
+    "formula": "[X_text | gamma * X_transfer]",
+    "text_features": 256395,
+    "transfer_features": 3008,
+    "combined_features": 259403,
+    "feature_scaling_identical_across_exp1_exp2": true
+  },
+  "downstream_classifier": {
+    "type": "SGDClassifier",
+    "loss": "log_loss",
+    "max_iter": 30,
+    "random_state": 20260827,
+    "n_jobs": 1,
+    "tol": 0.001
+  },
+  "gamma_candidates": [
+    0.1,
+    0.5,
+    1.0
+  ],
+  "gamma_selection": {
+    "split": "ABO_validation",
+    "selected_gamma": 1.0
+  },
+  "results": {
+    "0.1": {
+      "gamma": 0.1,
+      "metrics": {
+        "accuracy": 0.9081302905513613,
+        "macro_f1": 0.05860746223261576,
+        "weighted_f1": 0.8982549287781715
+      },
+      "classifier": {
+        "type": "SGDClassifier",
+        "loss": "log_loss",
+        "max_iter": 30,
+        "random_state": 20260827,
+        "n_jobs": 1,
+        "tol": 0.001
+      },
+      "train_rows": 70258,
+      "validation_rows": 69936,
+      "combined_dimension": 259403
+    },
+    "0.5": {
+      "gamma": 0.5,
+      "metrics": {
+        "accuracy": 0.908144589338824,
+        "macro_f1": 0.058608620629190845,
+        "weighted_f1": 0.8982630355652672
+      },
+      "classifier": {
+        "type": "SGDClassifier",
+        "loss": "log_loss",
+        "max_iter": 30,
+        "random_state": 20260827,
+        "n_jobs": 1,
+        "tol": 0.001
+      },
+      "train_rows": 70258,
+      "validation_rows": 69936,
+      "combined_dimension": 259403
+    },
+    "1.0": {
+      "gamma": 1.0,
+      "metrics": {
+        "accuracy": 0.9083018760009152,
+        "macro_f1": 0.05869800367078924,
+        "weighted_f1": 0.8984773884074551
+      },
+      "classifier": {
+        "type": "SGDClassifier",
+        "loss": "log_loss",
+        "max_iter": 30,
+        "random_state": 20260827,
+        "n_jobs": 1,
+        "tol": 0.001
+      },
+      "train_rows": 70258,
+      "validation_rows": 69936,
+      "combined_dimension": 259403
+    }
+  },
+  "frozen_baseline_reference": {
+    "experiment": "Exp0",
+    "b4_version": "v002",
+    "representation_version": "v002",
+    "retraining": false
+  },
+  "test_evaluation": {
+    "performed": false,
+    "reason": "Gate 1 only"
+  },
+  "leakage_controls": {
+    "record_joins": false,
+    "asin_matching": false,
+    "product_id_matching": false,
+    "category_id_mapping": false,
+    "semantic_label_crosswalk": false,
+    "synthetic_pairing": false,
+    "external_enrichment": false,
+    "image_download": false,
+    "path_guessing": false,
+    "split_regeneration": false,
+    "rakuten_validation_test_for_tuning": false,
+    "abo_test_for_tuning": false,
+    "b5_predictions_used": false,
+    "b5_weights_used": false,
+    "rakuten_source_model_modified": false
+  }
+}

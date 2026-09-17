@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "stage": "B6.2.3",
+  "analysis_version": "v001",
+  "purpose": "Deterministic compatibility analysis of active B3 representations",
+  "datasets": {
+    "ABO": {
+      "version": "v002",
+      "splits": {
+        "train": {
+          "records": 70284,
+          "text": 70284,
+          "attributes": 70260,
+          "category": 70284,
+          "visual": 69823
+        },
+        "validation": {
+          "records": 69996,
+          "text": 69996,
+          "attributes": 69994,
+          "category": 69996,
+          "visual": 69926
+        },
+        "test": {
+          "records": 7422,
+          "text": 7422,
+          "attributes": 7419,
+          "category": 7422,
+          "visual": 7378
+        }
+      },
+      "totals": {
+        "records": 147702,
+        "text": 147702,
+        "attributes": 147673,
+        "category": 147702,
+        "visual": 147127
+      }
+    },
+    "MAVE": {
+      "version": "v001",
+      "splits": {
+        "train": {
+          "records": 2326033,
+          "text": 2320309,
+          "attributes": 5724,
+          "category": 2326033,
+          "visual": 1476600
+        },
+        "validation": {
+          "records": 290488,
+          "text": 289782,
+          "attributes": 706,
+          "category": 290488,
+          "visual": 184527
+        },
+        "test": {
+          "records": 290837,
+          "text": 290119,
+          "attributes": 718,
+          "category": 290837,
+          "visual": 185147
+        }
+      },
+      "totals": {
+        "records": 2907358,
+        "text": 2900210,
+        "attributes": 7148,
+        "category": 2907358,
+        "visual": 1846274
+      }
+    },
+    "Rakuten": {
+      "version": "001",
+      "splits": {
+        "train": {
+          "records": 719701,
+          "text": 719701,
+          "attributes": 0,
+          "category": 719701,
+          "visual": 0
+        },
+        "validation": {
+          "records": 80299,
+          "text": 80299,
+          "attributes": 0,
+          "category": 80299,
+          "visual": 0
+        },
+        "test": {
+          "records": 200000,
+          "text": 200000,
+          "attributes": 0,
+          "category": 200000,
+          "visual": 0
+        }
+      },
+      "totals": {
+        "records": 1000000,
+        "text": 1000000,
+        "attributes": 0,
+        "category": 1000000,
+        "visual": 0
+      }
+    }
+  },
+  "cross_dataset_record_id_overlap": {
+    "ABO__MAVE": {
+      "record_id_overlap": 0
+    },
+    "ABO__Rakuten": {
+      "record_id_overlap": 0
+    },
+    "MAVE__Rakuten": {
+      "record_id_overlap": 0
+    }
+  },
+  "rules": {
+    "no_cross_dataset_join": true,
+    "no_label_merge": true,
+    "no_learned_parameters": true,
+    "no_test_driven_selection": true,
+    "missingness_preserved": true
+  }
+}

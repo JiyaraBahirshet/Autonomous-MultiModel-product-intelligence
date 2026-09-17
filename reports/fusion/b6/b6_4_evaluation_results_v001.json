@@ -1,0 +1,81 @@
+{
+  "stage": "B6.4",
+  "substage": "B6.4.2",
+  "version": "v001",
+  "status": "PASS",
+  "evaluation_type": "read_only_frozen_result_evaluation",
+  "read_only": true,
+  "model_training": false,
+  "frozen_artifact_modification": false,
+  "new_gamma_search": false,
+  "test_tuning": false,
+  "target": {
+    "dataset": "ABO",
+    "task": "product_type_classification",
+    "target_classes": 549,
+    "filtered_train_count": 70258,
+    "filtered_test_count": 7416,
+    "test_metric_records": 7386,
+    "test_unseen_target_records": 30,
+    "excluded_target_classes": [
+      "HAIRBAND",
+      "PUNCHING_BAG",
+      "SALWAR_SUIT_SET",
+      "TREADMILL"
+    ]
+  },
+  "frozen_inputs": {
+    "exp1_gate2": "D:\\Autonomous MultiModel product intelligence\\reports\\fusion\\b6\\b6_3_3_exp1_gate2_test_v001.json",
+    "exp2_gate2": "D:\\Autonomous MultiModel product intelligence\\reports\\fusion\\b6\\b6_3_3_exp2_gate2_test_v001.json",
+    "b6_3_4": "D:\\Autonomous MultiModel product intelligence\\reports\\fusion\\b6\\b6_3_4_evaluation_results_v001.json"
+  },
+  "frozen_metrics": {
+    "exp1_negative_control": {
+      "accuracy": 0.5682372055239643,
+      "macro_f1": 0.058720810905631214,
+      "weighted_f1": 0.50588931202641
+    },
+    "exp2_genuine_transfer": {
+      "accuracy": 0.5683725968047658,
+      "macro_f1": 0.05877880520618687,
+      "weighted_f1": 0.5061787255110273
+    },
+    "matched_text_only": {
+      "accuracy": 0.5679664229623612,
+      "macro_f1": 0.05875117923535614,
+      "weighted_f1": 0.5056574753989312
+    }
+  },
+  "metric_deltas": {
+    "exp2_minus_exp1": {
+      "accuracy": 0.0001353912808015334,
+      "macro_f1": 5.7994300555655465e-05,
+      "weighted_f1": 0.00028941348461730687
+    },
+    "exp2_minus_text_only": {
+      "accuracy": 0.0004061738424046002,
+      "macro_f1": 2.762597083073165e-05,
+      "weighted_f1": 0.0005212501120960278
+    },
+    "text_only_minus_exp1": {
+      "accuracy": -0.0002707825616030668,
+      "macro_f1": 3.0368329724923815e-05,
+      "weighted_f1": -0.00023183662747872091
+    }
+  },
+  "interpretation": "SMALL_WEAK_POSITIVE_TRANSFER",
+  "scientific_boundary": "representation-level cross-dataset transfer",
+  "statistical_significance_claim": false,
+  "prohibited_claims": {
+    "strong_transfer": false,
+    "substantial_improvement": false,
+    "statistical_significance": false,
+    "universal_classifier": false,
+    "label_transfer": false,
+    "multimodal_superiority": false,
+    "uncertainty_implementation": false,
+    "selective_prediction_implementation": false,
+    "open_set_implementation": false,
+    "human_review_routing_implementation": false
+  }
+}

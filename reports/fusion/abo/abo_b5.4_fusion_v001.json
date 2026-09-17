@@ -1,0 +1,275 @@
+{
+  "report_version": "v001",
+  "report_name": "abo_b5.4_multimodal_fusion",
+  "status": "PASS",
+  "dataset": "ABO",
+  "stage": "B5.4",
+  "b3_version": "v002",
+  "b4_version": "v002",
+  "b5_version": "v001",
+  "target_field": "product_type",
+  "execution": {
+    "seed": 20260827,
+    "images_read": false,
+    "model_training": false,
+    "model_retraining": false,
+    "split_regeneration": false,
+    "fusion_only": true
+  },
+  "prediction_source": {
+    "directory": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\b5\\predictions_v001",
+    "prediction_version": "v001",
+    "b5_3_metadata": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\b5\\predictions_v001\\metadata.json",
+    "b5_3_report": "D:\\Autonomous MultiModel product intelligence\\reports\\fusion\\abo\\abo_b5.3_prediction_prep_v001.json"
+  },
+  "class_alignment": {
+    "class_count": 549,
+    "text_original_classes": 553,
+    "image_original_classes": 549,
+    "common_classes": 549,
+    "probability_columns_aligned_by_product_type": true,
+    "common_probability_normalization": true,
+    "normalization_method": "Renormalize projected probabilities over the common product_type classes"
+  },
+  "population": {
+    "train": 69823,
+    "validation": 69867,
+    "test": 7346,
+    "paired_common_target_population": true,
+    "validation_test_record_id_leakage": 0
+  },
+  "fusion": {
+    "equation": "P_fused = alpha * P_text + (1-alpha) * P_image",
+    "alpha_grid": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "selected_alpha": 0.9,
+    "selected_text_weight": 0.9,
+    "selected_image_weight": 0.09999999999999998,
+    "selection_split": "validation",
+    "test_evaluation_alpha_frozen": true,
+    "selection_criterion": [
+      "macro_f1",
+      "accuracy",
+      "weighted_f1",
+      "smallest_alpha"
+    ]
+  },
+  "validation": {
+    "selected": {
+      "alpha": 0.9,
+      "text_weight": 0.9,
+      "image_weight": 0.1,
+      "metrics": {
+        "accuracy": 0.9102008101106388,
+        "macro_f1": 0.10984121005115813,
+        "weighted_f1": 0.9029800395941627
+      }
+    },
+    "text_only": {
+      "alpha": 1.0,
+      "text_weight": 1.0,
+      "image_weight": 0.0,
+      "metrics": {
+        "accuracy": 0.9085691385060186,
+        "macro_f1": 0.05881378793474582,
+        "weighted_f1": 0.8984557667662201
+      }
+    },
+    "image_only": {
+      "alpha": 0.0,
+      "text_weight": 0.0,
+      "image_weight": 1.0,
+      "metrics": {
+        "accuracy": 0.8380780626046631,
+        "macro_f1": 0.09820038695311578,
+        "weighted_f1": 0.8544478028556998
+      }
+    },
+    "delta_vs_text_only": {
+      "accuracy": 0.0016316716046201885,
+      "macro_f1": 0.051027422116412306,
+      "weighted_f1": 0.004524272827942655
+    },
+    "delta_vs_image_only": {
+      "accuracy": 0.07212274750597569,
+      "macro_f1": 0.011640823098042347,
+      "weighted_f1": 0.048532236738462964
+    },
+    "alpha_grid_results": [
+      {
+        "alpha": 0.0,
+        "text_weight": 0.0,
+        "image_weight": 1.0,
+        "metrics": {
+          "accuracy": 0.8380780626046631,
+          "macro_f1": 0.09820038695311578,
+          "weighted_f1": 0.8544478028556998
+        }
+      },
+      {
+        "alpha": 0.1,
+        "text_weight": 0.1,
+        "image_weight": 0.9,
+        "metrics": {
+          "accuracy": 0.8436314712238968,
+          "macro_f1": 0.09481495262426111,
+          "weighted_f1": 0.8580242458783136
+        }
+      },
+      {
+        "alpha": 0.2,
+        "text_weight": 0.2,
+        "image_weight": 0.8,
+        "metrics": {
+          "accuracy": 0.8447049393848312,
+          "macro_f1": 0.09332215511471166,
+          "weighted_f1": 0.8587091265791962
+        }
+      },
+      {
+        "alpha": 0.3,
+        "text_weight": 0.3,
+        "image_weight": 0.7,
+        "metrics": {
+          "accuracy": 0.8456209655488285,
+          "macro_f1": 0.09161063934837824,
+          "weighted_f1": 0.8592894794467884
+        }
+      },
+      {
+        "alpha": 0.4,
+        "text_weight": 0.4,
+        "image_weight": 0.6,
+        "metrics": {
+          "accuracy": 0.8470951951565117,
+          "macro_f1": 0.09185980634937595,
+          "weighted_f1": 0.860284556487952
+        }
+      },
+      {
+        "alpha": 0.5,
+        "text_weight": 0.5,
+        "image_weight": 0.5,
+        "metrics": {
+          "accuracy": 0.8501867834600025,
+          "macro_f1": 0.09247202638978372,
+          "weighted_f1": 0.8621696434076942
+        }
+      },
+      {
+        "alpha": 0.6,
+        "text_weight": 0.6,
+        "image_weight": 0.4,
+        "metrics": {
+          "accuracy": 0.8580159445804171,
+          "macro_f1": 0.0938098020972902,
+          "weighted_f1": 0.866863978659598
+        }
+      },
+      {
+        "alpha": 0.7,
+        "text_weight": 0.7,
+        "image_weight": 0.3,
+        "metrics": {
+          "accuracy": 0.8899623570498232,
+          "macro_f1": 0.09883487985192191,
+          "weighted_f1": 0.8859243840398794
+        }
+      },
+      {
+        "alpha": 0.8,
+        "text_weight": 0.8,
+        "image_weight": 0.2,
+        "metrics": {
+          "accuracy": 0.900768603203229,
+          "macro_f1": 0.10414411296252364,
+          "weighted_f1": 0.8948349925821133
+        }
+      },
+      {
+        "alpha": 0.9,
+        "text_weight": 0.9,
+        "image_weight": 0.1,
+        "metrics": {
+          "accuracy": 0.9102008101106388,
+          "macro_f1": 0.10984121005115813,
+          "weighted_f1": 0.9029800395941627
+        }
+      },
+      {
+        "alpha": 1.0,
+        "text_weight": 1.0,
+        "image_weight": 0.0,
+        "metrics": {
+          "accuracy": 0.9085691385060186,
+          "macro_f1": 0.05881378793474582,
+          "weighted_f1": 0.8984557667662201
+        }
+      }
+    ]
+  },
+  "test": {
+    "selected_alpha": 0.9,
+    "text_only": {
+      "accuracy": 0.569425537707596,
+      "macro_f1": 0.058107181452159186,
+      "weighted_f1": 0.5058603257557122
+    },
+    "image_only": {
+      "accuracy": 0.3913694527634087,
+      "macro_f1": 0.11203960097135889,
+      "weighted_f1": 0.3638150700358917
+    },
+    "fusion": {
+      "accuracy": 0.5386604955077593,
+      "macro_f1": 0.1223595494343571,
+      "weighted_f1": 0.5073533552478247
+    },
+    "delta_vs_text_only": {
+      "accuracy": -0.030765042199836667,
+      "macro_f1": 0.06425236798219791,
+      "weighted_f1": 0.0014930294921124965
+    },
+    "delta_vs_image_only": {
+      "accuracy": 0.14729104274435062,
+      "macro_f1": 0.010319948462998219,
+      "weighted_f1": 0.14353828521193296
+    },
+    "fusion_outcome_by_macro_f1": "better_than_both"
+  },
+  "integrity": {
+    "b3_modified": false,
+    "b4_2_modified": false,
+    "b4_2_retrained": false,
+    "splits_regenerated": false,
+    "images_read": false,
+    "image_download": false,
+    "path_guessing": false,
+    "synthetic_data": false,
+    "rakuten_integration": false,
+    "mave_integration": false,
+    "test_tuning": false,
+    "train_used_for_alpha_selection": false,
+    "validation_used_for_alpha_selection": true,
+    "fusion_performed": true
+  },
+  "artifacts": {
+    "fusion_metadata": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\b5\\fusion_v001\\metadata.json",
+    "report": "D:\\Autonomous MultiModel product intelligence\\reports\\fusion\\abo\\abo_b5.4_fusion_v001.json"
+  },
+  "source_contracts": {
+    "b5_3_metadata": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\b5\\predictions_v001\\metadata.json",
+    "b5_3_report": "D:\\Autonomous MultiModel product intelligence\\reports\\fusion\\abo\\abo_b5.3_prediction_prep_v001.json"
+  }
+}
