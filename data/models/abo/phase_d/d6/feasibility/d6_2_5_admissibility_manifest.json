@@ -1,0 +1,27 @@
+{
+  "manifest_version": "D6.2.5-v001",
+  "phase": "D6",
+  "stage": "D6.2.5",
+  "seed": 20260827,
+  "read_only": true,
+  "inputs": {
+    "d6_2_4_results": "data\\models\\abo\\phase_d\\d6\\feasibility\\d6_2_4_canonical_set_results.json",
+    "d6_2_4_inventory": "data\\models\\abo\\phase_d\\d6\\feasibility\\d6_2_4_candidate_inventory.json",
+    "cbase_training_manifest": "data\\models\\abo\\phase_c\\c3\\training\\cbase_training_manifest.json",
+    "c3_embedding_manifest": "data\\models\\abo\\phase_c\\c3\\embeddings\\c3_embedding_manifest.json",
+    "abo_train": "data\\splits\\abo\\train.jsonl",
+    "abo_validation": "data\\splits\\abo\\validation.jsonl",
+    "abo_test": "data\\splits\\abo\\test.jsonl"
+  },
+  "outputs": {
+    "results": "data\\models\\abo\\phase_d\\d6\\feasibility\\d6_2_5_admissibility_results.json",
+    "matrix": "data\\models\\abo\\phase_d\\d6\\feasibility\\d6_2_5_admissibility_matrix.csv"
+  },
+  "cbase_sha256": "3ae988f0d4a2e186aa6fc896191cd5739c0092c4c89ff9293f8924c9ba0439d9",
+  "d_test_namespace_present": false,
+  "overall_status": "UNRESOLVED",
+  "no_inference": true,
+  "no_test_evaluation": true,
+  "no_threshold_selection": true,
+  "no_upstream_modification": true
+}

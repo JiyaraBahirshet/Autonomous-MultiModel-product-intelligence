@@ -1,0 +1,42 @@
+{
+  "status": "EXECUTED",
+  "phase": "D2",
+  "stage": "temperature_calibration",
+  "seed": 20260827,
+  "method": "temperature_scaling",
+  "temperature": 1.9641200304031372,
+  "checkpoint": {
+    "path": "data\\models\\abo\\phase_c\\c3\\training\\cbase_best.pt",
+    "sha256": "3ae988f0d4a2e186aa6fc896191cd5739c0092c4c89ff9293f8924c9ba0439d9",
+    "expected_sha256": "3ae988f0d4a2e186aa6fc896191cd5739c0092c4c89ff9293f8924c9ba0439d9",
+    "verified": true
+  },
+  "populations": {
+    "source_validation": 69867,
+    "dcal": 34909,
+    "dselect": 34958,
+    "dtest_accessed": false
+  },
+  "information_flow": [
+    "fresh_CBase_inference",
+    "DCal_temperature_fit",
+    "freeze_temperature",
+    "DSelect_evaluation"
+  ],
+  "outputs": {
+    "npz": "data\\models\\abo\\phase_d\\d2\\calibration\\d2_calibrated_validation_outputs.npz",
+    "npz_sha256": "78aa5de731107cd47a2149d6f85261d9f831a9894261cf612edeb05cc9a4f94f",
+    "metrics": "data\\models\\abo\\phase_d\\d2\\calibration\\d2_calibration_metrics.json",
+    "reliability": "data\\models\\abo\\phase_d\\d2\\calibration\\d2_reliability_data.json"
+  },
+  "boundary": {
+    "d3_threshold_selection": "NOT_PERFORMED",
+    "abstention_threshold": "NOT_SELECTED",
+    "coverage_target": "NOT_SELECTED",
+    "human_review_rule": "NOT_SELECTED",
+    "open_set": "NOT_PERFORMED",
+    "dtest": "NOT_ACCESSED",
+    "phase_c_modified": false,
+    "dtest_accessed": false
+  }
+}

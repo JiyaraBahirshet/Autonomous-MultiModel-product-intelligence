@@ -1,0 +1,42 @@
+{
+  "phase": "D4",
+  "version": "v001",
+  "method": "human_review_routing_characterization",
+  "seed": 20260827,
+  "inputs": {
+    "d2_npz": "data\\models\\abo\\phase_d\\d2\\calibration\\d2_calibrated_validation_outputs.npz",
+    "d2_npz_sha256": "78aa5de731107cd47a2149d6f85261d9f831a9894261cf612edeb05cc9a4f94f",
+    "d2_metrics": "data\\models\\abo\\phase_d\\d2\\calibration\\d2_calibration_metrics.json",
+    "d2_metrics_sha256": "a52238c1aac16de8605681da38742fdc10af7d673006477666689b2566d8e0d2",
+    "d2_manifest": "data\\models\\abo\\phase_d\\d2\\calibration\\d2_calibration_manifest.json",
+    "d2_manifest_sha256": "7052fd3d621bab8a2615a453a6f47f064e840a84d6c10a0ce3d7acbda026a214",
+    "d3_config": "configs\\phase_d\\d3_v002_characterization_config.json",
+    "d3_config_sha256": "8de7f3b8294aece4880eff46eb90cff35191f7c88641018f86e0c150fca71a35"
+  },
+  "population": {
+    "dselect_count": 34958
+  },
+  "threshold_grid": {
+    "start": 0.0,
+    "end": 1.0,
+    "step": 0.01,
+    "count": 101,
+    "result_adaptive": false
+  },
+  "boundary": {
+    "threshold_selected": false,
+    "r_max_selected": false,
+    "c_min_selected": false,
+    "human_performance_evaluated": false,
+    "dtest_accessed": false,
+    "d2_modified": false,
+    "d3_modified": false,
+    "phase_c_modified": false
+  },
+  "outputs": {
+    "results": "data\\models\\abo\\phase_d\\d4\\development\\d4_human_review_routing_results.json",
+    "curve": "data\\models\\abo\\phase_d\\d4\\development\\d4_review_routing_curve.csv",
+    "config": "configs\\phase_d\\d4_v001_human_review_routing_config.json"
+  },
+  "status": "EXECUTED"
+}

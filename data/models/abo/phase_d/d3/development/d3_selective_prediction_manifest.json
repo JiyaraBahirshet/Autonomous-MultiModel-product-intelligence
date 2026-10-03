@@ -1,0 +1,32 @@
+{
+  "c_min": null,
+  "created_at_utc": "2026-09-30T13:20:34.719440+00:00",
+  "d2_modified": false,
+  "d2_source": "data\\models\\abo\\phase_d\\d2\\calibration\\d2_calibrated_validation_outputs.npz",
+  "d2_source_sha256": "78aa5de731107cd47a2149d6f85261d9f831a9894261cf612edeb05cc9a4f94f",
+  "d3_config": "configs\\phase_d\\d3_v002_characterization_config.json",
+  "d3_config_sha256": "8de7f3b8294aece4880eff46eb90cff35191f7c88641018f86e0c150fca71a35",
+  "d3_results_csv": "data\\models\\abo\\phase_d\\d3\\development\\d3_coverage_risk_curve.csv",
+  "d3_results_json": "data\\models\\abo\\phase_d\\d3\\development\\d3_selective_prediction_results.json",
+  "dcal_count": 34909,
+  "dselect_count": 34958,
+  "dtest_accessed": false,
+  "experiment": "selective_prediction_characterization",
+  "objective": "characterization_only",
+  "phase": "D3",
+  "phase_c_modified": false,
+  "r_max": null,
+  "seed": 20260827,
+  "status": "EXECUTED",
+  "temperature": 1.9641200304031372,
+  "threshold_grid": {
+    "count": 101,
+    "end": 1.0,
+    "frozen_before_result_inspection": true,
+    "result_adaptive": false,
+    "start": 0.0,
+    "step": 0.01
+  },
+  "threshold_selected": false,
+  "version": "v002"
+}

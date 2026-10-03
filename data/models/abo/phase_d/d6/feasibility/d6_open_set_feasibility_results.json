@@ -1,0 +1,13 @@
+{
+  "phase": "D6",
+  "version": "v001",
+  "status": "UNRESOLVED",
+  "reason": "The feasibility audit inventories approved project artifacts and structured evidence, but does not infer an admissible unknown population from filenames, counts, predictions, or cross-dataset similarity. Explicit provenance, known-space separation, and exclusion evidence are required before a candidate can be marked FEASIBLE.",
+  "dtest_accessed": false,
+  "model_inference": false,
+  "threshold_selected": false,
+  "synthetic_unknowns": false,
+  "external_scraping": false,
+  "cross_dataset_unknown_mapping_assumed": false,
+  "cbase_hash_match": true
+}

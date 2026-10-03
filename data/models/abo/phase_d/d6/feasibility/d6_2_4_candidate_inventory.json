@@ -1,0 +1,277 @@
+{
+  "audit": "D6.2.4",
+  "version": "v002",
+  "generated_at_utc": "2026-10-03T04:00:41.226543+00:00",
+  "candidates": [
+    {
+      "canonical_product_type": "AIR_PURIFIER",
+      "total_count": 1,
+      "train_count": 0,
+      "validation_count": 1,
+      "test_count": 0,
+      "present_in_train": false,
+      "present_in_validation": true,
+      "present_in_test": false
+    },
+    {
+      "canonical_product_type": "AUDIO_OR_VIDEO",
+      "total_count": 2,
+      "train_count": 0,
+      "validation_count": 1,
+      "test_count": 1,
+      "present_in_train": false,
+      "present_in_validation": true,
+      "present_in_test": true
+    },
+    {
+      "canonical_product_type": "CHILDRENS_COSTUME",
+      "total_count": 16,
+      "train_count": 0,
+      "validation_count": 0,
+      "test_count": 16,
+      "present_in_train": false,
+      "present_in_validation": false,
+      "present_in_test": true
+    },
+    {
+      "canonical_product_type": "CONDIMENT",
+      "total_count": 1,
+      "train_count": 0,
+      "validation_count": 0,
+      "test_count": 1,
+      "present_in_train": false,
+      "present_in_validation": false,
+      "present_in_test": true
+    },
+    {
+      "canonical_product_type": "COOKING_OVEN",
+      "total_count": 1,
+      "train_count": 0,
+      "validation_count": 0,
+      "test_count": 1,
+      "present_in_train": false,
+      "present_in_validation": false,
+      "present_in_test": true
+    },
+    {
+      "canonical_product_type": "DIGITAL_DEVICE_3",
+      "total_count": 1,
+      "train_count": 0,
+      "validation_count": 0,
+      "test_count": 1,
+      "present_in_train": false,
+      "present_in_validation": false,
+      "present_in_test": true
+    },
+    {
+      "canonical_product_type": "DVD_PLAYER_OR_RECORDER",
+      "total_count": 1,
+      "train_count": 0,
+      "validation_count": 1,
+      "test_count": 0,
+      "present_in_train": false,
+      "present_in_validation": true,
+      "present_in_test": false
+    },
+    {
+      "canonical_product_type": "FASHIONNECKLACEBRACELETANKLET",
+      "total_count": 41,
+      "train_count": 0,
+      "validation_count": 41,
+      "test_count": 0,
+      "present_in_train": false,
+      "present_in_validation": true,
+      "present_in_test": false
+    },
+    {
+      "canonical_product_type": "FOOD_DEHYDRATOR",
+      "total_count": 1,
+      "train_count": 0,
+      "validation_count": 1,
+      "test_count": 0,
+      "present_in_train": false,
+      "present_in_validation": true,
+      "present_in_test": false
+    },
+    {
+      "canonical_product_type": "GARLIC_PRESS",
+      "total_count": 1,
+      "train_count": 0,
+      "validation_count": 0,
+      "test_count": 1,
+      "present_in_train": false,
+      "present_in_validation": false,
+      "present_in_test": true
+    },
+    {
+      "canonical_product_type": "GUITARS",
+      "total_count": 2,
+      "train_count": 0,
+      "validation_count": 0,
+      "test_count": 2,
+      "present_in_train": false,
+      "present_in_validation": false,
+      "present_in_test": true
+    },
+    {
+      "canonical_product_type": "HAIRBAND",
+      "total_count": 3,
+      "train_count": 2,
+      "validation_count": 0,
+      "test_count": 1,
+      "present_in_train": true,
+      "present_in_validation": false,
+      "present_in_test": true
+    },
+    {
+      "canonical_product_type": "HARDWARE_CLAMP_VISE",
+      "total_count": 1,
+      "train_count": 0,
+      "validation_count": 0,
+      "test_count": 1,
+      "present_in_train": false,
+      "present_in_validation": false,
+      "present_in_test": true
+    },
+    {
+      "canonical_product_type": "HOME_ORGANIZERS_AND_STORAGE",
+      "total_count": 1,
+      "train_count": 0,
+      "validation_count": 0,
+      "test_count": 1,
+      "present_in_train": false,
+      "present_in_validation": false,
+      "present_in_test": true
+    },
+    {
+      "canonical_product_type": "LEHENGA_CHOLI_SET",
+      "total_count": 1,
+      "train_count": 0,
+      "validation_count": 0,
+      "test_count": 1,
+      "present_in_train": false,
+      "present_in_validation": false,
+      "present_in_test": true
+    },
+    {
+      "canonical_product_type": "MEASURING_CUP",
+      "total_count": 5,
+      "train_count": 0,
+      "validation_count": 5,
+      "test_count": 0,
+      "present_in_train": false,
+      "present_in_validation": true,
+      "present_in_test": false
+    },
+    {
+      "canonical_product_type": "NON_RIDING_TOY_VEHICLE",
+      "total_count": 2,
+      "train_count": 0,
+      "validation_count": 2,
+      "test_count": 0,
+      "present_in_train": false,
+      "present_in_validation": true,
+      "present_in_test": false
+    },
+    {
+      "canonical_product_type": "PAINT_BRUSH",
+      "total_count": 3,
+      "train_count": 0,
+      "validation_count": 3,
+      "test_count": 0,
+      "present_in_train": false,
+      "present_in_validation": true,
+      "present_in_test": false
+    },
+    {
+      "canonical_product_type": "POWERSPORTS_VEHICLE_PART",
+      "total_count": 1,
+      "train_count": 0,
+      "validation_count": 0,
+      "test_count": 1,
+      "present_in_train": false,
+      "present_in_validation": false,
+      "present_in_test": true
+    },
+    {
+      "canonical_product_type": "POWER_BANK",
+      "total_count": 2,
+      "train_count": 0,
+      "validation_count": 1,
+      "test_count": 1,
+      "present_in_train": false,
+      "present_in_validation": true,
+      "present_in_test": true
+    },
+    {
+      "canonical_product_type": "PUNCHING_BAG",
+      "total_count": 3,
+      "train_count": 1,
+      "validation_count": 0,
+      "test_count": 2,
+      "present_in_train": true,
+      "present_in_validation": false,
+      "present_in_test": true
+    },
+    {
+      "canonical_product_type": "SALWAR_SUIT_SET",
+      "total_count": 26,
+      "train_count": 22,
+      "validation_count": 1,
+      "test_count": 3,
+      "present_in_train": true,
+      "present_in_validation": true,
+      "present_in_test": true
+    },
+    {
+      "canonical_product_type": "TELESCOPE",
+      "total_count": 2,
+      "train_count": 0,
+      "validation_count": 2,
+      "test_count": 0,
+      "present_in_train": false,
+      "present_in_validation": true,
+      "present_in_test": false
+    },
+    {
+      "canonical_product_type": "TIMER",
+      "total_count": 1,
+      "train_count": 0,
+      "validation_count": 0,
+      "test_count": 1,
+      "present_in_train": false,
+      "present_in_validation": false,
+      "present_in_test": true
+    },
+    {
+      "canonical_product_type": "TREADMILL",
+      "total_count": 1,
+      "train_count": 1,
+      "validation_count": 0,
+      "test_count": 0,
+      "present_in_train": true,
+      "present_in_validation": false,
+      "present_in_test": false
+    },
+    {
+      "canonical_product_type": "WAIST_CINCHER",
+      "total_count": 1,
+      "train_count": 0,
+      "validation_count": 0,
+      "test_count": 1,
+      "present_in_train": false,
+      "present_in_validation": false,
+      "present_in_test": true
+    },
+    {
+      "canonical_product_type": "WIRELESS_LOCKED_PHONE",
+      "total_count": 1,
+      "train_count": 0,
+      "validation_count": 1,
+      "test_count": 0,
+      "present_in_train": false,
+      "present_in_validation": true,
+      "present_in_test": false
+    }
+  ]
+}

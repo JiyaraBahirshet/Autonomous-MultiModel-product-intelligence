@@ -1,0 +1,124 @@
+{
+  "phase": "D6",
+  "stage": "D6.2.7",
+  "version": "v001",
+  "status": "UNRESOLVED",
+  "audit_type": "formal_evidence_reconciliation",
+  "read_only": true,
+  "frozen_cbase": {
+    "path": "data\\models\\abo\\phase_c\\c3\\training\\cbase_best.pt",
+    "expected_sha256": "3ae988f0d4a2e186aa6fc896191cd5739c0092c4c89ff9293f8924c9ba0439d9",
+    "observed_sha256": "3ae988f0d4a2e186aa6fc896191cd5739c0092c4c89ff9293f8924c9ba0439d9",
+    "sha256_pass": true,
+    "known_class_count": 549
+  },
+  "d_test": {
+    "namespace_present": false,
+    "file_count": 0
+  },
+  "candidate_population": {
+    "full_abo_unique_classes": 576,
+    "frozen_known_classes": 549,
+    "abo_only_classes": 27,
+    "abo_only_records": 122,
+    "zero_training_classes": 23,
+    "zero_training_records": 89,
+    "admissible_classes": 0,
+    "admissible_records": 0,
+    "inadmissible_classes": 4,
+    "inadmissible_records": 33,
+    "unresolved_classes": 23,
+    "unresolved_records": 89
+  },
+  "record_level_lineage": {
+    "candidate_records": 122,
+    "candidate_c3_train_overlap": 0,
+    "candidate_c3_validation_overlap": 0,
+    "candidate_c4_test_overlap": 0,
+    "zero_training_candidate_records": 89,
+    "zero_training_c3_train_overlap": 0,
+    "zero_training_c3_validation_overlap": 0,
+    "zero_training_c4_test_overlap": 0
+  },
+  "model_selection_lineage": {
+    "c3_test_accessed": false,
+    "best_checkpoint": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\phase_c\\c3\\training\\cbase_best.pt",
+    "best_epoch": 17,
+    "best_validation_macro_f1": 0.4626669030182739,
+    "train_population": 69823,
+    "validation_population": 69867,
+    "record_level_exclusion_pass": true
+  },
+  "downstream_lineage": {
+    "d2_source_validation": true,
+    "d2_partition_pass": false,
+    "d3_dtest_pass": true,
+    "d4_dtest_pass": false,
+    "d5_dtest_pass": false,
+    "zero_training_records_absent_from_c3_validation": true,
+    "overall_downstream_lineage_pass": false
+  },
+  "decision": {
+    "status": "UNRESOLVED",
+    "reason": "At least one candidate remains NOT_ESTABLISHED after reconciliation.",
+    "admissible_classes": [],
+    "inadmissible_classes": [
+      "HAIRBAND",
+      "PUNCHING_BAG",
+      "SALWAR_SUIT_SET",
+      "TREADMILL"
+    ],
+    "unresolved_classes": [
+      "AIR_PURIFIER",
+      "AUDIO_OR_VIDEO",
+      "CHILDRENS_COSTUME",
+      "CONDIMENT",
+      "COOKING_OVEN",
+      "DIGITAL_DEVICE_3",
+      "DVD_PLAYER_OR_RECORDER",
+      "FASHIONNECKLACEBRACELETANKLET",
+      "FOOD_DEHYDRATOR",
+      "GARLIC_PRESS",
+      "GUITARS",
+      "HARDWARE_CLAMP_VISE",
+      "HOME_ORGANIZERS_AND_STORAGE",
+      "LEHENGA_CHOLI_SET",
+      "MEASURING_CUP",
+      "NON_RIDING_TOY_VEHICLE",
+      "PAINT_BRUSH",
+      "POWERSPORTS_VEHICLE_PART",
+      "POWER_BANK",
+      "TELESCOPE",
+      "TIMER",
+      "WAIST_CINCHER",
+      "WIRELESS_LOCKED_PHONE"
+    ]
+  },
+  "boundary": {
+    "open_set_inference_performed": false,
+    "unknown_detection_claim": false,
+    "threshold_selected": false,
+    "d_test_evaluated": false,
+    "synthetic_unknowns_created": false,
+    "external_scraping_performed": false,
+    "upstream_modified": false
+  },
+  "prohibited_actions_not_performed": [
+    "C-Base retraining",
+    "C-Base fine-tuning",
+    "C-Base modification",
+    "Phase C split regeneration",
+    "D2 recalibration",
+    "D3 threshold selection",
+    "D4 threshold selection",
+    "D5 modification",
+    "D-Test evaluation",
+    "open-set inference",
+    "synthetic unknown construction",
+    "external scraping",
+    "fabricated labels",
+    "fabricated images",
+    "manual overwrite of D6.2.4",
+    "manual overwrite of D6.2.5"
+  ]
+}

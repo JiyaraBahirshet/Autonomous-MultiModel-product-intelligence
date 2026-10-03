@@ -1,0 +1,13 @@
+{
+  "phase": "D6",
+  "version": "v001",
+  "status": "UNRESOLVED",
+  "config": "configs\\phase_d\\d6_v001_open_set_feasibility_config.json",
+  "inventory": "data\\models\\abo\\phase_d\\d6\\feasibility\\d6_candidate_population_inventory.json",
+  "evidence_discovery": "data\\models\\abo\\phase_d\\d6\\feasibility\\d6_json_evidence_discovery.json",
+  "admissibility_matrix": "data\\models\\abo\\phase_d\\d6\\feasibility\\d6_admissibility_matrix.csv",
+  "results": "data\\models\\abo\\phase_d\\d6\\feasibility\\d6_open_set_feasibility_results.json",
+  "dtest_accessed": false,
+  "model_inference": false,
+  "cbase_sha256": "3ae988f0d4a2e186aa6fc896191cd5739c0092c4c89ff9293f8924c9ba0439d9"
+}

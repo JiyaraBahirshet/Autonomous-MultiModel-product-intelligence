@@ -1,0 +1,125 @@
+{
+  "phase": "D2",
+  "method": "temperature_scaling",
+  "temperature": 1.9641200304031372,
+  "calibration_fit_population": "D-Cal",
+  "calibration_evaluation_population": "D-Select",
+  "dcal_count": 34909,
+  "dselect_count": 34958,
+  "diagnostic_bins": {
+    "count": 15,
+    "type": "equal_width",
+    "edges": [
+      0.0,
+      0.06666666666666667,
+      0.13333333333333333,
+      0.2,
+      0.26666666666666666,
+      0.3333333333333333,
+      0.4,
+      0.4666666666666667,
+      0.5333333333333333,
+      0.6,
+      0.6666666666666666,
+      0.7333333333333333,
+      0.8,
+      0.8666666666666667,
+      0.9333333333333333,
+      1.0
+    ]
+  },
+  "raw": {
+    "dcal": {
+      "accuracy": 0.9512446646996476,
+      "nll": 0.2805519700050354,
+      "ece": 0.028894441134999498,
+      "brier": 0.07685387968676939,
+      "confidence": {
+        "mean": 0.9801316261291504,
+        "median": 0.9999984502792358,
+        "min": 0.14680646359920502,
+        "max": 1.0,
+        "p10": 0.9941866993904114,
+        "p25": 0.9999744892120361,
+        "p75": 0.9999998807907104,
+        "p90": 1.0,
+        "high_confidence_definition": "top1_probability >= 0.90",
+        "high_confidence_count": 33030,
+        "high_confidence_accuracy": 0.9806539509536785,
+        "high_confidence_error_rate": 0.019346049046321534
+      }
+    },
+    "dselect": {
+      "accuracy": 0.9519995423079124,
+      "nll": 0.27525773644447327,
+      "ece": 0.027749817238051703,
+      "brier": 0.0753679447813821,
+      "confidence": {
+        "mean": 0.9797361493110657,
+        "median": 0.9999983310699463,
+        "min": 0.19053924083709717,
+        "max": 1.0,
+        "p10": 0.993874192237854,
+        "p25": 0.9999740123748779,
+        "p75": 0.9999998807907104,
+        "p90": 1.0,
+        "high_confidence_definition": "top1_probability >= 0.90",
+        "high_confidence_count": 33037,
+        "high_confidence_accuracy": 0.9817174682931259,
+        "high_confidence_error_rate": 0.018282531706874106
+      }
+    }
+  },
+  "calibrated": {
+    "dcal": {
+      "accuracy": 0.9512446646996476,
+      "nll": 0.19969825446605682,
+      "ece": 0.005245899180089445,
+      "brier": 0.06929519679522045,
+      "confidence": {
+        "mean": 0.9515469074249268,
+        "median": 0.997542142868042,
+        "min": 0.055686552077531815,
+        "max": 1.0,
+        "p10": 0.8830052614212036,
+        "p25": 0.9907200336456299,
+        "p75": 0.9991762042045593,
+        "p90": 0.9996802806854248,
+        "high_confidence_definition": "top1_probability >= 0.90",
+        "high_confidence_count": 31237,
+        "high_confidence_accuracy": 0.9945897493357236,
+        "high_confidence_error_rate": 0.0054102506642763615
+      }
+    },
+    "dselect": {
+      "accuracy": 0.9519995423079124,
+      "nll": 0.19768987596035004,
+      "ece": 0.006901814916415015,
+      "brier": 0.0681462996871144,
+      "confidence": {
+        "mean": 0.9509603381156921,
+        "median": 0.997482180595398,
+        "min": 0.07099815458059311,
+        "max": 1.0,
+        "p10": 0.877932071685791,
+        "p25": 0.9906322956085205,
+        "p75": 0.9991583824157715,
+        "p90": 0.9996722340583801,
+        "high_confidence_definition": "top1_probability >= 0.90",
+        "high_confidence_count": 31228,
+        "high_confidence_accuracy": 0.9960292045600102,
+        "high_confidence_error_rate": 0.003970795439989794
+      }
+    }
+  },
+  "boundary": {
+    "dtest_accessed": false,
+    "threshold_selected": false,
+    "coverage_target_selected": false,
+    "abstention_rule_selected": false,
+    "human_review_rule_selected": false,
+    "open_set_rule_selected": false,
+    "phase_c_modified": false,
+    "cbase_retrained": false
+  }
+}

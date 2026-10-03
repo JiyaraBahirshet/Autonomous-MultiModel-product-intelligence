@@ -1,0 +1,713 @@
+{
+  "phase": "D6",
+  "version": "v001",
+  "inventory_scope": [
+    "data\\models\\abo",
+    "reports\\phase_c",
+    "configs"
+  ],
+  "file_inventory": [
+    {
+      "path": "data\\models\\abo\\b4.2\\image_model.joblib",
+      "size_bytes": 25150738,
+      "suffix": ".joblib"
+    },
+    {
+      "path": "data\\models\\abo\\b4.2\\statistics.json",
+      "size_bytes": 2317,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\b4.2\\text_model.joblib",
+      "size_bytes": 496902589,
+      "suffix": ".joblib"
+    },
+    {
+      "path": "data\\models\\abo\\phase_d\\d5\\development\\d5_class_error_analysis.csv",
+      "size_bytes": 16428,
+      "suffix": ".csv"
+    },
+    {
+      "path": "data\\models\\abo\\phase_d\\d5\\development\\d5_confidence_error_bins.csv",
+      "size_bytes": 2565,
+      "suffix": ".csv"
+    },
+    {
+      "path": "data\\models\\abo\\phase_d\\d5\\development\\d5_reliability_error_analysis_manifest.json",
+      "size_bytes": 1805,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_d\\d5\\development\\d5_reliability_error_analysis_results.json",
+      "size_bytes": 57487,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_d\\d5\\development\\d5_routing_error_analysis.csv",
+      "size_bytes": 10807,
+      "suffix": ".csv"
+    },
+    {
+      "path": "data\\models\\abo\\phase_d\\d4\\development\\d4_human_review_routing_manifest.json",
+      "size_bytes": 1653,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_d\\d4\\development\\d4_human_review_routing_results.json",
+      "size_bytes": 51800,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_d\\d4\\development\\d4_review_routing_curve.csv",
+      "size_bytes": 13753,
+      "suffix": ".csv"
+    },
+    {
+      "path": "data\\models\\abo\\phase_d\\d3\\development\\d3_coverage_risk_curve.csv",
+      "size_bytes": 10472,
+      "suffix": ".csv"
+    },
+    {
+      "path": "data\\models\\abo\\phase_d\\d3\\development\\d3_selective_prediction_manifest.json",
+      "size_bytes": 1226,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_d\\d3\\development\\d3_selective_prediction_results.json",
+      "size_bytes": 38746,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_d\\d2\\audit\\d2_acceptance_audit_report.json",
+      "size_bytes": 5831,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_d\\d2\\calibration\\d2_calibrated_validation_outputs.npz",
+      "size_bytes": 285699287,
+      "suffix": ".npz"
+    },
+    {
+      "path": "data\\models\\abo\\phase_d\\d2\\calibration\\d2_calibration_manifest.json",
+      "size_bytes": 1463,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_d\\d2\\calibration\\d2_calibration_metrics.json",
+      "size_bytes": 3824,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_d\\d2\\calibration\\d2_reliability_data.json",
+      "size_bytes": 15137,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_d\\d2\\inference\\d2_fresh_cbase_validation_outputs.npz",
+      "size_bytes": 137564035,
+      "suffix": ".npz"
+    },
+    {
+      "path": "data\\models\\abo\\phase_d\\d2\\inference\\d2_fresh_inference_manifest.json",
+      "size_bytes": 1518,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_d\\d2\\partition\\d2_partition_metadata.json",
+      "size_bytes": 920,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_d\\d2\\partition\\dcal_manifest.json",
+      "size_bytes": 1431981,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_d\\d2\\partition\\dselect_manifest.json",
+      "size_bytes": 1432852,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c6\\integrity_freeze\\c6_artifact_inventory.json",
+      "size_bytes": 3069,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c6\\integrity_freeze\\c6_integrity_freeze.json",
+      "size_bytes": 11355,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c6\\integrity_freeze\\c6_integrity_freeze_report.json",
+      "size_bytes": 12836,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_1_reliability_signal_audit\\c5_1_correct.npy",
+      "size_bytes": 7474,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_1_reliability_signal_audit\\c5_1_joint_representation.npy",
+      "size_bytes": 15044736,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_1_reliability_signal_audit\\c5_1_logits.npy",
+      "size_bytes": 16131944,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_1_reliability_signal_audit\\c5_1_predictions.npy",
+      "size_bytes": 58896,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_1_reliability_signal_audit\\c5_1_predictive_entropy.npy",
+      "size_bytes": 29512,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_1_reliability_signal_audit\\c5_1_probabilities.npy",
+      "size_bytes": 16131944,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_1_reliability_signal_audit\\c5_1_signal_inventory.json",
+      "size_bytes": 2828,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_1_reliability_signal_audit\\c5_1_signal_inventory_manifest.json",
+      "size_bytes": 3803,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_1_reliability_signal_audit\\c5_1_top1_probability.npy",
+      "size_bytes": 29512,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_1_reliability_signal_audit\\c5_1_top1_top2_margin.npy",
+      "size_bytes": 29512,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_1_reliability_signal_audit\\c5_1_top2_probability.npy",
+      "size_bytes": 29512,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_2_confidence_probability_audit\\c5_2_audit_manifest.json",
+      "size_bytes": 5017,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_2_confidence_probability_audit\\c5_2_confidence_bins.json",
+      "size_bytes": 4519,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_2_confidence_probability_audit\\c5_2_correct_incorrect_summary.json",
+      "size_bytes": 5485,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_2_confidence_probability_audit\\c5_2_high_confidence_errors.json",
+      "size_bytes": 196703,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_2_confidence_probability_audit\\c5_2_low_confidence_correct.json",
+      "size_bytes": 26360,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_2_confidence_probability_audit\\c5_2_summary.json",
+      "size_bytes": 252963,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_3_margin_ambiguity_analysis\\c5_3_audit_manifest.json",
+      "size_bytes": 6311,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_3_margin_ambiguity_analysis\\c5_3_correct_incorrect_summary.json",
+      "size_bytes": 4635,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_3_margin_ambiguity_analysis\\c5_3_high_margin_errors.json",
+      "size_bytes": 184082,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_3_margin_ambiguity_analysis\\c5_3_low_margin_predictions.json",
+      "size_bytes": 84842,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_3_margin_ambiguity_analysis\\c5_3_margin_bins.json",
+      "size_bytes": 2419,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_3_margin_ambiguity_analysis\\c5_3_signal_relationships.json",
+      "size_bytes": 654,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_3_margin_ambiguity_analysis\\c5_3_summary.json",
+      "size_bytes": 14800,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_3_margin_ambiguity_analysis\\c5_3_top2_competition.json",
+      "size_bytes": 33625,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_ablation_sensitivity.json",
+      "size_bytes": 1209,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_audit_manifest.json",
+      "size_bytes": 4701,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_correct.npy",
+      "size_bytes": 7474,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_correct_incorrect_summary.json",
+      "size_bytes": 2680,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_full_predictions.npy",
+      "size_bytes": 58896,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_full_top1_probability.npy",
+      "size_bytes": 29512,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_image_ablation_kl.npy",
+      "size_bytes": 29512,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_image_ablation_prediction_changed.npy",
+      "size_bytes": 7474,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_image_only_predictions.npy",
+      "size_bytes": 58896,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_image_only_top1_probability.npy",
+      "size_bytes": 29512,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_image_projected_l2.npy",
+      "size_bytes": 29512,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_image_strength_share.npy",
+      "size_bytes": 29512,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_modality_relationships.json",
+      "size_bytes": 470,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_modality_strength.json",
+      "size_bytes": 3246,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_summary.json",
+      "size_bytes": 5374,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_text_ablation_kl.npy",
+      "size_bytes": 29512,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_text_ablation_prediction_changed.npy",
+      "size_bytes": 7474,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_text_only_predictions.npy",
+      "size_bytes": 58896,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_text_only_top1_probability.npy",
+      "size_bytes": 29512,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_text_projected_l2.npy",
+      "size_bytes": 29512,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_text_strength_share.npy",
+      "size_bytes": 29512,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_5_representation_distance_analysis\\c5_5_audit_manifest.json",
+      "size_bytes": 1958,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_5_representation_distance_analysis\\c5_5_class_prototypes.npy",
+      "size_bytes": 1124480,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_5_representation_distance_analysis\\c5_5_class_train_counts.npy",
+      "size_bytes": 4520,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_5_representation_distance_analysis\\c5_5_cosine_margin.npy",
+      "size_bytes": 29512,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_5_representation_distance_analysis\\c5_5_cosine_nearest_class.npy",
+      "size_bytes": 58896,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_5_representation_distance_analysis\\c5_5_euclidean_margin.npy",
+      "size_bytes": 29512,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_5_representation_distance_analysis\\c5_5_euclidean_nearest_class.npy",
+      "size_bytes": 58896,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_5_representation_distance_analysis\\c5_5_nearest_competitor_cosine_class.npy",
+      "size_bytes": 58896,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_5_representation_distance_analysis\\c5_5_nearest_competitor_cosine_distance.npy",
+      "size_bytes": 29512,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_5_representation_distance_analysis\\c5_5_nearest_competitor_euclidean.npy",
+      "size_bytes": 29512,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_5_representation_distance_analysis\\c5_5_nearest_competitor_euclidean_class.npy",
+      "size_bytes": 58896,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_5_representation_distance_analysis\\c5_5_summary.json",
+      "size_bytes": 6434,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_5_representation_distance_analysis\\c5_5_true_class_cosine_distance.npy",
+      "size_bytes": 29512,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c5\\c5_5_representation_distance_analysis\\c5_5_true_class_euclidean.npy",
+      "size_bytes": 29512,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c4\\evaluation\\c4_2_evaluation_manifest.json",
+      "size_bytes": 1456,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c4\\evaluation\\cbase_test_predictions.npz",
+      "size_bytes": 9961,
+      "suffix": ".npz"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c4\\evaluation\\cbase_test_results.json",
+      "size_bytes": 1878,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c4\\test_embeddings\\c4_test_embedding_manifest.json",
+      "size_bytes": 15988,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c4\\test_embeddings\\test_image.npy",
+      "size_bytes": 15044736,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c4\\test_embeddings\\test_image_checkpoint_progress.json",
+      "size_bytes": 1132,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c4\\test_embeddings\\test_labels.npy",
+      "size_bytes": 58896,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c4\\test_embeddings\\test_record_ids.json",
+      "size_bytes": 198345,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c4\\test_embeddings\\test_text.npy",
+      "size_bytes": 11283584,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c4\\test_embeddings\\test_text_checkpoint_progress.json",
+      "size_bytes": 1130,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c4\\evaluation\\c4_3_error_analysis\\c4_3_confusion_matrix.npy",
+      "size_bytes": 2411336,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c4\\evaluation\\c4_3_error_analysis\\c4_3_confusion_pairs.json",
+      "size_bytes": 135442,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c4\\evaluation\\c4_3_error_analysis\\c4_3_error_analysis_manifest.json",
+      "size_bytes": 1975,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c4\\evaluation\\c4_3_error_analysis\\c4_3_incorrect_records.json",
+      "size_bytes": 309612,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c4\\evaluation\\c4_3_error_analysis\\c4_3_per_class.json",
+      "size_bytes": 134986,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c4\\evaluation\\c4_3_error_analysis\\c4_3_summary.json",
+      "size_bytes": 59542,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c4\\evaluation\\c4_3_error_analysis\\c4_3_support_buckets.json",
+      "size_bytes": 1314,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c3\\embeddings\\c3_embedding_manifest.json",
+      "size_bytes": 16989,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c3\\embeddings\\train_image.npy",
+      "size_bytes": 142997632,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c3\\embeddings\\train_image_checkpoint_progress.json",
+      "size_bytes": 1033,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c3\\embeddings\\train_labels.npy",
+      "size_bytes": 558712,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c3\\embeddings\\train_record_ids.json",
+      "size_bytes": 1885224,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c3\\embeddings\\train_text.npy",
+      "size_bytes": 107248256,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c3\\embeddings\\train_text_checkpoint_progress.json",
+      "size_bytes": 1031,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c3\\embeddings\\validation_image.npy",
+      "size_bytes": 143087744,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c3\\embeddings\\validation_image_checkpoint_progress.json",
+      "size_bytes": 1043,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c3\\embeddings\\validation_labels.npy",
+      "size_bytes": 559064,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c3\\embeddings\\validation_record_ids.json",
+      "size_bytes": 1886412,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c3\\embeddings\\validation_text.npy",
+      "size_bytes": 107315840,
+      "suffix": ".npy"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c3\\embeddings\\validation_text_checkpoint_progress.json",
+      "size_bytes": 1041,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c3\\training\\cbase_best.pt",
+      "size_bytes": 15222122,
+      "suffix": ".pt"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c3\\training\\cbase_latest.pt",
+      "size_bytes": 15223800,
+      "suffix": ".pt"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c3\\training\\cbase_training_history.json",
+      "size_bytes": 10972,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c3\\training\\cbase_training_manifest.json",
+      "size_bytes": 2500,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c3\\training\\cbase_training_progress.json",
+      "size_bytes": 1258,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\phase_c\\c2\\smoke\\c2_smoke_checkpoint.pt",
+      "size_bytes": 15218571,
+      "suffix": ".pt"
+    },
+    {
+      "path": "data\\models\\abo\\b5\\fusion_v001\\metadata.json",
+      "size_bytes": 19864,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\b5\\predictions_v001\\metadata.json",
+      "size_bytes": 13348,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\b5\\predictions_v001\\test.npz",
+      "size_bytes": 29641174,
+      "suffix": ".npz"
+    },
+    {
+      "path": "data\\models\\abo\\b5\\predictions_v001\\train.npz",
+      "size_bytes": 282023032,
+      "suffix": ".npz"
+    },
+    {
+      "path": "data\\models\\abo\\b5\\predictions_v001\\validation.npz",
+      "size_bytes": 279939577,
+      "suffix": ".npz"
+    },
+    {
+      "path": "data\\models\\abo\\b4.2\\checkpoints\\image\\latest_image_checkpoint.joblib",
+      "size_bytes": 25149262,
+      "suffix": ".joblib"
+    },
+    {
+      "path": "data\\models\\abo\\b4.2\\checkpoints\\image\\latest_image_checkpoint.json",
+      "size_bytes": 739,
+      "suffix": ".json"
+    },
+    {
+      "path": "data\\models\\abo\\b4.2\\checkpoints\\image\\progress.json",
+      "size_bytes": 269,
+      "suffix": ".json"
+    },
+    {
+      "path": "reports\\phase_c\\PHASE_C_COMPLETION_FREEZE_RECORD.md",
+      "size_bytes": 20042,
+      "suffix": ".md"
+    },
+    {
+      "path": "configs\\datasets.yaml",
+      "size_bytes": 260,
+      "suffix": ".yaml"
+    },
+    {
+      "path": "configs\\project.yaml",
+      "size_bytes": 254,
+      "suffix": ".yaml"
+    },
+    {
+      "path": "configs\\splits.yaml",
+      "size_bytes": 0,
+      "suffix": ".yaml"
+    },
+    {
+      "path": "configs\\phase_d\\d3_v002_characterization_config.json",
+      "size_bytes": 3574,
+      "suffix": ".json"
+    },
+    {
+      "path": "configs\\phase_d\\d4_v001_human_review_routing_config.json",
+      "size_bytes": 1025,
+      "suffix": ".json"
+    },
+    {
+      "path": "configs\\phase_d\\d5_v001_reliability_error_analysis_config.json",
+      "size_bytes": 1486,
+      "suffix": ".json"
+    },
+    {
+      "path": "configs\\phase_d\\d6_v001_open_set_feasibility_config.json",
+      "size_bytes": 644,
+      "suffix": ".json"
+    },
+    {
+      "path": "configs\\fusion\\b6\\b6_3_3_config_v001.json",
+      "size_bytes": 1523,
+      "suffix": ".json"
+    }
+  ],
+  "candidate_population_status": "NOT_ESTABLISHED",
+  "policy": "No candidate is admissible merely because an artifact or class count exists."
+}

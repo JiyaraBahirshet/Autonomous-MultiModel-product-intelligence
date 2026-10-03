@@ -1,0 +1,24 @@
+{
+  "phase": "D2",
+  "stage": "partition_generation",
+  "status": "GENERATED",
+  "seed": 20260827,
+  "source_validation_population": 69867,
+  "source_validation_id_sha256": "12444a787da53259bd9064eb831eda4464be11633aa5dfb754df1c57508b79eb",
+  "source_validation_labels_sha256": "0e3d7a978975dc5a7dc20cd302ab5eaa8e5c6874369dfe2bec9db82f5b907aad",
+  "dcal_count": 34909,
+  "dselect_count": 34958,
+  "union_count": 69867,
+  "intersection_count": 0,
+  "dcal_manifest_sha256": "cc2d91f9cc51bb3b504bdf61c1935ad562b6855f116f39fb0dee571d9829f9cd",
+  "dselect_manifest_sha256": "32f81ac4441cb0cea7ace7c9ea97e4b355e2990277ad0655c0dbdb6f7adc8a32",
+  "integrity": {
+    "source_count_verified": true,
+    "source_ids_unique": true,
+    "dcal_dselect_disjoint": true,
+    "union_equals_source": true,
+    "deterministic_seed_fixed": true,
+    "adaptive_repartitioning": false,
+    "dtest_accessed": false
+  }
+}

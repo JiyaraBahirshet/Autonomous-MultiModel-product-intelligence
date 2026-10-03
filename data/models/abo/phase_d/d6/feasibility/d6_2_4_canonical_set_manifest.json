@@ -1,0 +1,31 @@
+{
+  "manifest_version": "d6.2.4-v002",
+  "audit": "D6.2.4",
+  "generated_at_utc": "2026-10-03T04:00:41.231715+00:00",
+  "inputs": {
+    "cbase_checkpoint": "data\\models\\abo\\phase_c\\c3\\training\\cbase_best.pt",
+    "cbase_class_manifest": "data\\models\\abo\\phase_c\\c3\\embeddings\\c3_embedding_manifest.json",
+    "splits": {
+      "train": "data\\splits\\abo\\train.jsonl",
+      "validation": "data\\splits\\abo\\validation.jsonl",
+      "test": "data\\splits\\abo\\test.jsonl"
+    }
+  },
+  "frozen_constraints": {
+    "cbase_sha256": "3ae988f0d4a2e186aa6fc896191cd5739c0092c4c89ff9293f8924c9ba0439d9",
+    "known_classes": 549,
+    "expected_abo_classes": 576,
+    "model_inference": false,
+    "d_test_evaluation": false,
+    "threshold_selection": false,
+    "synthetic_data": false,
+    "external_data": false
+  },
+  "results": {
+    "abo_count": 576,
+    "intersection": 549,
+    "abo_only": 27,
+    "cbase_only": 0
+  },
+  "feasibility_status": "UNRESOLVED"
+}

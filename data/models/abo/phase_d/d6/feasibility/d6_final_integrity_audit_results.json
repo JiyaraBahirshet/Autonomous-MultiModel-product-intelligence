@@ -1,0 +1,366 @@
+{
+  "phase": "D6",
+  "stage": "final_integrity_audit",
+  "version": "v001",
+  "generated_at_utc": "2026-10-03T05:42:36.241850+00:00",
+  "status": "VERIFIED",
+  "audit_status": "PASS",
+  "summary": {
+    "full_abo_classes": 576,
+    "frozen_known_classes": 549,
+    "abo_only_classes": 27,
+    "abo_only_records": 122,
+    "admissible_classes": 23,
+    "admissible_records": 89,
+    "inadmissible_classes": 4,
+    "inadmissible_records": 33,
+    "unresolved_classes": 0,
+    "unresolved_records": 0
+  },
+  "frozen_cbase": {
+    "expected_sha256": "3ae988f0d4a2e186aa6fc896191cd5739c0092c4c89ff9293f8924c9ba0439d9",
+    "observed_sha256": "3ae988f0d4a2e186aa6fc896191cd5739c0092c4c89ff9293f8924c9ba0439d9"
+  },
+  "dtest_namespace_present": false,
+  "passes": [
+    {
+      "name": "required artifact: d6_2_4_results",
+      "detail": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\phase_d\\d6\\feasibility\\d6_2_4_canonical_set_results.json"
+    },
+    {
+      "name": "required artifact: d6_2_4_inventory",
+      "detail": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\phase_d\\d6\\feasibility\\d6_2_4_candidate_inventory.json"
+    },
+    {
+      "name": "required artifact: d6_2_5_results",
+      "detail": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\phase_d\\d6\\feasibility\\d6_2_5_admissibility_results.json"
+    },
+    {
+      "name": "required artifact: d6_2_7_results",
+      "detail": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\phase_d\\d6\\feasibility\\d6_2_7_v002_evidence_reconciliation_results.json"
+    },
+    {
+      "name": "required artifact: d6_2_7_matrix",
+      "detail": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\phase_d\\d6\\feasibility\\d6_2_7_v002_evidence_reconciliation_matrix.csv"
+    },
+    {
+      "name": "required artifact: d6_2_7_manifest",
+      "detail": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\phase_d\\d6\\feasibility\\d6_2_7_v002_evidence_reconciliation_manifest.json"
+    },
+    {
+      "name": "required artifact: cbase",
+      "detail": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\phase_c\\c3\\training\\cbase_best.pt"
+    },
+    {
+      "name": "required artifact: c3_embedding_manifest",
+      "detail": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\phase_c\\c3\\embeddings\\c3_embedding_manifest.json"
+    },
+    {
+      "name": "required artifact: c3_training_manifest",
+      "detail": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\phase_c\\c3\\training\\cbase_training_manifest.json"
+    },
+    {
+      "name": "required artifact: c3_train_ids",
+      "detail": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\phase_c\\c3\\embeddings\\train_record_ids.json"
+    },
+    {
+      "name": "required artifact: c3_validation_ids",
+      "detail": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\phase_c\\c3\\embeddings\\validation_record_ids.json"
+    },
+    {
+      "name": "required artifact: c4_test_ids",
+      "detail": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\phase_c\\c4\\test_embeddings\\test_record_ids.json"
+    },
+    {
+      "name": "required artifact: d2_fresh_manifest",
+      "detail": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\phase_d\\d2\\inference\\d2_fresh_inference_manifest.json"
+    },
+    {
+      "name": "required artifact: d2_calibration_manifest",
+      "detail": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\phase_d\\d2\\calibration\\d2_calibration_manifest.json"
+    },
+    {
+      "name": "required artifact: d3_manifest",
+      "detail": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\phase_d\\d3\\development\\d3_selective_prediction_manifest.json"
+    },
+    {
+      "name": "required artifact: d4_manifest",
+      "detail": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\phase_d\\d4\\development\\d4_human_review_routing_manifest.json"
+    },
+    {
+      "name": "required artifact: d5_manifest",
+      "detail": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\phase_d\\d5\\development\\d5_reliability_error_analysis_manifest.json"
+    },
+    {
+      "name": "frozen C-Base SHA-256",
+      "detail": "observed=3ae988f0d4a2e186aa6fc896191cd5739c0092c4c89ff9293f8924c9ba0439d9"
+    },
+    {
+      "name": "D-Test namespace absent",
+      "detail": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\phase_d\\dtest"
+    },
+    {
+      "name": "D6.2.4 candidate count = 27",
+      "detail": "observed=27"
+    },
+    {
+      "name": "ABO-only candidate records = 122",
+      "detail": "observed=122"
+    },
+    {
+      "name": "zero-training candidate classes = 23",
+      "detail": "observed=23"
+    },
+    {
+      "name": "zero-training candidate records = 89",
+      "detail": "observed=89"
+    },
+    {
+      "name": "training-exposed candidate classes = 4",
+      "detail": "observed=4"
+    },
+    {
+      "name": "training-exposed candidate records = 33",
+      "detail": "observed=33"
+    },
+    {
+      "name": "D6.2.7 status = FEASIBLE",
+      "detail": "observed=FEASIBLE"
+    },
+    {
+      "name": "D6.2.7 full ABO universe = 576",
+      "detail": "observed=576"
+    },
+    {
+      "name": "D6.2.7 frozen known space = 549",
+      "detail": "observed=549"
+    },
+    {
+      "name": "D6.2.7 ABO-only classes = 27",
+      "detail": "observed=27"
+    },
+    {
+      "name": "D6.2.7 ABO-only records = 122",
+      "detail": "observed=122"
+    },
+    {
+      "name": "candidate \u2192 C3 train overlap = 0",
+      "detail": "0"
+    },
+    {
+      "name": "candidate \u2192 C3 validation overlap = 0",
+      "detail": "0"
+    },
+    {
+      "name": "candidate \u2192 C4 frozen test overlap = 0",
+      "detail": "0"
+    },
+    {
+      "name": "zero-training \u2192 C3 train overlap = 0",
+      "detail": "0"
+    },
+    {
+      "name": "zero-training \u2192 C3 validation overlap = 0",
+      "detail": "0"
+    },
+    {
+      "name": "zero-training \u2192 C4 test overlap = 0",
+      "detail": "0"
+    },
+    {
+      "name": "C3 training population = 69,823",
+      "detail": "69823"
+    },
+    {
+      "name": "C3 validation population = 69,867",
+      "detail": "69867"
+    },
+    {
+      "name": "C3 test access = false",
+      "detail": "False"
+    },
+    {
+      "name": "candidate model-selection exclusion = PASS",
+      "detail": "True"
+    },
+    {
+      "name": "D6 downstream evidence: d2_source_pass",
+      "detail": "True"
+    },
+    {
+      "name": "D6 downstream evidence: d2_calibration_pass",
+      "detail": "True"
+    },
+    {
+      "name": "D6 downstream evidence: d3_pass",
+      "detail": "True"
+    },
+    {
+      "name": "D6 downstream evidence: d4_pass",
+      "detail": "True"
+    },
+    {
+      "name": "D6 downstream evidence: d5_pass",
+      "detail": "True"
+    },
+    {
+      "name": "D2\u2013D5 aggregate lineage = PASS",
+      "detail": "True"
+    },
+    {
+      "name": "admissible classes = 23",
+      "detail": "23"
+    },
+    {
+      "name": "admissible records = 89",
+      "detail": "89"
+    },
+    {
+      "name": "inadmissible classes = 4",
+      "detail": "4"
+    },
+    {
+      "name": "inadmissible records = 33",
+      "detail": "33"
+    },
+    {
+      "name": "unresolved classes = 0",
+      "detail": "0"
+    },
+    {
+      "name": "unresolved records = 0",
+      "detail": "0"
+    },
+    {
+      "name": "training-exposed classes exactly identified",
+      "detail": "observed=['HAIRBAND', 'PUNCHING_BAG', 'SALWAR_SUIT_SET', 'TREADMILL']"
+    },
+    {
+      "name": "admissible class count = 23",
+      "detail": "observed=23"
+    },
+    {
+      "name": "admissible + inadmissible = all ABO-only candidates",
+      "detail": "admissible=23, inadmissible=4, candidates=27"
+    },
+    {
+      "name": "admissible \u2229 inadmissible = empty",
+      "detail": ""
+    },
+    {
+      "name": "D6 boundary: open_set_inference = False",
+      "detail": "False"
+    },
+    {
+      "name": "D6 boundary: unknown_detection_claim = False",
+      "detail": "False"
+    },
+    {
+      "name": "D6 boundary: threshold_selected = False",
+      "detail": "False"
+    },
+    {
+      "name": "D6 boundary: dtest_evaluated = False",
+      "detail": "False"
+    },
+    {
+      "name": "D6 boundary: synthetic_unknowns = False",
+      "detail": "False"
+    },
+    {
+      "name": "D6 boundary: external_scraping = False",
+      "detail": "False"
+    },
+    {
+      "name": "D6 boundary: upstream_modified = False",
+      "detail": "False"
+    },
+    {
+      "name": "D6 boundary: frozen_artifacts_modified = False",
+      "detail": "False"
+    },
+    {
+      "name": "D6.2.7 manifest version",
+      "detail": "D6.2.7-v002"
+    },
+    {
+      "name": "D6.2.7 manifest read_only = true",
+      "detail": "True"
+    },
+    {
+      "name": "D6.2.7 manifest status = FEASIBLE",
+      "detail": "FEASIBLE"
+    },
+    {
+      "name": "manifest C-Base SHA matches frozen SHA",
+      "detail": "3ae988f0d4a2e186aa6fc896191cd5739c0092c4c89ff9293f8924c9ba0439d9"
+    },
+    {
+      "name": "manifest D-Test absent",
+      "detail": "False"
+    },
+    {
+      "name": "manifest no inference",
+      "detail": "True"
+    },
+    {
+      "name": "manifest no test evaluation",
+      "detail": "True"
+    },
+    {
+      "name": "manifest no threshold selection",
+      "detail": "True"
+    },
+    {
+      "name": "manifest no upstream modification",
+      "detail": "True"
+    },
+    {
+      "name": "manifest no frozen-artifact modification",
+      "detail": "True"
+    },
+    {
+      "name": "D2 fresh source is C3 validation",
+      "detail": "data\\models\\abo\\phase_c\\c3\\embeddings\\validation_record_ids.json"
+    },
+    {
+      "name": "D2 fresh dtest_accessed = false",
+      "detail": "False"
+    },
+    {
+      "name": "D2 calibration dtest_accessed = false",
+      "detail": "False"
+    },
+    {
+      "name": "D3 dtest_accessed = false",
+      "detail": "False"
+    },
+    {
+      "name": "D3 threshold not selected",
+      "detail": "False"
+    },
+    {
+      "name": "D4 dtest_accessed = false",
+      "detail": "False"
+    },
+    {
+      "name": "D4 human performance not evaluated",
+      "detail": "False"
+    },
+    {
+      "name": "D5 dtest_accessed = false",
+      "detail": "False"
+    }
+  ],
+  "warnings": [],
+  "failures": [],
+  "boundary": {
+    "open_set_detection_performed": false,
+    "unknown_detection_claim": false,
+    "threshold_selected": false,
+    "dtest_evaluated": false,
+    "upstream_modified": false,
+    "frozen_artifacts_modified": false
+  },
+  "freeze_recommendation": "D6 VERIFIED; Phase D may proceed to final freeze."
+}

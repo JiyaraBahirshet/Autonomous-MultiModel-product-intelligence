@@ -1,0 +1,18 @@
+{
+  "phase": "D6",
+  "version": "v001",
+  "purpose": "open_set_feasibility_gate",
+  "seed": 20260827,
+  "known_class_count": 549,
+  "frozen_phase_c_test_count": 7346,
+  "cbase_checkpoint": "data\\models\\abo\\phase_c\\c3\\training\\cbase_best.pt",
+  "cbase_expected_sha256": "3ae988f0d4a2e186aa6fc896191cd5739c0092c4c89ff9293f8924c9ba0439d9",
+  "candidate_policy": "existing_project_artifacts_only",
+  "dtest_accessed": false,
+  "model_inference": false,
+  "threshold_selected": false,
+  "synthetic_unknowns": false,
+  "external_scraping": false,
+  "cross_dataset_unknown_mapping_assumed": false,
+  "result_adaptive": false
+}

@@ -1,0 +1,14 @@
+{
+  "phase": "D6",
+  "substage": "D6.2",
+  "version": "v001",
+  "status": "EVIDENCE_COLLECTED",
+  "cbase_sha256": "3ae988f0d4a2e186aa6fc896191cd5739c0092c4c89ff9293f8924c9ba0439d9",
+  "cbase_hash_matches": true,
+  "dtest_accessed": false,
+  "model_inference": false,
+  "threshold_selected": false,
+  "synthetic_data": false,
+  "candidate_feasibility": "NOT_YET_ESTABLISHED",
+  "class_evidence_artifact": "data\\models\\abo\\phase_d\\d6\\feasibility\\d6_class_universe_evidence.json"
+}

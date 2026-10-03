@@ -1,0 +1,103 @@
+{
+  "phase": "D6",
+  "stage": "D6.2.7",
+  "version": "v002",
+  "status": "FEASIBLE",
+  "audit_type": "formal_evidence_reconciliation",
+  "read_only": true,
+  "frozen_cbase": {
+    "expected_sha256": "3ae988f0d4a2e186aa6fc896191cd5739c0092c4c89ff9293f8924c9ba0439d9",
+    "observed_sha256": "3ae988f0d4a2e186aa6fc896191cd5739c0092c4c89ff9293f8924c9ba0439d9",
+    "sha256_pass": true,
+    "known_classes": 549
+  },
+  "d6_universe": {
+    "full_abo_classes": 576,
+    "frozen_known_classes": 549,
+    "abo_only_classes": 27,
+    "abo_only_records": 122,
+    "zero_training_classes": 23,
+    "zero_training_records": 89
+  },
+  "record_level_lineage": {
+    "candidate_records": 122,
+    "candidate_c3_train_overlap": 0,
+    "candidate_c3_validation_overlap": 0,
+    "candidate_c4_test_overlap": 0,
+    "zero_training_records": 89,
+    "zero_training_c3_train_overlap": 0,
+    "zero_training_c3_validation_overlap": 0,
+    "zero_training_c4_test_overlap": 0
+  },
+  "model_selection": {
+    "c3_train": 69823,
+    "c3_validation": 69867,
+    "c3_test_accessed": false,
+    "best_epoch": 17,
+    "best_validation_macro_f1": 0.4626669030182739,
+    "best_checkpoint": "D:\\Autonomous MultiModel product intelligence\\data\\models\\abo\\phase_c\\c3\\training\\cbase_best.pt",
+    "candidate_exclusion_pass": true
+  },
+  "downstream_lineage": {
+    "d2_source_pass": true,
+    "d2_calibration_pass": true,
+    "d3_pass": true,
+    "d4_pass": true,
+    "d5_pass": true,
+    "aggregate_pass": true
+  },
+  "candidate_counts": {
+    "admissible_classes": 23,
+    "admissible_records": 89,
+    "inadmissible_classes": 4,
+    "inadmissible_records": 33,
+    "unresolved_classes": 0,
+    "unresolved_records": 0
+  },
+  "decision": {
+    "status": "FEASIBLE",
+    "reason": "An admissible, provenance-traceable ABO population outside the frozen 549-class known space has been established.",
+    "admissible_classes": [
+      "AIR_PURIFIER",
+      "AUDIO_OR_VIDEO",
+      "CHILDRENS_COSTUME",
+      "CONDIMENT",
+      "COOKING_OVEN",
+      "DIGITAL_DEVICE_3",
+      "DVD_PLAYER_OR_RECORDER",
+      "FASHIONNECKLACEBRACELETANKLET",
+      "FOOD_DEHYDRATOR",
+      "GARLIC_PRESS",
+      "GUITARS",
+      "HARDWARE_CLAMP_VISE",
+      "HOME_ORGANIZERS_AND_STORAGE",
+      "LEHENGA_CHOLI_SET",
+      "MEASURING_CUP",
+      "NON_RIDING_TOY_VEHICLE",
+      "PAINT_BRUSH",
+      "POWERSPORTS_VEHICLE_PART",
+      "POWER_BANK",
+      "TELESCOPE",
+      "TIMER",
+      "WAIST_CINCHER",
+      "WIRELESS_LOCKED_PHONE"
+    ],
+    "inadmissible_classes": [
+      "HAIRBAND",
+      "PUNCHING_BAG",
+      "SALWAR_SUIT_SET",
+      "TREADMILL"
+    ],
+    "unresolved_classes": []
+  },
+  "boundary": {
+    "open_set_inference": false,
+    "unknown_detection_claim": false,
+    "threshold_selected": false,
+    "dtest_evaluated": false,
+    "synthetic_unknowns": false,
+    "external_scraping": false,
+    "upstream_modified": false,
+    "frozen_artifacts_modified": false
+  }
+}

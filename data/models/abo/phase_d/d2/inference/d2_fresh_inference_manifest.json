@@ -1,0 +1,45 @@
+{
+  "status": "GENERATED",
+  "phase": "D2",
+  "stage": "fresh_cbase_inference",
+  "seed": 20260827,
+  "source": {
+    "text_embeddings": "data\\models\\abo\\phase_c\\c3\\embeddings\\validation_text.npy",
+    "image_embeddings": "data\\models\\abo\\phase_c\\c3\\embeddings\\validation_image.npy",
+    "labels": "data\\models\\abo\\phase_c\\c3\\embeddings\\validation_labels.npy",
+    "record_ids": "data\\models\\abo\\phase_c\\c3\\embeddings\\validation_record_ids.json",
+    "checkpoint": "data\\models\\abo\\phase_c\\c3\\training\\cbase_best.pt"
+  },
+  "checkpoint": {
+    "sha256": "3ae988f0d4a2e186aa6fc896191cd5739c0092c4c89ff9293f8924c9ba0439d9",
+    "expected_sha256": "3ae988f0d4a2e186aa6fc896191cd5739c0092c4c89ff9293f8924c9ba0439d9",
+    "verified": true
+  },
+  "population": {
+    "total": 69867,
+    "dcal": 34909,
+    "dselect": 34958,
+    "dtest_accessed": false
+  },
+  "outputs": {
+    "file": "data\\models\\abo\\phase_d\\d2\\inference\\d2_fresh_cbase_validation_outputs.npz",
+    "sha256": "3e41c33a1bfbadc4e7106d9d8a5d612244aa378c3b1afd60b38d46a600759d58",
+    "logits_shape": [
+      69867,
+      549
+    ],
+    "predictions_shape": [
+      69867
+    ]
+  },
+  "method_boundary": {
+    "fresh_inference_only": true,
+    "calibration_fitted": false,
+    "temperature_scaling_fitted": false,
+    "threshold_selected": false,
+    "coverage_target_selected": false,
+    "review_rule_selected": false,
+    "dtest_used": false,
+    "phase_c_modified": false
+  }
+}

@@ -1,0 +1,329 @@
+[
+  {
+    "path": "data\\models\\abo\\b4.2\\statistics.json",
+    "matches": [
+      {
+        "key": "text_only.train.classes",
+        "type": "int",
+        "preview": 553
+      },
+      {
+        "key": "image_only.train.classes",
+        "type": "int",
+        "preview": 549
+      }
+    ]
+  },
+  {
+    "path": "data\\models\\abo\\phase_c\\c3\\embeddings\\c3_embedding_manifest.json",
+    "matches": [
+      {
+        "key": "target.classes",
+        "type": "list",
+        "preview": [
+          "ABIS_BEAUTY",
+          "ABIS_BOOK",
+          "ABIS_DRUGSTORE",
+          "ABIS_ELECTRONICS",
+          "ABIS_HOME_IMPROVEMENT",
+          "ABIS_KITCHEN",
+          "ABIS_LAWN_AND_GARDEN",
+          "ABIS_PET_PRODUCTS",
+          "ABIS_VIDEO_GAMES",
+          "ACCESSORY",
+          "ACCESSORY_OR_PART_OR_SUPPLY",
+          "AGRICULTURAL_SUPPLIES",
+          "AIR_COMPRESSOR",
+          "AIR_CONDITIONER",
+          "AIR_FRYER",
+          "AIR_MATTRESS",
+          "AIR_PUMP",
+          "AMAZON_BOOK_READER_ACCESSORY",
+          "AMAZON_TABLET_ACCESSORY",
+          "ANIMAL_COLLAR"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "data\\models\\abo\\phase_c\\c3\\training\\cbase_training_manifest.json",
+    "matches": [
+      {
+        "key": "integrity.target_classes",
+        "type": "int",
+        "preview": 549
+      },
+      {
+        "key": "model.num_classes",
+        "type": "int",
+        "preview": 549
+      },
+      {
+        "key": "training_config.num_classes",
+        "type": "int",
+        "preview": 549
+      }
+    ]
+  },
+  {
+    "path": "data\\models\\abo\\phase_c\\c4\\evaluation\\c4_2_evaluation_manifest.json",
+    "matches": [
+      {
+        "key": "target_classes",
+        "type": "int",
+        "preview": 549
+      }
+    ]
+  },
+  {
+    "path": "data\\models\\abo\\phase_c\\c4\\evaluation\\c4_3_error_analysis\\c4_3_error_analysis_manifest.json",
+    "matches": [
+      {
+        "key": "num_classes",
+        "type": "int",
+        "preview": 549
+      }
+    ]
+  },
+  {
+    "path": "data\\models\\abo\\phase_c\\c4\\evaluation\\c4_3_error_analysis\\c4_3_summary.json",
+    "matches": [
+      {
+        "key": "num_classes",
+        "type": "int",
+        "preview": 549
+      },
+      {
+        "key": "support_bucket_summary.6-10.classes",
+        "type": "int",
+        "preview": 55
+      },
+      {
+        "key": "support_bucket_summary.0.classes",
+        "type": "int",
+        "preview": 206
+      },
+      {
+        "key": "support_bucket_summary.11-25.classes",
+        "type": "int",
+        "preview": 42
+      },
+      {
+        "key": "support_bucket_summary.1-5.classes",
+        "type": "int",
+        "preview": 200
+      },
+      {
+        "key": "support_bucket_summary.101-500.classes",
+        "type": "int",
+        "preview": 10
+      },
+      {
+        "key": "support_bucket_summary.26-50.classes",
+        "type": "int",
+        "preview": 20
+      },
+      {
+        "key": "support_bucket_summary.51-100.classes",
+        "type": "int",
+        "preview": 14
+      },
+      {
+        "key": "support_bucket_summary.501+.classes",
+        "type": "int",
+        "preview": 2
+      }
+    ]
+  },
+  {
+    "path": "data\\models\\abo\\phase_c\\c4\\evaluation\\c4_3_error_analysis\\c4_3_support_buckets.json",
+    "matches": [
+      {
+        "key": "buckets.6-10.classes",
+        "type": "int",
+        "preview": 55
+      },
+      {
+        "key": "buckets.0.classes",
+        "type": "int",
+        "preview": 206
+      },
+      {
+        "key": "buckets.11-25.classes",
+        "type": "int",
+        "preview": 42
+      },
+      {
+        "key": "buckets.1-5.classes",
+        "type": "int",
+        "preview": 200
+      },
+      {
+        "key": "buckets.101-500.classes",
+        "type": "int",
+        "preview": 10
+      },
+      {
+        "key": "buckets.26-50.classes",
+        "type": "int",
+        "preview": 20
+      },
+      {
+        "key": "buckets.51-100.classes",
+        "type": "int",
+        "preview": 14
+      },
+      {
+        "key": "buckets.501+.classes",
+        "type": "int",
+        "preview": 2
+      }
+    ]
+  },
+  {
+    "path": "data\\models\\abo\\phase_c\\c4\\evaluation\\cbase_test_results.json",
+    "matches": [
+      {
+        "key": "num_classes",
+        "type": "int",
+        "preview": 549
+      }
+    ]
+  },
+  {
+    "path": "data\\models\\abo\\phase_c\\c4\\test_embeddings\\c4_test_embedding_manifest.json",
+    "matches": [
+      {
+        "key": "target.classes",
+        "type": "list",
+        "preview": [
+          "ABIS_BEAUTY",
+          "ABIS_BOOK",
+          "ABIS_DRUGSTORE",
+          "ABIS_ELECTRONICS",
+          "ABIS_HOME_IMPROVEMENT",
+          "ABIS_KITCHEN",
+          "ABIS_LAWN_AND_GARDEN",
+          "ABIS_PET_PRODUCTS",
+          "ABIS_VIDEO_GAMES",
+          "ACCESSORY",
+          "ACCESSORY_OR_PART_OR_SUPPLY",
+          "AGRICULTURAL_SUPPLIES",
+          "AIR_COMPRESSOR",
+          "AIR_CONDITIONER",
+          "AIR_FRYER",
+          "AIR_MATTRESS",
+          "AIR_PUMP",
+          "AMAZON_BOOK_READER_ACCESSORY",
+          "AMAZON_TABLET_ACCESSORY",
+          "ANIMAL_COLLAR"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "data\\models\\abo\\phase_c\\c5\\c5_1_reliability_signal_audit\\c5_1_signal_inventory.json",
+    "matches": [
+      {
+        "key": "num_classes",
+        "type": "int",
+        "preview": 549
+      }
+    ]
+  },
+  {
+    "path": "data\\models\\abo\\phase_c\\c5\\c5_2_confidence_probability_audit\\c5_2_audit_manifest.json",
+    "matches": [
+      {
+        "key": "num_classes",
+        "type": "int",
+        "preview": 549
+      }
+    ]
+  },
+  {
+    "path": "data\\models\\abo\\phase_c\\c5\\c5_2_confidence_probability_audit\\c5_2_summary.json",
+    "matches": [
+      {
+        "key": "num_classes",
+        "type": "int",
+        "preview": 549
+      }
+    ]
+  },
+  {
+    "path": "data\\models\\abo\\phase_c\\c5\\c5_3_margin_ambiguity_analysis\\c5_3_audit_manifest.json",
+    "matches": [
+      {
+        "key": "num_classes",
+        "type": "int",
+        "preview": 549
+      }
+    ]
+  },
+  {
+    "path": "data\\models\\abo\\phase_c\\c5\\c5_3_margin_ambiguity_analysis\\c5_3_summary.json",
+    "matches": [
+      {
+        "key": "num_classes",
+        "type": "int",
+        "preview": 549
+      },
+      {
+        "key": "overall.num_classes",
+        "type": "int",
+        "preview": 549
+      }
+    ]
+  },
+  {
+    "path": "data\\models\\abo\\phase_c\\c5\\c5_4_modality_evidence_analysis\\c5_4_summary.json",
+    "matches": [
+      {
+        "key": "num_classes",
+        "type": "int",
+        "preview": 549
+      }
+    ]
+  },
+  {
+    "path": "data\\models\\abo\\phase_c\\c5\\c5_5_representation_distance_analysis\\c5_5_audit_manifest.json",
+    "matches": [
+      {
+        "key": "num_classes",
+        "type": "int",
+        "preview": 549
+      }
+    ]
+  },
+  {
+    "path": "data\\models\\abo\\phase_c\\c5\\c5_5_representation_distance_analysis\\c5_5_summary.json",
+    "matches": [
+      {
+        "key": "num_classes",
+        "type": "int",
+        "preview": 549
+      }
+    ]
+  },
+  {
+    "path": "data\\models\\abo\\phase_c\\c6\\integrity_freeze\\c6_integrity_freeze.json",
+    "matches": [
+      {
+        "key": "frozen_contract.classes",
+        "type": "int",
+        "preview": 549
+      }
+    ]
+  },
+  {
+    "path": "data\\models\\abo\\phase_c\\c6\\integrity_freeze\\c6_integrity_freeze_report.json",
+    "matches": [
+      {
+        "key": "frozen_contract.classes",
+        "type": "int",
+        "preview": 549
+      }
+    ]
+  }
+]
